@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/portfolio/static/js/main.df991343.js",
+    "main.css": "/portfolio/static/css/main.e7a1852a.css",
+    "main.js": "/portfolio/static/js/main.765baa00.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Learn_Scotland.jpg": "/portfolio/static/media/Learn_Scotland.2c738102c37054572693.jpg",
     "static/media/Art_Ghetto.jpg": "/portfolio/static/media/Art_Ghetto.b7259db508ae9603758f.jpg",
     "static/media/watchlist.jpg": "/portfolio/static/media/watchlist.d7fac745cbcef0796d67.jpg",
+    "static/media/css3.png": "/portfolio/static/media/css3.f608fd47714b149ee2f0.png",
+    "static/media/html5.png": "/portfolio/static/media/html5.565ea6814da8c4e3771e.png",
     "index.html": "/portfolio/index.html",
-    "main.e6c13ad2.css.map": "/portfolio/static/css/main.e6c13ad2.css.map",
-    "main.df991343.js.map": "/portfolio/static/js/main.df991343.js.map",
+    "main.e7a1852a.css.map": "/portfolio/static/css/main.e7a1852a.css.map",
+    "main.765baa00.js.map": "/portfolio/static/js/main.765baa00.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.df991343.js"
+    "static/css/main.e7a1852a.css",
+    "static/js/main.765baa00.js"
   ]
 }
