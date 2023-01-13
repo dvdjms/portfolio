@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c1155026.css",
-    "main.js": "/portfolio/static/js/main.393ab4cc.js",
+    "main.js": "/portfolio/static/js/main.cbf0a27b.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Learn_Scotland.jpg": "/portfolio/static/media/Learn_Scotland.2c738102c37054572693.jpg",
     "static/media/Art_Ghetto.jpg": "/portfolio/static/media/Art_Ghetto.b7259db508ae9603758f.jpg",
@@ -11,15 +11,17 @@
     "static/media/watchlistmovie.png": "/portfolio/static/media/watchlistmovie.9ba58d22fb9e5b0e46fc.png",
     "static/media/watchlistdirector.png": "/portfolio/static/media/watchlistdirector.9e3f3da5ad6d7e9a2dee.png",
     "static/media/css3.png": "/portfolio/static/media/css3.f608fd47714b149ee2f0.png",
+    "static/media/CodeClan-Logo-Blue.png": "/portfolio/static/media/CodeClan-Logo-Blue.47ea5306fff13bec2ade.png",
     "static/media/html5.png": "/portfolio/static/media/html5.565ea6814da8c4e3771e.png",
+    "static/media/CS50.png": "/portfolio/static/media/CS50.bde6c5a6dd04b3fdf692.png",
     "static/media/arrow_right.png": "/portfolio/static/media/arrow_right.0e78a0355801e90496cd.png",
     "index.html": "/portfolio/index.html",
     "main.c1155026.css.map": "/portfolio/static/css/main.c1155026.css.map",
-    "main.393ab4cc.js.map": "/portfolio/static/js/main.393ab4cc.js.map",
+    "main.cbf0a27b.js.map": "/portfolio/static/js/main.cbf0a27b.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1155026.css",
-    "static/js/main.393ab4cc.js"
+    "static/js/main.cbf0a27b.js"
   ]
 }
