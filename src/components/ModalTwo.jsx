@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import './Modal.css';
-import WatchlistOne from './images/watchlistmovies.png';
-import WatchlistTwo from './images/watchlistmovie.png';
-import WatchlistThree from './images/watchlistdirector.png';
+
+import LearnScotlandOne from './images/LearnScotland_1.png';
+import LearnScotlandTwo from './images/LearnScotland_2.png';
+import LearnScotlandThree from './images/LearnScotland_3.png';
 import Arrow from './images/arrow_right.png';
 
 
@@ -32,7 +33,7 @@ const ModalTwo = () => {
                                 
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <ImageSize src={WatchlistOne} className="d-block w-100" alt="..."></ImageSize>
+                                        <ImageSize src={LearnScotlandOne} className="d-block w-100" alt="..."></ImageSize>
                                         <div className="carousel-caption d-none d-md-block">
                                          {/* eslint-disable-next-line  */}
                                             <h5></h5>
@@ -40,7 +41,7 @@ const ModalTwo = () => {
                                         </div>
                                     </div>
                                     <div className="carousel-item">
-                                        <ImageSize src={WatchlistTwo} className="d-block w-100" alt="..."></ImageSize>
+                                        <ImageSize src={LearnScotlandTwo} className="d-block w-100" alt="..."></ImageSize>
                                         <div className="carousel-caption d-none d-md-block">
                                             {/* eslint-disable-next-line  */}
                                             <h5></h5>
@@ -48,7 +49,7 @@ const ModalTwo = () => {
                                         </div>
                                     </div>
                                     <div className="carousel-item">
-                                        <ImageSize src={WatchlistThree} className="d-block w-100" alt="..."></ImageSize>
+                                        <ImageSize src={LearnScotlandThree} className="d-block w-100" alt="..."></ImageSize>
                                         <div className="carousel-caption d-none d-md-block">
                                             {/* eslint-disable-next-line  */}
                                             <h5></h5>

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import './Modal.css';
-import WatchlistOne from './images/watchlistmovies.png';
-import WatchlistTwo from './images/watchlistmovie.png';
-import WatchlistThree from './images/watchlistdirector.png';
+import ArtGhettoOne from './images/ArtGhetto_2.png';
+import ArtGhettoTwo from './images/ArtGhetto_3.png';
+import ArtGhettoThree from './images/ArtGhetto_4.png';
 import Arrow from './images/arrow_right.png';
 
 
@@ -32,7 +32,7 @@ const ModalTwo = () => {
                                 
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <ImageSize src={WatchlistOne} className="d-block w-100" alt="..."></ImageSize>
+                                        <ImageSize src={ArtGhettoOne} className="d-block w-100" alt="..."></ImageSize>
                                         <div className="carousel-caption d-none d-md-block">
                                          {/* eslint-disable-next-line  */}
                                             <h5></h5>
@@ -40,7 +40,7 @@ const ModalTwo = () => {
                                         </div>
                                     </div>
                                     <div className="carousel-item">
-                                        <ImageSize src={WatchlistTwo} className="d-block w-100" alt="..."></ImageSize>
+                                        <ImageSize src={ArtGhettoTwo} className="d-block w-100" alt="..."></ImageSize>
                                         <div className="carousel-caption d-none d-md-block">
                                             {/* eslint-disable-next-line  */}
                                             <h5></h5>
@@ -48,7 +48,7 @@ const ModalTwo = () => {
                                         </div>
                                     </div>
                                     <div className="carousel-item">
-                                        <ImageSize src={WatchlistThree} className="d-block w-100" alt="..."></ImageSize>
+                                        <ImageSize src={ArtGhettoThree} className="d-block w-100" alt="..."></ImageSize>
                                         <div className="carousel-caption d-none d-md-block">
                                             {/* eslint-disable-next-line  */}
                                             <h5></h5>
@@ -68,7 +68,7 @@ const ModalTwo = () => {
 
                         <ModalTitle>Art Ghetto</ModalTitle>
                         <ModalSubTitle>CS50x Final Project</ModalSubTitle>
-                        <Paragraph>After 4 weeks at CodeClan we undertook our first project. Working independently we were to create a flask application that allows a user to perform simple CRUD actions. I created a movie watchlist.</Paragraph>
+                        <Paragraph>Working independently I developed a flask application that allows a user to mimic buying art. A user can register, a user can buy art, a user can view transaction history</Paragraph>
                         <Footer>
                             <a href="https://github.com/dvdjms/watchlist" target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
                             <CloseButton type="button" className="btn btn-default" data-dismiss="modal">Close</CloseButton>

@@ -2,8 +2,8 @@ import React from 'react';
 import styled, { keyframes }  from 'styled-components';
 import watchlist from './images/watchlist.jpg';
 import portfolio from './images/portfolio.jpg';
-import Art_Ghetto from './images/Art_Ghetto.jpg';
-import learn_scotland from './images/Learn_Scotland.jpg';
+import Art_Ghetto from './images/ArtGhetto_1.png';
+import learn_scotland from './images/LearnScotland.jpg';
 import Modal from '../components/ModalContainer';
 
 
