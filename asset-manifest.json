@@ -1,14 +1,20 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c1155026.css",
-    "main.js": "/portfolio/static/js/main.cf771ddb.js",
+    "main.js": "/portfolio/static/js/main.8b0bf178.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/Learn_Scotland.jpg": "/portfolio/static/media/Learn_Scotland.2c738102c37054572693.jpg",
-    "static/media/Art_Ghetto.jpg": "/portfolio/static/media/Art_Ghetto.b7259db508ae9603758f.jpg",
+    "static/media/ArtGhetto_2.png": "/portfolio/static/media/ArtGhetto_2.87c2fcdd28f6ef3c0815.png",
+    "static/media/LearnScotland.jpg": "/portfolio/static/media/LearnScotland.2c738102c37054572693.jpg",
+    "static/media/ArtGhetto_1.png": "/portfolio/static/media/ArtGhetto_1.5d0a2a74f2c22e2050ae.png",
     "static/media/watchlist.jpg": "/portfolio/static/media/watchlist.d7fac745cbcef0796d67.jpg",
+    "static/media/LearnScotland_3.png": "/portfolio/static/media/LearnScotland_3.b7abb2d57afbd53761d3.png",
+    "static/media/LearnScotland_1.png": "/portfolio/static/media/LearnScotland_1.47fd0bc2a02f0f6ff5cf.png",
+    "static/media/LearnScotland_2.png": "/portfolio/static/media/LearnScotland_2.19c5006503d8ccc79136.png",
     "static/media/Portrait2.png": "/portfolio/static/media/Portrait2.97dae0eb7c66ab013e4f.png",
     "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.ca6c185c2a1f7131ebcd.jpg",
+    "static/media/ArtGhetto_3.png": "/portfolio/static/media/ArtGhetto_3.ff6d9da5eec49ce28977.png",
     "static/media/watchlistmovies.png": "/portfolio/static/media/watchlistmovies.ad80f38954f4d790cb4b.png",
+    "static/media/ArtGhetto_4.png": "/portfolio/static/media/ArtGhetto_4.ebe8d7a2b5efa81f8140.png",
     "static/media/watchlistmovie.png": "/portfolio/static/media/watchlistmovie.9ba58d22fb9e5b0e46fc.png",
     "static/media/watchlistdirector.png": "/portfolio/static/media/watchlistdirector.9e3f3da5ad6d7e9a2dee.png",
     "static/media/CodeClan-Logo-Blue.png": "/portfolio/static/media/CodeClan-Logo-Blue.47ea5306fff13bec2ade.png",
@@ -16,11 +22,11 @@
     "static/media/arrow_right.png": "/portfolio/static/media/arrow_right.0e78a0355801e90496cd.png",
     "index.html": "/portfolio/index.html",
     "main.c1155026.css.map": "/portfolio/static/css/main.c1155026.css.map",
-    "main.cf771ddb.js.map": "/portfolio/static/js/main.cf771ddb.js.map",
+    "main.8b0bf178.js.map": "/portfolio/static/js/main.8b0bf178.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1155026.css",
-    "static/js/main.cf771ddb.js"
+    "static/js/main.8b0bf178.js"
   ]
 }
