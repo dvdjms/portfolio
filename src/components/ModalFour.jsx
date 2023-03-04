@@ -70,7 +70,7 @@ const ModalTwo = () => {
                         <ModalSubTitle>CS50x Final Project</ModalSubTitle>
                         <Paragraph>Working independently I developed a flask application that allows a user to mimic buying art. A user can register, a user can buy art, a user can view transaction history</Paragraph>
                         <Footer>
-                            <a href="https://github.com/dvdjms/watchlist" target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
+                            <a href="https://github.com/dvdjms/Art-Ghetto" target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
                             <CloseButton type="button" className="btn btn-default" data-dismiss="modal">Close</CloseButton>
                         </Footer>
                     </div>
@@ -124,6 +124,7 @@ const ImageSize = styled.img`
     max-width: 100%;
 	background-size: cover;
 	overflow: hidden;
+    /* border: solid #474775 1px; */
 `;
 
 // class="modal-footer"

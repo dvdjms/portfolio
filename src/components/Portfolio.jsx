@@ -1,9 +1,10 @@
 import React from 'react';
 import styled, { keyframes }  from 'styled-components';
 import watchlist from './images/watchlist.jpg';
-import portfolio from './images/portfolio.jpg';
-import Art_Ghetto from './images/ArtGhetto_1.png';
 import learn_scotland from './images/LearnScotland.jpg';
+import chaterio from './images/Chaterio_1.png';
+import Art_Ghetto from './images/ArtGhetto_1.png';
+import portfolio from './images/portfolio.jpg';
 import Modal from '../components/ModalContainer';
 
 
@@ -43,7 +44,7 @@ const Portfolio = () => {
 
                 <ScrollElement>
                     <ImageContainer id="image3" >
-                        <Image alt="Chaterio homepage" src={watchlist}></Image>
+                        <Image alt="Chaterio homepage" src={chaterio}></Image>
                         <TitleOfPortfolio>Chaterio</TitleOfPortfolio>
                         <TechnologiesHeader>React / ExpressJS / WebSockets</TechnologiesHeader>
                          <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">LEARN MORE</LearnMoreButton>
