@@ -6,6 +6,37 @@ import ScrollSpy from 'react-scrollspy-navigation';
 
 const Header = () => {
 
+    window.onscroll = () => {
+        if (window.innerHeight + window.scrollY >= window.innerHeight){
+            document.querySelector('#one').style.color = "#E31A6D";
+            document.querySelector('#two').style.color = "white";
+        }
+        if (window.innerHeight + window.scrollY >= window.innerHeight * 1.6){
+            document.querySelector('#one').style.color = "white";
+            document.querySelector('#two').style.color = "#E31A6D";
+            document.querySelector('#three').style.color = "white";
+        }
+        if (window.innerHeight + window.scrollY >= window.innerHeight * 2.6){
+            document.querySelector('#two').style.color = "white";
+            document.querySelector('#three').style.color = "#E31A6D";
+            document.querySelector('#four').style.color = "white";
+        }
+        if (window.innerHeight + window.scrollY >= window.innerHeight * 3.8){
+            document.querySelector('#three').style.color = "white";
+            document.querySelector('#four').style.color = "#E31A6D";
+            document.querySelector('#five').style.color = "white";
+        }
+        if (window.innerHeight + window.scrollY >= window.innerHeight * 4.8){
+            document.querySelector('#four').style.color = "white";
+            document.querySelector('#five').style.color = "#E31A6D";
+            document.querySelector('#six').style.color = "white";
+        }
+        if (window.innerHeight + window.scrollY >= window.innerHeight * 6){
+            document.querySelector('#five').style.color = "white";
+            document.querySelector('#six').style.color = "#E31A6D";
+        }
+    }
+
     return (
         <>
         <HeaderOne>
@@ -15,12 +46,12 @@ const Header = () => {
         <HeaderTwo>
             <UnorderedList>
             <ScrollSpy>
-                <List><A href="#about">About</A></List>
-                <List><A href="#training">Training</A></List>
-                <List><A href="#skills">Skills</A></List>
-                <List><A href="#experience">Experience</A></List>
-                <List><A href="#portfolio">Portfolio</A></List>
-                <List><A href="#contact">Contact</A></List>
+                <List><A id="one" href="#about">About</A></List>
+                <List><A id="two" href="#training">Training</A></List>
+                <List><A id="three" href="#skills">Skills</A></List>
+                <List><A id="four" href="#experience">Experience</A></List>
+                <List><A id="five" href="#portfolio">Portfolio</A></List>
+                <List><A id="six" href="#contact">Contact</A></List>
             </ScrollSpy>
             </UnorderedList>
         </HeaderTwo>

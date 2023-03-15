@@ -16,7 +16,7 @@ const About = () => {
                     </ContainerDiv2>
                     <Img src={Portrait}></Img>
                     <ContainerDiv3>
-                        <Profile>I'm currently training in Software Development at CodeClan, Edinburgh. Dedicated to becoming a full stack developer, I have a passion for UI/UX design, and I'm a tenacious problem solver. I bring with me over 10 years' accounts and administration experience from a variety of sectors and over 5 years Teaching English as a Foreign Language.</Profile>
+                        <Profile>I have recently completed the Professional Software Development course at CodeClan, Edinburgh. Dedicated to becoming a full stack developer, I have a passion and focus for customer satisfaction, UI/UX design, and clean understandable code. I'm also a tenacious problem solver. I bring with me over 10 years' accounts and administration experience from a variety of sectors and over 5 years Teaching English as a Foreign Language.</Profile>
                     </ContainerDiv3>
                 </ContainerMain>
             </Section>
