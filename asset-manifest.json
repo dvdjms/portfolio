@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c1155026.css",
-    "main.js": "/portfolio/static/js/main.e1de49bc.js",
+    "main.js": "/portfolio/static/js/main.7e747f4c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/ArtGhetto_2.png": "/portfolio/static/media/ArtGhetto_2.87c2fcdd28f6ef3c0815.png",
     "static/media/Chaterio_1.png": "/portfolio/static/media/Chaterio_1.ea75fce1d7aa4df3f500.png",
@@ -13,22 +13,26 @@
     "static/media/LearnScotland_2.png": "/portfolio/static/media/LearnScotland_2.19c5006503d8ccc79136.png",
     "static/media/Portrait2.png": "/portfolio/static/media/Portrait2.97dae0eb7c66ab013e4f.png",
     "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.ca6c185c2a1f7131ebcd.jpg",
+    "static/media/Weather_1.png": "/portfolio/static/media/Weather_1.f37fd8dc34ed886d232c.png",
+    "static/media/Weather_2.png": "/portfolio/static/media/Weather_2.39831e9ecdc6e04e2be7.png",
     "static/media/ArtGhetto_3.png": "/portfolio/static/media/ArtGhetto_3.ff6d9da5eec49ce28977.png",
     "static/media/watchlistmovies.png": "/portfolio/static/media/watchlistmovies.ad80f38954f4d790cb4b.png",
     "static/media/ArtGhetto_4.png": "/portfolio/static/media/ArtGhetto_4.ebe8d7a2b5efa81f8140.png",
     "static/media/imagescomingsoon.png": "/portfolio/static/media/imagescomingsoon.ba6f53e7d2a7a7c56311.png",
+    "static/media/Weather_4.png": "/portfolio/static/media/Weather_4.c407bd46eff79e785fbc.png",
     "static/media/watchlistmovie.png": "/portfolio/static/media/watchlistmovie.9ba58d22fb9e5b0e46fc.png",
+    "static/media/Weather_3.png": "/portfolio/static/media/Weather_3.8eabc7a3aa2e90137a97.png",
     "static/media/watchlistdirector.png": "/portfolio/static/media/watchlistdirector.9e3f3da5ad6d7e9a2dee.png",
     "static/media/CodeClan-Logo-Blue.png": "/portfolio/static/media/CodeClan-Logo-Blue.47ea5306fff13bec2ade.png",
     "static/media/CS50.png": "/portfolio/static/media/CS50.bde6c5a6dd04b3fdf692.png",
     "static/media/arrow_right.png": "/portfolio/static/media/arrow_right.0e78a0355801e90496cd.png",
     "index.html": "/portfolio/index.html",
     "main.c1155026.css.map": "/portfolio/static/css/main.c1155026.css.map",
-    "main.e1de49bc.js.map": "/portfolio/static/js/main.e1de49bc.js.map",
+    "main.7e747f4c.js.map": "/portfolio/static/js/main.7e747f4c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1155026.css",
-    "static/js/main.e1de49bc.js"
+    "static/js/main.7e747f4c.js"
   ]
 }
