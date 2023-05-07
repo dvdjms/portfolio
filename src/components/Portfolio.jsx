@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes }  from 'styled-components';
+import Weather from './images/Weather_1.png';
 import watchlist from './images/watchlist.jpg';
 import learn_scotland from './images/LearnScotland.jpg';
 import chaterio from './images/Chaterio_1.png';
@@ -15,15 +16,15 @@ const Portfolio = () => {
         <Section id="portfolio">
    
             <Modal></Modal>
-
-            <SectionTitle>PORTFOLIO &#x27A0;</SectionTitle>
+            {/* &#x27A0; */}
+            <SectionTitle>PORTFOLIO</SectionTitle>
 
             <ScrollContainer>
-                <ScrollElement>
+            <ScrollElement>
                     <ImageContainer id="image1" >
-                        <Image className="webImage" alt="Watchlist homepage" src={watchlist}></Image>
-                        <TitleOfPortfolio>Movie Watchlist</TitleOfPortfolio>
-                        <TechnologiesHeader>Python / Flask / Postgresql</TechnologiesHeader>
+                        <Image className="webImage" alt="WeatherWise homepage" src={Weather}></Image>
+                        <TitleOfPortfolio>WeatherWise</TitleOfPortfolio>
+                        <TechnologiesHeader>Python / Django / React / Sqlite3</TechnologiesHeader>
                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">LEARN MORE</LearnMoreButton>
                     </ImageContainer>
                     {/* <Paragraph>Movie Watchlist</Paragraph>
@@ -32,10 +33,21 @@ const Portfolio = () => {
 
                 <ScrollElement>
                     <ImageContainer id="image2" >
+                        <Image className="webImage" alt="Watchlist homepage" src={watchlist}></Image>
+                        <TitleOfPortfolio>Movie Watchlist</TitleOfPortfolio>
+                        <TechnologiesHeader>Python / Flask / Postgresql</TechnologiesHeader>
+                        <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">LEARN MORE</LearnMoreButton>
+                    </ImageContainer>
+                    {/* <Paragraph>Movie Watchlist</Paragraph>
+                    <Paragraph>CodeClan Individual Project</Paragraph> */}
+                </ScrollElement>
+
+                <ScrollElement>
+                    <ImageContainer id="image3" >
                         <Image alt="Learn Scotland homepage" src={learn_scotland}></Image>
                         <TitleOfPortfolio>Learn Scotland</TitleOfPortfolio>
                         <TechnologiesHeader>React / ExpressJS / MongoDB</TechnologiesHeader>
-                        <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">LEARN MORE</LearnMoreButton>
+                        <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">LEARN MORE</LearnMoreButton>
 
                     </ImageContainer>
                     {/* <Paragraph>Art Ghetto Collections</Paragraph>
@@ -43,11 +55,11 @@ const Portfolio = () => {
                 </ScrollElement>
 
                 <ScrollElement>
-                    <ImageContainer id="image3" >
+                    <ImageContainer id="image4" >
                         <Image alt="Chaterio homepage" src={chaterio}></Image>
                         <TitleOfPortfolio>Chaterio</TitleOfPortfolio>
                         <TechnologiesHeader>React / ExpressJS / WebSockets</TechnologiesHeader>
-                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">LEARN MORE</LearnMoreButton>
+                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">LEARN MORE</LearnMoreButton>
 
                     </ImageContainer>
                     {/* <Paragraph>Learn Scotland</Paragraph>
@@ -55,16 +67,16 @@ const Portfolio = () => {
                 </ScrollElement>
 
                 <ScrollElement>
-                    <ImageContainer id="image4" >
-                        <Image alt="Watchlist homepage" src={Art_Ghetto}></Image>
+                    <ImageContainer id="image5" >
+                        <Image alt="Art Ghetto Collections" src={Art_Ghetto}></Image>
                         <TitleOfPortfolio>Art Ghetto Collections</TitleOfPortfolio>
                         <TechnologiesHeader>Python / Flask / JavaScript / Sqlite3</TechnologiesHeader>
-                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">LEARN MORE</LearnMoreButton>
+                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">LEARN MORE</LearnMoreButton>
                     </ImageContainer>
                 </ScrollElement>
 
                 <ScrollElement>
-                    <ImageContainer id="image5" >
+                    <ImageContainer id="image6" >
                         <Image alt="Portfolio" src={portfolio}></Image>
                         <TitleOfPortfolio>Portfolio</TitleOfPortfolio>
                         <TechnologiesHeader>React</TechnologiesHeader>
@@ -157,7 +169,7 @@ const TitleOfPortfolio = styled.h5`
 `;
 
 const TechnologiesHeader = styled.p`
-    color:  #E31A6D;
+    color: #E31A6D;
     margin: auto;
     padding-top: 4vh;
     position: absolute;

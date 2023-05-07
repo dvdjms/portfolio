@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import './Modal.css';
-import ArtGhettoOne from './images/ArtGhetto_2.png';
-import ArtGhettoTwo from './images/ArtGhetto_3.png';
-import ArtGhettoThree from './images/ArtGhetto_4.png';
+
+import LearnScotlandOne from './images/LearnScotland_1.png';
+import LearnScotlandTwo from './images/LearnScotland_2.png';
+import LearnScotlandThree from './images/LearnScotland_3.png';
 import Arrow from './images/arrow_right.png';
 
 
@@ -15,7 +16,7 @@ const ModalTwo = () => {
         {/* Modal One Container */}
         <div className="container">
             {/* Modal */}
-            <div className="modal fade" id="myModal4" role="dialog">
+            <div className="modal fade" id="myModal3" role="dialog">
                 <ModalSizePosition className="modal-dialog">
                 
                     {/* Modal content */}
@@ -23,7 +24,7 @@ const ModalTwo = () => {
                         
                         <ModalBody className="modal-body">
                             {/* Carousel */} 
-                            <div id="carouselExampleCaptions4" className="carousel slide" data-ride="carousel">
+                            <div id="carouselExampleCaptions3" className="carousel slide" data-ride="carousel">
                                 <ol className="carousel-indicators">
                                     <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
                                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -32,7 +33,7 @@ const ModalTwo = () => {
                                 
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <ImageSize src={ArtGhettoOne} className="d-block w-100" alt="..."></ImageSize>
+                                        <ImageSize src={LearnScotlandOne} className="d-block w-100" alt="..."></ImageSize>
                                         <div className="carousel-caption d-none d-md-block">
                                          {/* eslint-disable-next-line  */}
                                             <h5></h5>
@@ -40,7 +41,7 @@ const ModalTwo = () => {
                                         </div>
                                     </div>
                                     <div className="carousel-item">
-                                        <ImageSize src={ArtGhettoTwo} className="d-block w-100" alt="..."></ImageSize>
+                                        <ImageSize src={LearnScotlandTwo} className="d-block w-100" alt="..."></ImageSize>
                                         <div className="carousel-caption d-none d-md-block">
                                             {/* eslint-disable-next-line  */}
                                             <h5></h5>
@@ -48,7 +49,7 @@ const ModalTwo = () => {
                                         </div>
                                     </div>
                                     <div className="carousel-item">
-                                        <ImageSize src={ArtGhettoThree} className="d-block w-100" alt="..."></ImageSize>
+                                        <ImageSize src={LearnScotlandThree} className="d-block w-100" alt="..."></ImageSize>
                                         <div className="carousel-caption d-none d-md-block">
                                             {/* eslint-disable-next-line  */}
                                             <h5></h5>
@@ -57,20 +58,20 @@ const ModalTwo = () => {
                                     </div>
                                 </div>
                                 
-                                <a className="carousel-control-prev" href="#carouselExampleCaptions4" role="button" data-slide="prev">
+                                <a className="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev">
                                 <ArrowLeftImage src={Arrow}></ArrowLeftImage>
                                 </a>
-                                <a className="carousel-control-next" href="#carouselExampleCaptions4" role="button" data-slide="next">
+                                <a className="carousel-control-next" href="#carouselExampleCaptions2" role="button" data-slide="next">
                                 <ArrowRightImage src={Arrow}></ArrowRightImage>
                                 </a>
                             </div>
                         </ModalBody>
 
-                        <ModalTitle>Art Ghetto</ModalTitle>
-                        <ModalSubTitle>CS50x Final Project</ModalSubTitle>
-                        <Paragraph>Working independently I developed a flask application that allows a user to mimic buying art. A user can register, a user can buy art, a user can view transaction history</Paragraph>
+                        <ModalTitle>Learn Scotland</ModalTitle>
+                        <ModalSubTitle>CodeClan Group Project</ModalSubTitle>
+                        <Paragraph>Working within in a group of four, we planned, designed, and developed a Learn Scotland application aimed at young people. This included quizzes, interactive activities, and a leader board.</Paragraph>
                         <Footer>
-                            <a href="https://github.com/dvdjms/Art-Ghetto" target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
+                            <a href="https://github.com/pmo234/Learn_Scotland" target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
                             <CloseButton type="button" className="btn btn-default" data-dismiss="modal">Close</CloseButton>
                         </Footer>
                     </div>
@@ -124,7 +125,6 @@ const ImageSize = styled.img`
     max-width: 100%;
 	background-size: cover;
 	overflow: hidden;
-    /* border: solid #474775 1px; */
 `;
 
 // class="modal-footer"

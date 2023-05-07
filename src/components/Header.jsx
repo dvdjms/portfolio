@@ -9,30 +9,30 @@ const Header = () => {
     window.onscroll = () => {
         if (window.innerHeight + window.scrollY >= window.innerHeight){
             document.querySelector('#one').style.color = "#E31A6D";
-            document.querySelector('#two').style.color = "white";
+            document.querySelector('#two').style.color = "";
         }
         if (window.innerHeight + window.scrollY >= window.innerHeight * 1.6){
-            document.querySelector('#one').style.color = "white";
+            document.querySelector('#one').style.color = "";
             document.querySelector('#two').style.color = "#E31A6D";
-            document.querySelector('#three').style.color = "white";
+            document.querySelector('#three').style.color = "";
         }
         if (window.innerHeight + window.scrollY >= window.innerHeight * 2.6){
-            document.querySelector('#two').style.color = "white";
+            document.querySelector('#two').style.color = "";
             document.querySelector('#three').style.color = "#E31A6D";
-            document.querySelector('#four').style.color = "white";
+            document.querySelector('#four').style.color = "";
         }
         if (window.innerHeight + window.scrollY >= window.innerHeight * 3.8){
-            document.querySelector('#three').style.color = "white";
+            document.querySelector('#three').style.color = "";
             document.querySelector('#four').style.color = "#E31A6D";
-            document.querySelector('#five').style.color = "white";
+            document.querySelector('#five').style.color = "";
         }
         if (window.innerHeight + window.scrollY >= window.innerHeight * 4.8){
-            document.querySelector('#four').style.color = "white";
+            document.querySelector('#four').style.color = "";
             document.querySelector('#five').style.color = "#E31A6D";
-            document.querySelector('#six').style.color = "white";
+            document.querySelector('#six').style.color = "";
         }
         if (window.innerHeight + window.scrollY >= window.innerHeight * 6){
-            document.querySelector('#five').style.color = "white";
+            document.querySelector('#five').style.color = "";
             document.querySelector('#six').style.color = "#E31A6D";
         }
     }
@@ -92,19 +92,22 @@ const HeaderTwo = styled.header`
     background-color: #1b242f;
     border-bottom: solid 3px #10c2c9;
     border-top: solid .5px #E31A6D;
-    width: 100%;
+    width: 100vw;
     top: 0;
     height: 50px;
     position: sticky;
     z-index: 3;
+
 `;
 
 const UnorderedList = styled.ul`
     list-style: none;
     margin: auto;
     padding-top: 10px;
-    width: 43%;
+
+    width: 100vw;
     display: flex;
+    justify-content: center;
 `;
 
 const FromBottom = keyframes`

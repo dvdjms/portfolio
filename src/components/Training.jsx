@@ -13,7 +13,7 @@ const Training = () => {
             <TrainingContainer>
                 <CodeClanContainer>
                     <ImageContainer>
-                        <a href="https://codeclan.com/" target="_blank"><CodeClan alt="CodeClan Logo" src={codeclan}></CodeClan></a>
+                        <a href="https://codeclan.com/" rel="noreferrer" target="_blank"><CodeClan alt="CodeClan Logo" src={codeclan}></CodeClan></a>
                         <LineBreak></LineBreak>
                     </ImageContainer>
                  
@@ -57,10 +57,10 @@ const Training = () => {
                 </CodeClanContainer>
                 <CS50Container>
                 <ImageContainer>
-                <a href="https://cs50.harvard.edu/x/2023/" target="_blank"><CS50 alt="CS50 Logo" src={csLogo}></CS50></a>
+                <a href="https://cs50.harvard.edu/x/2023/" rel="noreferrer" target="_blank"><CS50 alt="CS50 Logo" src={csLogo}></CS50></a>
                     <LineBreak></LineBreak>
                 </ImageContainer>
-                <TextBlock><strong>Introduction to Computer Science.</strong> Online learning at its best from HarvardX.</TextBlock>
+                <TextBlock><strong>Computer Science for Web Programming.</strong> Online learning at its best from HarvardX.</TextBlock>
                 <Table>
                         <tbody>
                         <tr>
@@ -69,6 +69,10 @@ const Training = () => {
                         </tr>
                         <tr>
                             <td>Python</td>
+                            <td>&#9989;</td>
+                        </tr>
+                        <tr>
+                            <td>Django</td>
                             <td>&#9989;</td>
                         </tr>
                         <tr>
@@ -85,10 +89,6 @@ const Training = () => {
                         </tr>
                         <tr>
                             <td>Web Development</td>
-                            <td>&#9989;</td>
-                        </tr>
-                        <tr>
-                            <td>Independent Learning</td>
                             <td>&#9989;</td>
                         </tr>
                         <tr>
@@ -117,21 +117,16 @@ const Section = styled.section`
     border-bottom: solid #e8e8ea;
     text-align: center;
     padding-top: 80px;
-
-
     @media (max-width: 676px) {
         height: 200vh;
     }
 `;
 
 const TrainingContainer = styled.div`
-    margin: 25%;
-    margin-top: 6vh;
+    margin: auto;
+    margin-top: 55px;
+    min-width: 750px;
     width: 60%;
-
-    /* added flex here */
-    display: flex;
-    flex: wrap;
     @media (max-width: 676px) {
         flex-direction: column;
         width: 90vh;
@@ -156,9 +151,8 @@ const CS50 = styled.img`
 const TextBlock = styled.div`
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 11pt;
-    height: 10vh;
+    height: 65px;
     margin-top: 7vh;
-    padding-left: 15px;
     text-align: left;
 `;
 
@@ -166,21 +160,22 @@ const Table = styled.table`
     border-collapse: separate; 
     border-spacing: 0 .7em;
     font-family: Verdana, Tahoma, sans-serif;
-    margin-left: 1vw;
     margin-top: 2vh;
     text-align: left;
     width: 100%;
+    min-width: 250px;
 `;
 
 const CodeClanContainer = styled.div`
     float: left;
-    margin-right: 3vw;
-    width: 40%;
+    min-width: 250px;
+    width: 45%;
 `;
 
 const CS50Container = styled.div`
     float: right;
-    width: 39%;
+    min-width: 250px;
+    width: 45%;
 `;
 
 const LineBreak = styled.div`

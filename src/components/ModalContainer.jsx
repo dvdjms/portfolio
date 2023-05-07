@@ -1,7 +1,9 @@
-import ModalOne from './ModalOne';
-import ModalTwo from './ModalTwo';
-import ModalThree from './ModalThree';
-import ModalFour from './ModalFour';
+import ModalWeather from './ModalWeather';
+import ModalMovie from './ModalMovie';
+import ModalLearnScotland from './ModalLearnScotland';
+import ModalChaterio from './ModalChaterio';
+import ModalArtGhetto from './ModalArtGhetto';
+import ModalPortfolio from './ModalPortfolio';
 
 
 const Modal = () => {
@@ -9,10 +11,12 @@ const Modal = () => {
 
     return (
         <>
-            <ModalOne></ModalOne>
-            <ModalTwo></ModalTwo>
-            <ModalThree></ModalThree>
-            <ModalFour></ModalFour>
+            <ModalWeather></ModalWeather>
+            <ModalMovie></ModalMovie>
+            <ModalLearnScotland></ModalLearnScotland>
+            <ModalChaterio></ModalChaterio>
+            <ModalArtGhetto></ModalArtGhetto>
+            <ModalPortfolio></ModalPortfolio>
         </>
     )
 };
