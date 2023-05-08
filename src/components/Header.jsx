@@ -64,27 +64,23 @@ const Header = () => {
 const H1 = styled.h1`
     margin-top: 0;
     color: #efefef;
-    padding-top: 12px;
     text-align: center;
-    font-size: 2rem;
-    @media (max-width: 1000px) {
-        font-size: 1.8rem;
-        padding-top: 1%;
-    }
+    font-size: 30px;
+    padding-top: 1vh;
     @media (max-width: 768px) {
-        font-size: 1.6rem;
-        padding-top: 2%;
-    }
-    @media (max-width: 667px) {
-        font-size: 1.4rem;
-        padding-top: 3.5%;
-    }
+        font-size: 28px;
+    };
+    @media (max-width: 568px) {
+        font-size: 24;
+    };
 `;
 
-
 const HeaderOne = styled.div`
-    height: 9vh;
+    height: 50px;
     background: #252934;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
 `;
 
 const HeaderTwo = styled.header`
@@ -92,19 +88,21 @@ const HeaderTwo = styled.header`
     background-color: #1b242f;
     border-bottom: solid 3px #10c2c9;
     border-top: solid .5px #E31A6D;
-    width: 100vw;
+    width: 100%;
     top: 0;
     height: 50px;
     position: sticky;
     z-index: 3;
-
+    overflow-x: scroll;
+        ::-webkit-scrollbar {
+            display: none;
+        };
 `;
 
 const UnorderedList = styled.ul`
     list-style: none;
     margin: auto;
     padding-top: 10px;
-
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -117,7 +115,7 @@ const FromBottom = keyframes`
 `;
 
 const List = styled.li`
-    font-size: 20px;
+    font-size: 18px;
     float: left;
     margin-right: 20px;
     animation-name: ${FromBottom};

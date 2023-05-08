@@ -57,10 +57,10 @@ const ModalTwo = () => {
                                     </div>
                                 </div>
                                 
-                                <a className="carousel-control-prev" href="#carouselExampleCaptions4" role="button" data-slide="prev">
+                                <a className="carousel-control-prev" href="#carouselExampleCaptions5" role="button" data-slide="prev">
                                 <ArrowLeftImage src={Arrow}></ArrowLeftImage>
                                 </a>
-                                <a className="carousel-control-next" href="#carouselExampleCaptions4" role="button" data-slide="next">
+                                <a className="carousel-control-next" href="#carouselExampleCaptions5" role="button" data-slide="next">
                                 <ArrowRightImage src={Arrow}></ArrowRightImage>
                                 </a>
                             </div>

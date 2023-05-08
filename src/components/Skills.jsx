@@ -8,9 +8,10 @@ const Skills = () => {
         <>
         <Section id="skills">
             <SectionTitle>SKILLS</SectionTitle>
-                <SkillsOuterContainer>
-                <SkillsInnerContainer>
-                <h6>Frontend</h6>
+
+            <SkillsOuterContainer>
+                <ContainerFrontend>
+                    <H6>Frontend</H6>
                     <SkillContainer>
                         <HTMLPercentage>
                             <SkillTitle>HTML</SkillTitle>
@@ -29,10 +30,10 @@ const Skills = () => {
                         </JSPercentage>
                         <Span>55%</Span>
                     </SkillContainer>
-                </SkillsInnerContainer>
+                </ContainerFrontend>
 
-                <SkillsInnerContainer>
-                <h6>Backend</h6>
+                <ContainerBackend>
+                <H6>Backend</H6>
                     <SkillContainer>
                         <PythonPercentage>
                             <SkillTitle>Python</SkillTitle>
@@ -51,13 +52,10 @@ const Skills = () => {
                         </CPercentage>
                         <Span>45%</Span>
                     </SkillContainer>
+                </ContainerBackend>
 
-                </SkillsInnerContainer>
-
-            </SkillsOuterContainer>
-            <SkillsOuterContainer>
-                <SkillsInnerContainer>
-                <h6>Frameworks and Libraries</h6>
+                <ContainerFrameworks>
+                <H6>Frameworks and Libraries</H6>
                     <SkillContainer>
                         <FlaskPercentage>
                             <SkillTitle>Flask</SkillTitle>
@@ -94,10 +92,10 @@ const Skills = () => {
                         </BootstrapPercentage>
                         <Span>70%</Span>
                     </SkillContainer>
-                </SkillsInnerContainer>
+                </ContainerFrameworks>
 
-                <SkillsInnerContainer>
-                <h6>Databases and Testing</h6>
+                <ContainerDatabases>
+                <H6>Databases and Testing</H6>
                     <SkillContainer>
                         <SQLitePercentage>
                             <SkillTitle>SQLite3</SkillTitle>
@@ -123,72 +121,144 @@ const Skills = () => {
                         <Span>50%</Span>
                     </SkillContainer>
 
-                </SkillsInnerContainer>
-
+                </ContainerDatabases>
+     
             </SkillsOuterContainer>
 
         </Section>
     
         </>
-    )
-
-}
+    );
+};
 
 const Section = styled.section`
-    height: 110vh;
+    height: 125vh;
     border-bottom: solid #e8e8ea;
     text-align: center;
     padding-top: 80px;
     background-color: #F5f5f5;
-
-    /* added flex here */
-    @media (max-width: 676px) {
-        flex-direction: column;
-        height: 140vh;
-    }
+    @media (max-width: 876px) {
+        height: 160vh;
+    };
 `;
 
 const SkillsOuterContainer = styled.div`
-    height: 25vh;
+    height: 70%;
     margin: auto;
     width: 60%;
-
-    /* added flex here */
-    display: flex;
-    flex: wrap;
-    @media (max-width: 676px) {
-        flex-direction: column;
-        width: 80%;
-        height: 40vh;
-    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: [start] 200px [end] 300px;
+    gap: 7vh;
+    @media (max-width: 876px) {
+        gap: 3vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: [start] 170px [middle] 170px [middle] 280px [end] 200px;
+    };
 `;
 
-const SkillsInnerContainer = styled.div`
-    float: left;
-    margin-left: 4%;
-    height: 25vh;
-    width: 45%;
 
-      /* added flex here */
-    @media (max-width: 676px) {
-        flex-direction: column;
-        width: 80%;
-        height: 40vh;
-    }
+const ContainerFrontend = styled.div`
+    grid-column-start: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    @media (max-width: 876px) {
+        width: 100%;
+        grid-column:  1 / 1;
+        grid-row: 1 / 4;
+    };
 `;
+
+const ContainerBackend = styled(ContainerFrontend)`
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    @media (max-width: 876px) {
+        grid-column:  1 / 1;
+        grid-row: 2 / 4;
+    };
+`;
+
+const ContainerFrameworks = styled(ContainerFrontend)`
+    grid-column-start: 1 / 2;
+    grid-row: 2 / 2;
+    @media (max-width: 876px) {
+        grid-column:  1 / 1;
+        grid-row: 3 / 4;
+    };
+`;
+
+const ContainerDatabases = styled(ContainerFrontend)`
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    @media (max-width: 876px) {
+        grid-column:  1 / 1;
+        grid-row: 4 / 4;
+    };
+`;
+
+ const H6 = styled.h6`
+    height: 30px;
+ `;
 
 const SkillContainer = styled.div`
-    height: 3.5vh;
+    height: 27px;
     margin-bottom: 2vh;
     background: #e3e2e2;
+    @media (max-width: 876px) {
+        height: 23px;
+    };
+`;
 
+const SkillTitle = styled.div`
+    position: absolute;
+    color: white;
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: #10c2c9;
+    height: 27px;
+    padding-top: .4vh;
+    width: 90px;
+    @media (max-width: 876px) {
+        height: 23px;
+        padding-top: .2vh;
+    };
+`;
+
+const Span = styled.span`
+    color: gray;
+    position: relative;
+    float: right;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 9pt;
+    height: 27px;
+    padding-top: .4vh;
+    margin-right: .5vw;
+    width: 10%;
+`;
+
+const SectionTitle = styled.h1`
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #161639;
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+        font-size: 24px;
+    };
+    @media (max-width: 568px) {
+        font-size: 20px;
+    };
 `;
 
 const HTMLPercentage = styled.div`
     background-color: #05A1A7;
     float: left;
-    height: 3.5vh;
+    height: 27px;
     width: 80%;
+    @media (max-width: 876px) {
+        height: 23px;
+    };
 `;
 
 const CSSPercentage = styled(HTMLPercentage)`
@@ -250,42 +320,6 @@ const MongoPercentage = styled(HTMLPercentage)`
 const InsomniaPercentage = styled(HTMLPercentage)`
     width: 50%;
 `;
-
-
-
-const SkillTitle = styled.div`
-    position: absolute;
-    color: white;
-    font-size: 10pt;
-    font-weight: bold;
-    background-color: #10c2c9;
-    height: 3.5vh;
-    padding-top: .4vh;
-    width: 90px;
-`;
-
-const Span = styled.span`
-    color: gray;
-    position: relative;
-    float: right;
-    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 10pt;
-    height: 3.5vh;
-    padding-top: .4vh;
-    margin-right: .5vw;
-    width: 10%;
-`;
-
-
-
-const SectionTitle = styled.h1`
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
-    font-weight: 600;
-    color: #161639;
-    margin-bottom: 3.5%;
-`;
-
 
 
 export default Skills;

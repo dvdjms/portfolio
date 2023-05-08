@@ -10,7 +10,7 @@ const Experience = () => {
 
             <ExperienceOuterContainer>
                 <ExperienceInnerContainer>
-                    <h6>Accounts and Administration</h6>
+                    <H6>Accounts and Administration</H6>
                     <LineBreak></LineBreak>
     
                     <Paragraph>Over 10 years' working within accounting departments in a variety of sectors.</Paragraph>
@@ -23,7 +23,7 @@ const Experience = () => {
                 </ExperienceInnerContainer>
 
                 <ExperienceInnerContainer>
-                    <h6>English Language Instructor</h6>
+                    <H6>English Language Instructor</H6>
                     <LineBreak></LineBreak>
 
                     <Paragraph>Over 5 years Teaching English as Second Language in South Korea, Vietnam, and Online.</Paragraph>
@@ -36,7 +36,7 @@ const Experience = () => {
                 </ExperienceInnerContainer>
 
                 <ExperienceInnerContainer>
-                    <h6>Contact Tracer</h6>
+                    <H6>Contact Tracer</H6>
                     <LineBreak></LineBreak>
 
                     <Paragraph>During the pandemic I helped drive the infection rate down while contact tracing for the NHS.</Paragraph>
@@ -57,6 +57,10 @@ const Experience = () => {
 
 }
 
+const H6 = styled.h6`
+    height: 20px;
+`;
+
 const ExperienceOuterContainer = styled.div`
     margin: auto;
     margin-top: 10vh;
@@ -73,17 +77,17 @@ const ExperienceOuterContainer = styled.div`
 
 const ExperienceInnerContainer = styled.div`
     margin-left: 2%;
-    height: 60vh;
+    height: 420px;
     width: 100%;
-    border: solid #05A1A7 3px;;
+    border: solid #05A1A7 3px;
     border-radius: 5px;
-    padding-top: 1vw;
+    padding-top: 18px;
 
-      /* added flex here */
-    @media (max-width: 676px) {
-        flex-direction: column;
+    @media (max-width: 976px) {
+        flex-direction: column; // ??
         width: 80%;
         height: 60vh;
+        font-size: 12px;
     }
 `;
 
@@ -94,6 +98,7 @@ const SkillTitle = styled.div`
 `;
 
 const Paragraph = styled.p`
+    height: 90px;
     margin-left: .5vw;
     margin-right: .5vw;
     margin-top: 2vh;
@@ -108,6 +113,12 @@ const SectionTitle = styled.h1`
     font-size: 2.5vw;
     font-weight: 600;
     color: #161639;
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+    @media (max-width: 568px) {
+        font-size: 20px;
+    }
 `;
 
 const Section = styled.section`

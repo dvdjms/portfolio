@@ -13,7 +13,7 @@ const Training = () => {
             <TrainingContainer>
                 <CodeClanContainer>
                     <ImageContainer>
-                        <a href="https://codeclan.com/" rel="noreferrer" target="_blank"><CodeClan alt="CodeClan Logo" src={codeclan}></CodeClan></a>
+                        <a href="https://codeclan.com/" rel="noreferrer" target="_blank"><Logo alt="CodeClan Logo" src={codeclan}></Logo></a>
                         <LineBreak></LineBreak>
                     </ImageContainer>
                  
@@ -57,7 +57,7 @@ const Training = () => {
                 </CodeClanContainer>
                 <CS50Container>
                 <ImageContainer>
-                <a href="https://cs50.harvard.edu/x/2023/" rel="noreferrer" target="_blank"><CS50 alt="CS50 Logo" src={csLogo}></CS50></a>
+                <a href="https://cs50.harvard.edu/x/2023/" rel="noreferrer" target="_blank"><Logo alt="CS50 Logo" src={csLogo}></Logo></a>
                     <LineBreak></LineBreak>
                 </ImageContainer>
                 <TextBlock><strong>Computer Science for Web Programming.</strong> Online learning at its best from HarvardX.</TextBlock>
@@ -101,35 +101,58 @@ const Training = () => {
             </TrainingContainer>
         </Section>
         </>
-    )
+    );
+};
 
-}
+
+const Section = styled.section`
+    height: 100%;
+    border-bottom: solid #e8e8ea;
+    text-align: center;
+    padding-top: 80px;
+    width: 100%;
+`;
+
+const TrainingContainer = styled.div`
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 20vh;
+    height: 100%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 7vh;
+    @media (max-width: 876px) {
+        grid-template-columns: repeat(1, 1fr);
+        min-width: 300px;
+        width: 40%;
+    };
+    @media (max-width: 568px) {
+        margin-bottom: 70px;
+    };
+`;
+
+const CodeClanContainer = styled.div`
+    float: left;
+    min-width: 300px;
+    width: 100%;
+`;
+
+const CS50Container = styled(CodeClanContainer)`
+    float: right;
+`;
 
 const SectionTitle = styled.h1`
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5vw;
     font-weight: 600;
     color: #161639;
-`;
-
-const Section = styled.section`
-    height: 110vh;
-    border-bottom: solid #e8e8ea;
-    text-align: center;
-    padding-top: 80px;
-    @media (max-width: 676px) {
-        height: 200vh;
+    @media (max-width: 768px) {
+        font-size: 24px;
     }
-`;
-
-const TrainingContainer = styled.div`
-    margin: auto;
-    margin-top: 55px;
-    min-width: 750px;
-    width: 60%;
-    @media (max-width: 676px) {
-        flex-direction: column;
-        width: 90vh;
+    @media (max-width: 568px) {
+        font-size: 20px;
     }
 `;
 
@@ -137,23 +160,23 @@ const ImageContainer = styled.div`
     height: 6vh;
 `;
 
-const CodeClan = styled.img`
+const Logo = styled.img`
     float: center;
-    height: 100%;
-    padding-top: 1.2vh;
-`;
-
-const CS50 = styled.img`
-    float: center;
-    height: 100%;
+    height: 105%;
+    padding-top: 1.3vh;
 `;
 
 const TextBlock = styled.div`
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 11pt;
     height: 65px;
-    margin-top: 7vh;
+    margin-top: 60px;
     text-align: left;
+    min-width: 250px;
+    width: 97%;
+    @media (max-width: 1020px) {
+        font-size: 14px;
+    };
 `;
 
 const Table = styled.table`
@@ -164,18 +187,6 @@ const Table = styled.table`
     text-align: left;
     width: 100%;
     min-width: 250px;
-`;
-
-const CodeClanContainer = styled.div`
-    float: left;
-    min-width: 250px;
-    width: 45%;
-`;
-
-const CS50Container = styled.div`
-    float: right;
-    min-width: 250px;
-    width: 45%;
 `;
 
 const LineBreak = styled.div`

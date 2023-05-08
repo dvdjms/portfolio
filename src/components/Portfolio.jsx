@@ -96,6 +96,12 @@ const SectionTitle = styled.h1`
     color: #161639;
     width: 35%;
     margin: auto;
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+    @media (max-width: 568px) {
+        font-size: 20px;
+    }
 `;
 
 const ScrollElement = styled.div`
