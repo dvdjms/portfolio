@@ -151,6 +151,7 @@ const Section = styled.section`
     padding-top: 12vh;
     height: 110vh;
     background-color: #F5f5f5;
+    border-bottom: none;
 `;
 
 const Image = styled.img`
@@ -186,7 +187,6 @@ const TechnologiesHeader = styled.p`
     }
 `;
 
-
 const LearnMoreButton = styled.button`
     background: transparent;
     border: solid #E31A6D 2px;
@@ -205,29 +205,28 @@ const LearnMoreButton = styled.button`
         background-color: #E31A6D;
         border: #E31A6D;
         color: white;
-    }
+    };
     &:focus {
         background-color: #E31A6D;
         border: #E31A6D;
         box-shadow: none;
-    }
+    };
     @media (max-width: 885px) {
         font-size: 1.8vw;
         height: 5vh;
         left: 8vw;
         width: 13vw;
-    }
+    };
     @media (max-width: 767px) {
         font-size: 2vw;
         height: 4vh;
         left: 6.3vw;
         width: 15vw;
         opacity: 1;
-    }
+    };
     transition-duration: .4s;
     transition-property: all;
 `;
-
 
 const ImageContainer = styled.div`
     position: relative;
@@ -236,16 +235,16 @@ const ImageContainer = styled.div`
 
     ${TitleOfPortfolio} {
         opacity: 1;
-    }
+    };
     ${TechnologiesHeader} {
         opacity: 1;
-    }
+    };
     ${LearnMoreButton} {
         opacity: 0;
-    }
+    };
     ${Image} {
         opacity: 1;
-    }
+    };
     &:hover {
         z-index: 2;
 
@@ -267,7 +266,7 @@ const ImageContainer = styled.div`
         ${Image} {
             opacity: 0;
         }
-    }
+    };
 `;
 
 

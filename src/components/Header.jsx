@@ -71,7 +71,7 @@ const H1 = styled.h1`
         font-size: 28px;
     };
     @media (max-width: 568px) {
-        font-size: 24;
+        font-size: 24px;
     };
 `;
 
@@ -92,17 +92,18 @@ const HeaderTwo = styled.header`
     top: 0;
     height: 50px;
     position: sticky;
-    z-index: 3;
     overflow-x: scroll;
-        ::-webkit-scrollbar {
-            display: none;
-        };
+    z-index: 3;
+    ::-webkit-scrollbar {
+        display: none;
+    };
 `;
 
 const UnorderedList = styled.ul`
     list-style: none;
     margin: auto;
     padding-top: 10px;
+    padding-left: 0px;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -129,10 +130,10 @@ const A = styled.a`
     &:hover {
         color: #E31A6D;
         text-decoration: none;
-    }
+    };
     &:active {
         color: #10c2c9;
-    }
+    };
 `;
 
 

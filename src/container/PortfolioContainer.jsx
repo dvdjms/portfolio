@@ -5,6 +5,9 @@ import Training from '../components/Training';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+
+
 
 const PortfolioContainer = () => {
 
@@ -18,6 +21,7 @@ const PortfolioContainer = () => {
         <Experience className="element"/>
         <Portfolio className="element"/>
         <Contact className="element"/>
+        <Footer className="element"/>
         </>
     )
 }

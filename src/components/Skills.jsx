@@ -217,7 +217,7 @@ const SkillTitle = styled.div`
     font-weight: bold;
     background-color: #10c2c9;
     height: 27px;
-    padding-top: .4vh;
+    padding-top: .5vh;
     width: 90px;
     @media (max-width: 876px) {
         height: 23px;

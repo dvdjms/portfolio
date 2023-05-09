@@ -48,7 +48,6 @@ const ContainerMain = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: .5vh;
-    min-width: 350px;
     @media (max-width: 568px) {
             grid-template-columns: repeat(1, 1fr);
             margin-top: 30px;
@@ -169,8 +168,9 @@ const ContainerProfile = styled.div`
     };
     @media (max-width: 568px) {
         grid-column: 1/1;
-        margin-top: 45px;
+        margin-top: 0px;
         margin-right: 0px;
+        padding-left: 0px;
     };
 `;
 
@@ -178,7 +178,6 @@ const ContainerImage = styled(ContainerProfile)`
         height: 230px;
         width: 230px;
         grid-column: 1/2;
-
 `;
 
 const Profile = styled.p`
@@ -188,7 +187,7 @@ const Profile = styled.p`
         font-size: 14px;
     };
     @media (max-width: 568px) {
-        font-size: 14px;
+        font-size: 16px;
     };
 `;
 
@@ -211,7 +210,8 @@ const Img = styled.img`
         margin-left: 20px;
     };
     @media (max-width: 568px) {
-        margin-left: 0px;
+        margin: auto;
+        margin-bottom: 50px;
     };
 `;
 
