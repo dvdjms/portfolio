@@ -57,7 +57,7 @@ const Training = () => {
                 </CodeClanContainer>
                 <CS50Container>
                 <ImageContainer>
-                <a href="https://cs50.harvard.edu/x/2023/" rel="noreferrer" target="_blank"><Logo alt="CS50 Logo" src={csLogo}></Logo></a>
+                    <a href="https://cs50.harvard.edu/x/2023/" rel="noreferrer" target="_blank"><Logo alt="CS50 Logo" src={csLogo}></Logo></a>
                     <LineBreak></LineBreak>
                 </ImageContainer>
                 <TextBlock><strong>Computer Science for Web Programming.</strong> Online learning at its best from HarvardX.</TextBlock>
@@ -125,35 +125,43 @@ const TrainingContainer = styled.div`
     gap: 7vh;
     @media (max-width: 876px) {
         grid-template-columns: repeat(1, 1fr);
-        min-width: 300px;
-        width: 40%;
+        width: 60%;
     };
-    @media (max-width: 568px) {
-        margin-bottom: 70px;
+    @media (max-width: 576px) {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10vh;
+        width: 90%;
     };
+
 `;
 
 const CodeClanContainer = styled.div`
     float: left;
-    min-width: 300px;
+    margin: auto;
     width: 100%;
+    grid-template-columns: 1/2;
+    @media (max-width: 578px) {
+        width: 90%;
+    };
 `;
 
 const CS50Container = styled(CodeClanContainer)`
+    grid-template-columns: 2/2;
     float: right;
 `;
 
 const SectionTitle = styled.h1`
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5vw;
     font-weight: 600;
     color: #161639;
     @media (max-width: 768px) {
-        font-size: 24px;
-    }
-    @media (max-width: 568px) {
         font-size: 20px;
-    }
+    };
+    @media (max-width: 568px) {
+        font-size: 16px;
+    };
 `;
 
 const ImageContainer = styled.div`

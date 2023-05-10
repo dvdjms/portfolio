@@ -152,7 +152,7 @@ const ContainerLocationSmall = styled(ContainerLocationLarge)`
 `;
 
 const ContainerProfile = styled.div`
-    display: flex;
+    display: grid;
     text-align: left;
     min-width: 300px;
     grid-column: 2/2;
@@ -168,9 +168,8 @@ const ContainerProfile = styled.div`
     };
     @media (max-width: 568px) {
         grid-column: 1/1;
-        margin-top: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
+        margin: 0px;
+        padding: 0px;
     };
 `;
 
@@ -188,6 +187,8 @@ const Profile = styled.p`
     };
     @media (max-width: 568px) {
         font-size: 16px;
+        width: 90%;
+        margin: auto;
     };
 `;
 

@@ -47,34 +47,30 @@ const SectionTitle = styled.h1`
     font-size: 2.5vw;
     color: #F5f5f5;
     margin-top: 7vh;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    };
+    @media (max-width: 568px) {
+        font-size: 16px;
+    };
 `;
 
 const Section = styled.section`
-    height: 95vh;
+    height: 710px;
     text-align: center;
     background-color: #252934;
     border-top: #F5f5f5;
-    /* z-index: -2; */
     @media (max-width: 768px) {
-        height: 100vh;
+        height: 680px;
     };
-    @media (max-height: 568px, max-width: 320px) {
-        height: 130vh;
-    };
-    @media (max-height: 867px, max-width: 468px) {
-        height: 170vh;
+    @media (max-width: 568px) {
+        height: 660px;
     };
     @media (max-width: 368px) {
-        /* height: 100vh; */
+        height: 630px;
     };
-    @media (max-height: 1200px) {
-        height: 70vh;
-    };
-    @media (max-height: 840px) {
-        height: 95vh;
-    };
-    @media (max-height: 740px) {
-        height: 100vh;
+    @media (max-width: 320px) {
+        height: 590px;
     };
 `;
 

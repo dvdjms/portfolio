@@ -140,6 +140,9 @@ const Section = styled.section`
     @media (max-width: 876px) {
         height: 160vh;
     };
+    @media (max-width: 468px) {
+        height: 185vh;
+    };
 `;
 
 const SkillsOuterContainer = styled.div`
@@ -155,6 +158,9 @@ const SkillsOuterContainer = styled.div`
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         grid-template-rows: [start] 170px [middle] 170px [middle] 280px [end] 200px;
+    };
+    @media (max-width: 468px) {
+        width: 90%;
     };
 `;
 
@@ -244,10 +250,10 @@ const SectionTitle = styled.h1`
     color: #161639;
     margin-bottom: 50px;
     @media (max-width: 768px) {
-        font-size: 24px;
+        font-size: 20px;
     };
     @media (max-width: 568px) {
-        font-size: 20px;
+        font-size: 16px;
     };
 `;
 

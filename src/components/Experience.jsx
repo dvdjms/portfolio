@@ -53,48 +53,81 @@ const Experience = () => {
         </Section>
     
         </>
-    )
+    );
+};
 
-}
 
 const H6 = styled.h6`
     height: 20px;
 `;
 
+const Section = styled.section`
+    height: 100%;
+    border-bottom: solid #e8e8ea;
+    text-align: center;
+    padding-top: 80px;
+    @media (max-width: 676px) {
+        height: 245vh;
+    };
+`;
+
 const ExperienceOuterContainer = styled.div`
     margin: auto;
     margin-top: 10vh;
-    height: 60vh;
+    margin-bottom: 20vh;
+    height: 100%;
     width: 70%;
-    display: flex;
-    flex: wrap;
-    @media (max-width: 676px) {
-        flex-direction: column;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 3vh;
+    @media (max-width: 978px) {
+        gap: 1vh;
         width: 80%;
-        height: 40vh;
-    }
+    };
+    @media (max-width: 878px) {
+        width: 90%;
+    };
+    @media (max-width: 778px) {
+        gap: 2vh;
+        grid-template-columns: repeat(1, 1fr);
+        width: 40%;
+    };
+    @media (max-width: 678px) {
+        height: 88%;
+        width: 50%;
+    };
+    @media (max-width: 578px) {
+        width: 70%;
+    };
+    @media (max-width: 368px) {
+        width: 85%;
+    };
 `;
 
 const ExperienceInnerContainer = styled.div`
-    margin-left: 2%;
     height: 420px;
     width: 100%;
     border: solid #05A1A7 3px;
     border-radius: 5px;
     padding-top: 18px;
-
     @media (max-width: 976px) {
-        flex-direction: column; // ??
-        width: 80%;
         height: 60vh;
         font-size: 12px;
-    }
+    };
+    @media (max-width: 578px) {
+        width: 95%;
+    };
+    @media (max-width: 368px) {
+        height: 380px;
+        width: 100%;
+    };
 `;
 
 
 const SkillTitle = styled.div`
     margin-bottom: 1vh;
-    
 `;
 
 const Paragraph = styled.p`
@@ -104,9 +137,7 @@ const Paragraph = styled.p`
     margin-top: 2vh;
     text-align: left;
     padding: 1vh;
-
 `;
-
 
 const SectionTitle = styled.h1`
     font-family: Arial, Helvetica, sans-serif;
@@ -114,21 +145,11 @@ const SectionTitle = styled.h1`
     font-weight: 600;
     color: #161639;
     @media (max-width: 768px) {
-        font-size: 24px;
-    }
-    @media (max-width: 568px) {
         font-size: 20px;
-    }
-`;
-
-const Section = styled.section`
-    height: 110vh;
-    border-bottom: solid #e8e8ea;
-    text-align: center;
-    padding-top: 80px;
-    @media (max-width: 676px) {
-        height: 200vh;
-    }
+    };
+    @media (max-width: 568px) {
+        font-size: 16px;
+    };
 `;
 
 const LineBreak = styled.div`

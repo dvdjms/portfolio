@@ -20,7 +20,7 @@ const Portfolio = () => {
             <SectionTitle>PORTFOLIO</SectionTitle>
 
             <ScrollContainer>
-            <ScrollElement>
+                <ScrollElement>
                     <ImageContainer id="image1" >
                         <Image className="webImage" alt="WeatherWise homepage" src={Weather}></Image>
                         <TitleOfPortfolio>WeatherWise</TitleOfPortfolio>
@@ -48,7 +48,6 @@ const Portfolio = () => {
                         <TitleOfPortfolio>Learn Scotland</TitleOfPortfolio>
                         <TechnologiesHeader>React / ExpressJS / MongoDB</TechnologiesHeader>
                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">LEARN MORE</LearnMoreButton>
-
                     </ImageContainer>
                     {/* <Paragraph>Art Ghetto Collections</Paragraph>
                     <Paragraph>CS50x Final Project</Paragraph> */}
@@ -60,7 +59,6 @@ const Portfolio = () => {
                         <TitleOfPortfolio>Chaterio</TitleOfPortfolio>
                         <TechnologiesHeader>React / ExpressJS / WebSockets</TechnologiesHeader>
                          <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">LEARN MORE</LearnMoreButton>
-
                     </ImageContainer>
                     {/* <Paragraph>Learn Scotland</Paragraph>
                     <Paragraph>CodeClan Group Project</Paragraph> */}
@@ -82,10 +80,9 @@ const Portfolio = () => {
                         <TechnologiesHeader>React</TechnologiesHeader>
                     </ImageContainer>
                 </ScrollElement>
-
             </ScrollContainer>
         </Section>
-    )
+    );
 };
 
 
@@ -97,11 +94,24 @@ const SectionTitle = styled.h1`
     width: 35%;
     margin: auto;
     @media (max-width: 768px) {
-        font-size: 24px;
-    }
-    @media (max-width: 568px) {
         font-size: 20px;
-    }
+    };
+    @media (max-width: 568px) {
+        font-size: 16px;
+    };
+`;
+
+const Section = styled.section`
+    height: 125vh;
+    text-align: center;
+    padding-top: 12vh;
+    padding-bottom: 30vh;
+    background-color: #F5f5f5;
+    border-bottom: none;
+    @media (max-width: 368px) {
+        height: 100vh;
+        width: 100%;
+    };
 `;
 
 const ScrollElement = styled.div`
@@ -116,17 +126,20 @@ const ScrollElement = styled.div`
     box-shadow: 5px;
     box-shadow: var(--shadow-4);
     margin-top: var(--_spacer);
+    @media (max-width: 368px) {
+        width: 100%;
+    };
 `;
-
 
 const scrollAnimation = keyframes`
     0% { left: 10%; right: 10%; }
-    100% { left: 0; right: 0; }
+    100% { left: 0%; right: 0; }
 `;
 
 const ScrollContainer = styled.div`
+    /* height: 47vh; */
     position: relative;
-    --_spacer: 3vh;
+    --_spacer: 15px;
     background-color: #252934;
     display: grid;
     gap: var(--_spacer);
@@ -140,18 +153,25 @@ const ScrollContainer = styled.div`
     scroll-padding-inline: var(--_spacer, 7vh);
         ${ScrollElement} {
     scroll-snap-align: start;
-    }
+    };
     animation-name: ${scrollAnimation};
     animation-duration: 1s;
-`;
-
-
-const Section = styled.section`
-    text-align: center;
-    padding-top: 12vh;
-    height: 110vh;
-    background-color: #F5f5f5;
-    border-bottom: none;
+    @media (max-width: 1020px) {
+        /* --_spacer: 2vh; */
+        grid-auto-columns: 50%;
+    };
+    @media (max-width: 768px) {
+        --_spacer: 3vh;
+        grid-auto-columns: 80%;
+    };
+    @media (max-width: 568px) {
+        --_spacer: 2vh;
+        grid-auto-columns: 98%;
+    };
+    @media (max-width: 368px) {
+        --_spacer: 1vh;
+    };
+    
 `;
 
 const Image = styled.img`
@@ -166,25 +186,43 @@ const Image = styled.img`
 `;
 
 const TitleOfPortfolio = styled.h5`
+    font-size: 18px;
     margin: auto;
     position: absolute;
     transition-duration: .4s;
     transition-property: all;
-    @media (max-width: 767px) {
-        display: none !important;
-    }
+    @media (max-width: 768px) {
+        font-size: 20px;
+    };
+    @media (max-width: 468px) {
+        font-size: 18px;
+    };
+    @media (max-width: 368px) {
+        font-size: 16px;
+    };
 `;
 
 const TechnologiesHeader = styled.p`
     color: #E31A6D;
+    font-size: 16px;
     margin: auto;
-    padding-top: 4vh;
+    padding-top: 5vh;
     position: absolute;
     transition-duration: .4s;
     transition-property: all;
-    @media (max-width: 767px) {
-        display: none !important;
-    }
+    @media (max-width: 1020px) {
+        font-size: 16px;
+        padding-top: 5vh;
+    };
+    @media (max-width: 768px) {
+        padding-top: 7vh;
+    };
+    @media (max-width: 468px) {
+        padding-top: 6vh;
+    };
+    @media (max-width: 368px) {
+        padding-top: 6vh;
+    };
 `;
 
 const LearnMoreButton = styled.button`
@@ -194,10 +232,11 @@ const LearnMoreButton = styled.button`
     color: #212121;
     font-size: 1.2vw;
     height: 2.8vw;
-    left: 10.9vw;
-    top: 70%;
+    top: 75%;
     padding: 0;
     position: absolute;
+    transition-duration: .4s;
+    transition-property: all;
     width: 10vw;
     z-index: 2;
     &:hover {
@@ -212,20 +251,21 @@ const LearnMoreButton = styled.button`
         box-shadow: none;
     };
     @media (max-width: 885px) {
-        font-size: 1.8vw;
-        height: 5vh;
-        left: 8vw;
-        width: 13vw;
+        font-size: 16px;
+        height: 35px;
+        width: 140px;
+        top: 70%;
     };
-    @media (max-width: 767px) {
-        font-size: 2vw;
-        height: 4vh;
-        left: 6.3vw;
-        width: 15vw;
-        opacity: 1;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        height: 35px;
+        width: 140px;
     };
-    transition-duration: .4s;
-    transition-property: all;
+    @media (max-width: 468px) {
+        font-size: 12px;
+        height: 27px;
+        width: 100px;
+    };
 `;
 
 const ImageContainer = styled.div`
@@ -247,25 +287,24 @@ const ImageContainer = styled.div`
     };
     &:hover {
         z-index: 2;
-
         ${TitleOfPortfolio} {
             display: block;
             opacity: 1;
             transform: translateY(4vw);
-        }
+        };
         ${TechnologiesHeader} {
             display: block;
             opacity: 1;
             transform: translateY(4vw);
-        }
+        };
         ${LearnMoreButton} {
             display: block;
             opacity: 1;
             transform: translateY(-2vw);
-        }
+        };
         ${Image} {
             opacity: 0;
-        }
+        };
     };
 `;
 

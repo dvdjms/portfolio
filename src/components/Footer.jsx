@@ -66,6 +66,10 @@ const RedBox = styled.div`
     &:hover {
         background-color: #E31f5D;
     };
+    @media (max-width: 368px) {
+        height: 43px;
+        width: 40px;
+    };
 `;
 
 const ContainerIcon = styled.div`
