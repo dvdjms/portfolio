@@ -1,12 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 import './Modal.css';
 import React, { useState } from 'react';
-import ScrollSpy from 'react-scrollspy-navigation';
 
 
 const Header = () => {
 
-    const [hamburger, setHamburger] = useState(false);
+    const [hamburger, setHamburger] = useState(true);
 
     window.onscroll = () => {
         if (window.innerHeight + window.scrollY >= window.innerHeight){
@@ -52,14 +51,12 @@ const Header = () => {
 
         <HeaderTwo>
             <UnorderedList>
-                <ScrollSpy>
                     <List><A id="one" href="#about">About</A></List>
                     <List><A id="two" href="#training">Training</A></List>
                     <List><A id="three" href="#skills">Skills</A></List>
                     <List><A id="four" href="#experience">Experience</A></List>
                     <List><A id="five" href="#portfolio">Portfolio</A></List>
                     <List><A id="six" href="#contact">Contact</A></List>
-                </ScrollSpy>
             </UnorderedList>
 
             <UnorderedList1 hamburger={!hamburger} onClick={handleHamburger}>
@@ -90,6 +87,7 @@ const HamburgerContainer = styled.div`
     justify-content: space-around;
     margin-top: 1vh;
     margin-left: 20px;
+    padding-top: 3px;
     width: 2rem;
     z-index: 10;
     &:hover {
@@ -102,19 +100,18 @@ const HamburgerContainer = styled.div`
 `;
 
 const Hamburger = styled.div`
-    background-color: #efefef;
+    background-color: #efefefec;
     border-radius: 10px;
     display: none;
-    height: 0.25rem;
+    height: 3px; 
     transform-origin: 1px;
     transition: all 0.3s linear;
-    width: 2rem;
+    width: 30px;
     @media (max-width: 568px) {
         display: block;
     };
     @media (max-width: 368px) {
-        height: 0.20rem;
-        width: 1.5rem;
+        width: 24px;
     };
 `;
 
@@ -186,15 +183,15 @@ const UnorderedList1 = styled.ul`
         list-style: none;
         margin: auto;
         margin-top: 49px;
-        justify-content: center;
+        height: 235px;
         float: right;
         background-color: #1b242f;
         border-radius: 0 0 10px 0px;
         padding: 10px 0 10px 10px;
         width: 150px;
         position: absolute;
-        border-right: solid #E31A6D;
-        border-bottom: solid #E31A6D;
+        border-right: .7px solid #E31A6D;
+        border-bottom: .7px solid #E31A6D;
         animation-name: ${FromTop};
         animation-duration: 1s;
     };
@@ -210,6 +207,7 @@ const List = styled.li`
         float: none;
         text-align: right;
         animation: none;
+        padding-top: 7px;
     };
 `;
 

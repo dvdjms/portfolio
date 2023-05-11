@@ -115,13 +115,13 @@ const ContainerName = styled.div`
     @media (max-width: 767px) {
         font-size: 2vw;
         height: 60px;
-        margin-left: 0px;
     };
     @media (max-width: 568px) {
         font-size: 2.4vw;
         height: 50px;
         display: flex;
         justify-content: center;
+        margin: auto;
         margin-top: 20px;
     };
 `;
@@ -136,7 +136,6 @@ const ContainerLocationLarge = styled.div`
     };
     @media (max-width: 767px) {
         height: 8vh;
-        margin-left: 0px;
     };
     @media (max-width: 568px) {
         display: none;
@@ -148,6 +147,7 @@ const ContainerLocationSmall = styled(ContainerLocationLarge)`
     @media (max-width: 568px) {
         grid-column: 1 / 1;
         display: block;
+        margin: auto;
     };
 `;
 
@@ -168,7 +168,7 @@ const ContainerProfile = styled.div`
     };
     @media (max-width: 568px) {
         grid-column: 1/1;
-        margin: 0px;
+        margin: auto;
         padding: 0px;
     };
 `;
@@ -189,6 +189,7 @@ const Profile = styled.p`
         font-size: 16px;
         width: 90%;
         margin: auto;
+        padding-left: 5px;
     };
 `;
 

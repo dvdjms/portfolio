@@ -38,7 +38,7 @@ const RedBoxContainer = styled.div`
     margin-top: -25px;
     height: 50px;
     width: 47px;
-    left: 48%;
+    left: 48.2%;
     @media (max-width: 1020px) {
         left: 47%;
     };

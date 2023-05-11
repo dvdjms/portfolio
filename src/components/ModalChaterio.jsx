@@ -90,6 +90,14 @@ const ModalTitle = styled.h4`
     margin-top: 0.6vw;
     padding-left: 1.6vw;
     text-align: left;
+    @media (max-width: 468px) {
+        margin-bottom: 20px;
+        padding-left: 13px;
+    };
+    @media (max-width: 368px) {
+        margin-bottom: 15px;
+        padding-left: 13px;
+    };
 `;
 
 const ModalSubTitle = styled.h6`
@@ -99,6 +107,14 @@ const ModalSubTitle = styled.h6`
     text-align: left;
     margin: 0 1.6vw 0 1.6vw;
     border-bottom: solid lightgray;
+    @media (max-width: 468px) {
+        padding-bottom: 20px;
+        padding-left: 7px;
+    };
+    @media (max-width: 368px) {
+        padding-bottom: 10px;
+        padding-left: 7px;
+    };
 `;
 
 const Paragraph = styled.p`
@@ -106,6 +122,14 @@ const Paragraph = styled.p`
     height: 8vh;
     margin: 1.3vw 2vw 0 1.6vw;
     text-align: left;
+    @media (max-width: 468px) {
+        height: 15vh;
+        margin-top: 10px;
+        padding: 5px;
+    };
+    @media (max-width: 368px) {
+        height: 140px;
+    };
 `;
 
 const ModalSizePosition = styled.div`
@@ -125,9 +149,14 @@ const ImageSize = styled.img`
     max-width: 100%;
 	background-size: cover;
 	overflow: hidden;
+    @media (max-width: 468px) {
+        height: 200px;
+    };
+    @media (max-width: 368px) {
+        height: 160px;
+    };
 `;
 
-// class="modal-footer"
 const Footer = styled.p`
     margin: 1vw 1vw 0 1.6vw;
     height: 7.7vh;
@@ -149,6 +178,14 @@ const GitButton = styled.button`
     &:focus {
         outline: none;
     };
+    @media (max-width: 468px) {
+        font-size: 14px;
+        margin: 0px 0px 0px 5px;
+        width: 135px;
+    };
+    @media (max-width: 368px) {
+        margin: -5px 0 0 5px;
+    };
 `;
 
 const CloseButton = styled.button`
@@ -158,7 +195,6 @@ const CloseButton = styled.button`
 const ArrowRightImage = styled.img`
     margin-left: 6vh;
     width: 45px;
-
 `;
 
 const ArrowLeftImage = styled.img`
