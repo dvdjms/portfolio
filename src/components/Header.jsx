@@ -179,6 +179,8 @@ const FromBottom = keyframes`
 const UnorderedList1 = styled.ul`
     display: none;
     @media (max-width: 568px) {
+        animation-name: ${FromTop};
+        animation-duration: 1s;
         display: ${props => props.hamburger ? 'block' : 'none'};
         list-style: none;
         margin: auto;
@@ -192,8 +194,6 @@ const UnorderedList1 = styled.ul`
         position: absolute;
         border-right: .7px solid #E31A6D;
         border-bottom: .7px solid #E31A6D;
-        animation-name: ${FromTop};
-        animation-duration: 1s;
     };
 `;
 

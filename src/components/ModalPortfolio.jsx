@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import './Modal.css';
-import ArtGhettoOne from './images/ArtGhetto_2.png';
-import ArtGhettoTwo from './images/ArtGhetto_3.png';
-import ArtGhettoThree from './images/ArtGhetto_4.png';
-import Arrow from './images/arrow_right.png';
+import ArtGhettoOne from '../assets/images/ArtGhetto_2.png';
+import ArtGhettoTwo from '../assets/images/ArtGhetto_3.png';
+import ArtGhettoThree from '../assets/images/ArtGhetto_4.png';
+import Arrow from '../assets/images/arrow_right.png';
 
 
 const ModalTwo = () => {

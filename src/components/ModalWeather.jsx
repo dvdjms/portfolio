@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import './Modal.css';
-import WatchlistOne from './images/Weather_2.png';
-import WatchlistTwo from './images/Weather_3.png';
-import WatchlistThree from './images/Weather_4.png';
-import Arrow from './images/arrow_right.png';
+import WatchlistOne from '../assets/images/Weather_2.png';
+import WatchlistTwo from '../assets/images/Weather_3.png';
+import WatchlistThree from '../assets/images/Weather_4.png';
+import Arrow from '../assets/images/arrow_right.png';
 
 
 const ModalOne = () => {

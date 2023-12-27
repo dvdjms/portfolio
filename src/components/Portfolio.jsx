@@ -1,11 +1,11 @@
 import React from 'react';
 import styled, { keyframes }  from 'styled-components';
-import Weather from './images/Weather_1.png';
-import watchlist from './images/watchlist.jpg';
-import learn_scotland from './images/LearnScotland.jpg';
-import chaterio from './images/Chaterio_1.png';
-import Art_Ghetto from './images/ArtGhetto_1.png';
-import portfolio from './images/portfolio.jpg';
+import Weather from '../assets/images/Weather_1.png';
+import watchlist from '../assets/images/watchlist.jpg';
+import learn_scotland from '../assets/images/LearnScotland.jpg';
+import chaterio from '../assets/images/Chaterio_1.png';
+import Art_Ghetto from '../assets/images/ArtGhetto_1.png';
+import portfolio from '../assets/images/portfolio.jpg';
 import Modal from '../components/ModalContainer';
 
 

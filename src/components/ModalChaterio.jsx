@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import './Modal.css';
-import ChaterioOne from './images/imagescomingsoon.png';
-import ChaterioTwo from './images/imagescomingsoon.png';
-import ChaterioThree from './images/imagescomingsoon.png';
+import ChaterioOne from '../assets/images/imagescomingsoon.png';
+import ChaterioTwo from '../assets/images/imagescomingsoon.png';
+import ChaterioThree from '../assets/images/imagescomingsoon.png';
 
-import Arrow from './images/arrow_right.png';
+import Arrow from '../assets/images/arrow_right.png';
 
 
 const ModalThree = () => {

@@ -1,18 +1,12 @@
 import styled from 'styled-components';
 import './Modal.css';
-
-import LearnScotlandOne from './images/LearnScotland_1.png';
-import LearnScotlandTwo from './images/LearnScotland_2.png';
-import LearnScotlandThree from './images/LearnScotland_3.png';
-import Arrow from './images/arrow_right.png';
+import LearnScotlandVideo from '../assets/videos/LearnScotland.mp4';
 
 
 const ModalTwo = () => {
 
-
     return (
         <>
-
         {/* Modal One Container */}
         <div className="container">
             {/* Modal */}
@@ -23,47 +17,12 @@ const ModalTwo = () => {
                     <div className="modal-content">
                         
                         <ModalBody className="modal-body">
-                            {/* Carousel */} 
-                            <div id="carouselExampleCaptions3" className="carousel slide" data-ride="carousel">
-                                <ol className="carousel-indicators">
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                                </ol>
-                                
-                                <div className="carousel-inner">
-                                    <div className="carousel-item active">
-                                        <ImageSize src={LearnScotlandOne} className="d-block w-100" alt="..."></ImageSize>
-                                        <div className="carousel-caption d-none d-md-block">
-                                         {/* eslint-disable-next-line  */}
-                                            <h5></h5>
-                                            <p></p>
-                                        </div>
-                                    </div>
-                                    <div className="carousel-item">
-                                        <ImageSize src={LearnScotlandTwo} className="d-block w-100" alt="..."></ImageSize>
-                                        <div className="carousel-caption d-none d-md-block">
-                                            {/* eslint-disable-next-line  */}
-                                            <h5></h5>
-                                            <p></p>
-                                        </div>
-                                    </div>
-                                    <div className="carousel-item">
-                                        <ImageSize src={LearnScotlandThree} className="d-block w-100" alt="..."></ImageSize>
-                                        <div className="carousel-caption d-none d-md-block">
-                                            {/* eslint-disable-next-line  */}
-                                            <h5></h5>
-                                            <p></p>
-                                        </div>
-                                    </div>
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <Video controls>
+                                        <source src={LearnScotlandVideo} type="video/mp4" className="d-block w-100" />
+                                    </Video>
                                 </div>
-                                
-                                <a className="carousel-control-prev" href="#carouselExampleCaptions3" role="button" data-slide="prev">
-                                <ArrowLeftImage src={Arrow}></ArrowLeftImage>
-                                </a>
-                                <a className="carousel-control-next" href="#carouselExampleCaptions3" role="button" data-slide="next">
-                                <ArrowRightImage src={Arrow}></ArrowRightImage>
-                                </a>
                             </div>
                         </ModalBody>
 
@@ -144,7 +103,8 @@ const ModalBody = styled.div`
     margin-bottom: 3vh;
 `;
 
-const ImageSize = styled.img`
+
+const Video = styled.video`
 	height: 400px;
     max-width: 100%;
 	background-size: cover;
@@ -156,6 +116,7 @@ const ImageSize = styled.img`
         height: 160px;
     };
 `;
+
 
 const Footer = styled.p`
     margin: 1vw 1vw 0 1.6vw;
@@ -192,17 +153,6 @@ const CloseButton = styled.button`
     float: right;
 `;
 
-const ArrowRightImage = styled.img`
-    margin-left: 6vh;
-    width: 45px;
-`;
-
-const ArrowLeftImage = styled.img`
-    float: left;
-    margin-right: 6vh;
-    transform:rotate(180deg);
-    width: 45px;
-`;
 
 
 export default ModalTwo;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Portrait from './images/Portrait2.png';
+import Portrait from '../assets/images/Portrait2.png';
 
 
 const About = () => {
@@ -31,8 +31,8 @@ const About = () => {
 
 const Section = styled.section`
     border-bottom: solid #e8e8ea;
-    height: 100%;
-    padding-top: 10px;
+    height: 120%;
+    padding-top: 15px;
     background-color: #F5f5f5;
     width: 100%;
 `;
@@ -157,6 +157,7 @@ const ContainerProfile = styled.div`
     min-width: 300px;
     grid-column: 2/2;
     margin-top: 45px;
+    margin-bottom: 20px;
     @media (max-width: 1020px) {
         margin-right: 30px;
         margin-top: 70px;

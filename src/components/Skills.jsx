@@ -143,6 +143,9 @@ const Section = styled.section`
     @media (max-width: 468px) {
         height: 185vh;
     };
+    @media (max-width: 320px) {
+        height: 200vh;
+    };
 `;
 
 const SkillsOuterContainer = styled.div`

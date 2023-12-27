@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import codeclan from './images/CodeClan-Logo-Blue.png';
-import csLogo from './images/CS50.png';
+import codeclan from '../assets/images/CodeClan-Logo-Blue.png';
+import csLogo from '../assets/images/CS50.png';
 
 
 const Training = () => {

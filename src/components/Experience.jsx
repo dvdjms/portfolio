@@ -69,6 +69,9 @@ const Section = styled.section`
     @media (max-width: 676px) {
         height: 245vh;
     };
+    @media (max-width: 320px) {
+        height: 270vh;
+    };
 `;
 
 const ExperienceOuterContainer = styled.div`
