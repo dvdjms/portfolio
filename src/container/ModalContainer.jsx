@@ -3,11 +3,10 @@ import ModalMovie from '../modal/ModalMovie';
 import ModalLearnScotland from '../modal/ModalLearnScotland';
 import ModalChaterio from '../modal/ModalChaterio';
 import ModalArtGhetto from '../modal//ModalArtGhetto';
-// import ModalRecipe from '../modal//ModalRecipe';
+import ModalRecipeAI from '../modal//ModalRecipeAI';
 
 
 const Modal = () => {
-
 
     return (
         <>
@@ -16,10 +15,10 @@ const Modal = () => {
             <ModalLearnScotland />
             <ModalChaterio />
             <ModalArtGhetto />
+            <ModalRecipeAI />
         </>
-    )
+    );
 };
 
 
 export default Modal;
-

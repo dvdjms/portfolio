@@ -8,24 +8,21 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 
-
 const PortfolioContainer = () => {
-
 
     return (
         <>
-        <Header/>
-        <About className="element" />
-        <Training className="element" />
-        <Skills className="element" />
-        <Experience className="element" />
-        <Portfolio className="element" />
-        <Contact className="element" />
-        <Footer className="element" />
+            <Header/>
+            <About className="element" />
+            <Training className="element" />
+            <Skills className="element" />
+            <Experience className="element" />
+            <Portfolio className="element" />
+            <Contact className="element" />
+            <Footer className="element" />
         </>
-    )
-}
+    );
+};
 
 
 export default PortfolioContainer;
-

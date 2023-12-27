@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 import './Modal.css';
-import LearnScotlandVideo from '../assets/videos/LearnScotland.mp4';
+import RecipeAIVideo from '../assets/videos/RecipeAI.mp4';
 
 
-const ModalTwo = () => {
+const ModalRecipeAI = () => {
 
     return (
         <>
         {/* Modal One Container */}
         <div className="container">
             {/* Modal */}
-            <div className="modal fade" id="myModal3" role="dialog">
+            <div className="modal fade" id="myModal6" role="dialog">
                 <ModalSizePosition className="modal-dialog">
                 
                     {/* Modal content */}
@@ -20,17 +20,17 @@ const ModalTwo = () => {
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
                                     <Video controls>
-                                        <source src={LearnScotlandVideo} type="video/mp4" className="d-block w-100" />
+                                        <source src={RecipeAIVideo} type="video/mp4" className="d-block w-100" />
                                     </Video>
                                 </div>
                             </div>
                         </ModalBody>
 
-                        <ModalTitle>Learn Scotland</ModalTitle>
-                        <ModalSubTitle>CodeClan Group Project</ModalSubTitle>
-                        <Paragraph>Working within in a group of four, we planned, designed, and developed a Learn Scotland application aimed at young people. This included quizzes, interactive activities, and a leader board.</Paragraph>
+                        <ModalTitle>Recipe AI</ModalTitle>
+                        <ModalSubTitle>ChatGPT Practice project</ModalSubTitle>
+                        <Paragraph>Intrigued by the rapid evolution of Artificial Intelligence, I couldn't resist the urge to dive into the ChatGPT API. To channel my focus, I embarked on building a recipe generator.</Paragraph>
                         <Footer>
-                            <a href="https://github.com/pmo234/Learn_Scotland" target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
+                            <a href="https://github.com/dvdjms/Recipe-AI" target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
                             <CloseButton type="button" className="btn btn-default" data-dismiss="modal">Close</CloseButton>
                         </Footer>
                     </div>
@@ -155,5 +155,5 @@ const CloseButton = styled.button`
 
 
 
-export default ModalTwo;
+export default ModalRecipeAI;
 

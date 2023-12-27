@@ -5,8 +5,9 @@ import watchlist from '../assets/images/watchlist.jpg';
 import learn_scotland from '../assets/images/LearnScotland.jpg';
 import chaterio from '../assets/images/Chaterio_1.png';
 import Art_Ghetto from '../assets/images/ArtGhetto_1.png';
-import portfolio from '../assets/images/portfolio.jpg';
+import RecipeAI from '../assets/images/RecipeAI.png';
 import Modal from '../container/ModalContainer';
+
 
 
 const Portfolio = () => {
@@ -75,9 +76,10 @@ const Portfolio = () => {
 
                 <ScrollElement>
                     <ImageContainer id="image6" >
-                        <Image alt="Portfolio" src={portfolio}></Image>
-                        <TitleOfPortfolio>Portfolio</TitleOfPortfolio>
-                        <TechnologiesHeader>React</TechnologiesHeader>
+                        <Image alt="RecipeAI homepage" src={RecipeAI}></Image>
+                        <TitleOfPortfolio>Recipe AI</TitleOfPortfolio>
+                        <TechnologiesHeader>Angular / ASP.NET</TechnologiesHeader>
+                        <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">LEARN MORE</LearnMoreButton>
                     </ImageContainer>
                 </ScrollElement>
             </ScrollContainer>

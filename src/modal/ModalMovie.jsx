@@ -4,8 +4,8 @@ import WatchlistTwo from '../assets/images/watchlistmovie.png';
 import WatchlistThree from '../assets/images/watchlistdirector.png';
 import Modal from '../components/Modal';
 
-const ModalMovie = () => {
 
+const ModalMovie = () => {
 
     return (
         <>
@@ -21,7 +21,7 @@ const ModalMovie = () => {
                 myModal={"2"}
             />
          </>
-    )
+    );
 };
 
 
