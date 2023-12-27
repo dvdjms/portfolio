@@ -3,19 +3,34 @@ import '../modal/Modal.css';
 import { ModalBody } from 'react-bootstrap';
 import Arrow from '../assets/images/arrow_right.png';
 
-const Modal = ({imageOne, imageTwo, imageThree, title, subtitle, paragraph, githublink, myModal}) => {
+const Modal = ({imageOne, imageTwo, imageThree, title, subtitle, paragraph, githublink, modalNumber, isVideo, video}) => {
 
     return (
         <>     
         <div className="container">
             {/* Modal */}
-            <div className="modal fade" id={`myModal${myModal}`} role="dialog">
+            <div className="modal fade" id={`myModal${modalNumber}`} role="dialog">
                 <ModalSizePosition className="modal-dialog">
                     {/* Modal content */}
                     <div className="modal-content">
+
+                    {isVideo ? 
+                    (
+                    <ModalBody as={Modal_Body} className="modal-body">
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <Video controls>
+                                    <source src={video} type="video/mp4" className="d-block w-100" />
+                                </Video>
+                            </div>
+                        </div>
+                    </ModalBody>
+                    )
+                    :
+                    (
                     <ModalBody as={Modal_Body} className="modal-body">
                     {/* Carousel */} 
-                    <div id={`carouselCaptions${myModal}`} className="carousel slide" data-ride="carousel">
+                    <div id={`carouselCaptions${modalNumber}`} className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselCaptions" data-slide-to="0" className="active"></li>
                             <li data-target="#carouselCaptions" data-slide-to="1"></li>
@@ -48,14 +63,15 @@ const Modal = ({imageOne, imageTwo, imageThree, title, subtitle, paragraph, gith
                                 </div>
                             </div>
                         </div>
-                        <a className="carousel-control-prev" href={`#carouselCaptions${myModal}`} role="button" data-slide="prev">
-                        <ArrowLeftImage src={Arrow} />
+                        <a className="carousel-control-prev" href={`#carouselCaptions${modalNumber}`} role="button" data-slide="prev">
+                            <ArrowLeftImage src={Arrow} />
                         </a>
-                        <a className="carousel-control-next" href={`#carouselCaptions${myModal}`} role="button" data-slide="next">
-                        <ArrowRightImage src={Arrow} />
+                        <a className="carousel-control-next" href={`#carouselCaptions${modalNumber}`} role="button" data-slide="next">
+                            <ArrowRightImage src={Arrow} />
                         </a>
                     </div>
-                </ModalBody>
+                    </ModalBody>
+                    )}
 
                 <ModalTitle>{title}</ModalTitle>
                 <ModalSubTitle>{subtitle}</ModalSubTitle>
@@ -128,8 +144,7 @@ const ModalSizePosition = styled.div`
 
 const Modal_Body = styled.div`
     background-color: #F5f5f5;
-    /* border-bottom-color:  #474775; */
-    border-bottom-color:  #ffecec;
+    border-bottom-color: #ffecec;
     border-bottom-style: solid;
     border-bottom-width: .15vw;
     margin-bottom: 3vh;
@@ -193,6 +208,19 @@ const ArrowLeftImage = styled.img`
     margin-right: 6vh;
     transform:rotate(180deg);
     width: 45px;
+`;
+
+const Video = styled.video`
+	height: 400px;
+    max-width: 100%;
+	background-size: cover;
+	overflow: hidden;
+    @media (max-width: 468px) {
+        height: 200px;
+    };
+    @media (max-width: 368px) {
+        height: 160px;
+    };
 `;
 
 export default Modal;

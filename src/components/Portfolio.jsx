@@ -9,10 +9,8 @@ import RecipeAI from '../assets/images/RecipeAI.png';
 import Modal from '../container/ModalContainer';
 
 
-
 const Portfolio = () => {
 
-   
     return (
         <Section id="portfolio">
    
@@ -28,8 +26,6 @@ const Portfolio = () => {
                         <TechnologiesHeader>Python / Django / React / Sqlite3</TechnologiesHeader>
                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">LEARN MORE</LearnMoreButton>
                     </ImageContainer>
-                    {/* <Paragraph>Movie Watchlist</Paragraph>
-                    <Paragraph>CodeClan Individual Project</Paragraph> */}
                 </ScrollElement>
 
                 <ScrollElement>
@@ -39,8 +35,6 @@ const Portfolio = () => {
                         <TechnologiesHeader>Python / Flask / Postgresql</TechnologiesHeader>
                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">LEARN MORE</LearnMoreButton>
                     </ImageContainer>
-                    {/* <Paragraph>Movie Watchlist</Paragraph>
-                    <Paragraph>CodeClan Individual Project</Paragraph> */}
                 </ScrollElement>
 
                 <ScrollElement>
@@ -50,8 +44,6 @@ const Portfolio = () => {
                         <TechnologiesHeader>React / ExpressJS / MongoDB</TechnologiesHeader>
                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">LEARN MORE</LearnMoreButton>
                     </ImageContainer>
-                    {/* <Paragraph>Art Ghetto Collections</Paragraph>
-                    <Paragraph>CS50x Final Project</Paragraph> */}
                 </ScrollElement>
 
                 <ScrollElement>

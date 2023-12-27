@@ -18,7 +18,8 @@ const ModalMovie = () => {
                 subtitle="CodeClan Individual Project"
                 paragraph="After 4 weeks at CodeClan we undertook our first project. Working independently we were to create a flask application that allows a user to perform simple CRUD actions. I created a movie watchlist."
                 githublink="https://github.com/dvdjms/watchlist"
-                myModal={"2"}
+                modalNumber={"2"}
+                isVideo={false}
             />
          </>
     );

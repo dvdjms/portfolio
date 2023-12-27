@@ -17,7 +17,8 @@ const ModalArtGhetto = () => {
                 subtitle="CS50x Final Project"
                 paragraph="Working independently I developed a flask application that allows a user to mimic buying art. A user can register, a user can buy art, a user can view transaction history."
                 githublink="https://github.com/dvdjms/Art-Ghetto"
-                myModal={"5"}
+                modalNumber={"5"}
+                isVideo={false}
             />
         </>
     )
