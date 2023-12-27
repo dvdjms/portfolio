@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import './Modal.css';
+import '../modal/Modal.css';
 import React, { useState } from 'react';
 
 

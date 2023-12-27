@@ -6,7 +6,7 @@ import learn_scotland from '../assets/images/LearnScotland.jpg';
 import chaterio from '../assets/images/Chaterio_1.png';
 import Art_Ghetto from '../assets/images/ArtGhetto_1.png';
 import portfolio from '../assets/images/portfolio.jpg';
-import Modal from '../components/ModalContainer';
+import Modal from '../container/ModalContainer';
 
 
 const Portfolio = () => {

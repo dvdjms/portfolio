@@ -15,13 +15,13 @@ const PortfolioContainer = () => {
     return (
         <>
         <Header/>
-        <About className="element"/>
-        <Training className="element"/>
-        <Skills className="element"/>
-        <Experience className="element"/>
-        <Portfolio className="element"/>
-        <Contact className="element"/>
-        <Footer className="element"/>
+        <About className="element" />
+        <Training className="element" />
+        <Skills className="element" />
+        <Experience className="element" />
+        <Portfolio className="element" />
+        <Contact className="element" />
+        <Footer className="element" />
         </>
     )
 }
