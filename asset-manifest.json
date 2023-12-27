@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f1c74087.css",
-    "main.js": "/portfolio/static/js/main.6a0da400.js",
+    "main.js": "/portfolio/static/js/main.4a2e5208.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/LearnScotland.mp4": "/portfolio/static/media/LearnScotland.7a0c58ee9f1989433b0d.mp4",
     "static/media/ArtGhetto_2.png": "/portfolio/static/media/ArtGhetto_2.87c2fcdd28f6ef3c0815.png",
     "static/media/Chaterio_1.png": "/portfolio/static/media/Chaterio_1.ea75fce1d7aa4df3f500.png",
     "static/media/LearnScotland.jpg": "/portfolio/static/media/LearnScotland.2c738102c37054572693.jpg",
+    "static/media/RecipeAI.mp4": "/portfolio/static/media/RecipeAI.6b8193ed0dc0be06b64f.mp4",
     "static/media/ArtGhetto_1.png": "/portfolio/static/media/ArtGhetto_1.5d0a2a74f2c22e2050ae.png",
     "static/media/watchlist.jpg": "/portfolio/static/media/watchlist.d7fac745cbcef0796d67.jpg",
     "static/media/Portrait2.png": "/portfolio/static/media/Portrait2.97dae0eb7c66ab013e4f.png",
-    "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.ca6c185c2a1f7131ebcd.jpg",
+    "static/media/RecipeAI.png": "/portfolio/static/media/RecipeAI.a7002e00f2f29bbde27c.png",
     "static/media/Weather_1.png": "/portfolio/static/media/Weather_1.f37fd8dc34ed886d232c.png",
     "static/media/Weather_2.png": "/portfolio/static/media/Weather_2.39831e9ecdc6e04e2be7.png",
     "static/media/ArtGhetto_3.png": "/portfolio/static/media/ArtGhetto_3.ff6d9da5eec49ce28977.png",
@@ -26,11 +27,11 @@
     "static/media/arrow_right.png": "/portfolio/static/media/arrow_right.0e78a0355801e90496cd.png",
     "index.html": "/portfolio/index.html",
     "main.f1c74087.css.map": "/portfolio/static/css/main.f1c74087.css.map",
-    "main.6a0da400.js.map": "/portfolio/static/js/main.6a0da400.js.map",
+    "main.4a2e5208.js.map": "/portfolio/static/js/main.4a2e5208.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1c74087.css",
-    "static/js/main.6a0da400.js"
+    "static/js/main.4a2e5208.js"
   ]
 }
