@@ -1,16 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f1c74087.css",
-    "main.js": "/portfolio/static/js/main.a1e08f16.js",
+    "main.js": "/portfolio/static/js/main.ba111a3d.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/LearnScotland.mp4": "/portfolio/static/media/LearnScotland.7a0c58ee9f1989433b0d.mp4",
     "static/media/ArtGhetto_2.png": "/portfolio/static/media/ArtGhetto_2.87c2fcdd28f6ef3c0815.png",
     "static/media/Chaterio_1.png": "/portfolio/static/media/Chaterio_1.ea75fce1d7aa4df3f500.png",
     "static/media/LearnScotland.jpg": "/portfolio/static/media/LearnScotland.2c738102c37054572693.jpg",
     "static/media/ArtGhetto_1.png": "/portfolio/static/media/ArtGhetto_1.5d0a2a74f2c22e2050ae.png",
     "static/media/watchlist.jpg": "/portfolio/static/media/watchlist.d7fac745cbcef0796d67.jpg",
-    "static/media/LearnScotland_3.png": "/portfolio/static/media/LearnScotland_3.b7abb2d57afbd53761d3.png",
-    "static/media/LearnScotland_1.png": "/portfolio/static/media/LearnScotland_1.47fd0bc2a02f0f6ff5cf.png",
-    "static/media/LearnScotland_2.png": "/portfolio/static/media/LearnScotland_2.19c5006503d8ccc79136.png",
     "static/media/Portrait2.png": "/portfolio/static/media/Portrait2.97dae0eb7c66ab013e4f.png",
     "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.ca6c185c2a1f7131ebcd.jpg",
     "static/media/Weather_1.png": "/portfolio/static/media/Weather_1.f37fd8dc34ed886d232c.png",
@@ -28,11 +26,11 @@
     "static/media/arrow_right.png": "/portfolio/static/media/arrow_right.0e78a0355801e90496cd.png",
     "index.html": "/portfolio/index.html",
     "main.f1c74087.css.map": "/portfolio/static/css/main.f1c74087.css.map",
-    "main.a1e08f16.js.map": "/portfolio/static/js/main.a1e08f16.js.map",
+    "main.ba111a3d.js.map": "/portfolio/static/js/main.ba111a3d.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1c74087.css",
-    "static/js/main.a1e08f16.js"
+    "static/js/main.ba111a3d.js"
   ]
 }
