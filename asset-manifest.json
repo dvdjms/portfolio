@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f1c74087.css",
-    "main.js": "/portfolio/static/js/main.339a87d5.js",
+    "main.js": "/portfolio/static/js/main.8d51149c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/LearnScotland.mp4": "/portfolio/static/media/LearnScotland.7a0c58ee9f1989433b0d.mp4",
     "static/media/ArtGhetto_2.png": "/portfolio/static/media/ArtGhetto_2.87c2fcdd28f6ef3c0815.png",
@@ -12,26 +12,26 @@
     "static/media/watchlist.jpg": "/portfolio/static/media/watchlist.d7fac745cbcef0796d67.jpg",
     "static/media/Portrait2.png": "/portfolio/static/media/Portrait2.97dae0eb7c66ab013e4f.png",
     "static/media/RecipeAI.png": "/portfolio/static/media/RecipeAI.a7002e00f2f29bbde27c.png",
-    "static/media/Weather_1.png": "/portfolio/static/media/Weather_1.f37fd8dc34ed886d232c.png",
-    "static/media/Weather_2.png": "/portfolio/static/media/Weather_2.39831e9ecdc6e04e2be7.png",
+    "static/media/WeatherwiseMain.png": "/portfolio/static/media/WeatherwiseMain.a4bd717a1d924e187df2.png",
     "static/media/ArtGhetto_3.png": "/portfolio/static/media/ArtGhetto_3.ff6d9da5eec49ce28977.png",
     "static/media/watchlistmovies.png": "/portfolio/static/media/watchlistmovies.ad80f38954f4d790cb4b.png",
     "static/media/ArtGhetto_4.png": "/portfolio/static/media/ArtGhetto_4.ebe8d7a2b5efa81f8140.png",
     "static/media/imagescomingsoon.png": "/portfolio/static/media/imagescomingsoon.ba6f53e7d2a7a7c56311.png",
-    "static/media/Weather_4.png": "/portfolio/static/media/Weather_4.c407bd46eff79e785fbc.png",
+    "static/media/WeatherwiseWeather.png": "/portfolio/static/media/WeatherwiseWeather.f3ef96d962be1a29ee39.png",
+    "static/media/WeatherwiseSearch.png": "/portfolio/static/media/WeatherwiseSearch.3ee9d8db0ca3750893e8.png",
     "static/media/watchlistmovie.png": "/portfolio/static/media/watchlistmovie.9ba58d22fb9e5b0e46fc.png",
-    "static/media/Weather_3.png": "/portfolio/static/media/Weather_3.8eabc7a3aa2e90137a97.png",
+    "static/media/WeatherwiseFavs.png": "/portfolio/static/media/WeatherwiseFavs.b4efdf4cf426afaafb98.png",
     "static/media/watchlistdirector.png": "/portfolio/static/media/watchlistdirector.9e3f3da5ad6d7e9a2dee.png",
     "static/media/CodeClan-Logo-Blue.png": "/portfolio/static/media/CodeClan-Logo-Blue.47ea5306fff13bec2ade.png",
     "static/media/CS50.png": "/portfolio/static/media/CS50.bde6c5a6dd04b3fdf692.png",
     "static/media/arrow_right.png": "/portfolio/static/media/arrow_right.0e78a0355801e90496cd.png",
     "index.html": "/portfolio/index.html",
     "main.f1c74087.css.map": "/portfolio/static/css/main.f1c74087.css.map",
-    "main.339a87d5.js.map": "/portfolio/static/js/main.339a87d5.js.map",
+    "main.8d51149c.js.map": "/portfolio/static/js/main.8d51149c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1c74087.css",
-    "static/js/main.339a87d5.js"
+    "static/js/main.8d51149c.js"
   ]
 }
