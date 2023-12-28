@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes }  from 'styled-components';
-import Weather from '../assets/images/Weather_1.png';
+import Weather from '../assets/images/WeatherwiseMain.png';
 import watchlist from '../assets/images/watchlist.jpg';
 import learn_scotland from '../assets/images/LearnScotland.jpg';
 import chaterio from '../assets/images/Chaterio_1.png';

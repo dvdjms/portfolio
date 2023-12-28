@@ -1,7 +1,7 @@
 import './Modal.css';
-import WeatherOne from '../assets/images/Weather_2.png';
-import WeatherTwo from '../assets/images/Weather_3.png';
-import WeatherThree from '../assets/images/Weather_4.png';
+import WeatherOne from '../assets/images/WeatherwiseWeather.png';
+import WeatherTwo from '../assets/images/WeatherwiseSearch.png';
+import WeatherThree from '../assets/images/WeatherwiseFavs.png';
 import Modal from '../components/Modal';
 
 

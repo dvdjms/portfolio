@@ -4,6 +4,7 @@ import Portrait from '../assets/images/Portrait2.png';
 
 const About = () => {
 
+
     return (
         <>
             <Section id="about">
@@ -18,12 +19,13 @@ const About = () => {
                         <Location2>West End ∙ Edinburgh ∙ Scotland</Location2>
                     </ContainerLocationSmall>
                     <ContainerImage>
-                        <Img src={Portrait}></Img>
+                            <Img src={Portrait}></Img>
                     </ContainerImage>
                     <ContainerProfile>
                         <Profile>I have recently completed the Professional Software Development course at CodeClan, Edinburgh. Dedicated to becoming a full stack developer, I have a passion and focus for customer satisfaction, UI/UX design, and clean understandable code. I'm also a tenacious problem solver. I bring with me over 10 years' accounts and administration experience from a variety of sectors and over 5 years Teaching English as a Foreign Language.</Profile>
                     </ContainerProfile>
                 </ContainerMain>
+  
             </Section>
         </>
     );
