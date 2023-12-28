@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
 
@@ -6,15 +6,15 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
 
     const form = useRef();
+    const [emailSent, setEmailSent] = useState(false);
 
     const sendEmail = (e) => {
-
         e.preventDefault();
-
-        emailjs.sendForm('service_om70qdh', 'template_ehxsiyd', form.current, 'J7wxA5qfiDgak0tca')
+        emailjs.sendForm('service_p5w2qah', 'template_ehxsiyd', form.current, 'J7wxA5qfiDgak0tca')
           .then((result) => {
               console.log(result.text);
-              form.current.reset()
+              form.current.reset();
+              setEmailSent(true);
           }, (error) => {
               console.log(error.text);
           });
@@ -37,10 +37,23 @@ const Contact = () => {
                     <SendButton  required type="submit" value="SEND"></SendButton>
                 </form>
             </Message>
+            {emailSent && <EmailSent>Email sent successfully</EmailSent>}
         </Section>
         </>
     );
 };
+
+const EmailSent = styled.div`
+    color: #F5f5f5;
+    background-color: #E31f5D;
+    border-radius: 5px;
+    min-height: 30px;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    padding-top: 3px;
+`;
+
 
 const SectionTitle = styled.h1`
     font-family: Arial, Helvetica, sans-serif;
@@ -149,6 +162,9 @@ const SendButton = styled.input`
     &:hover {
         background-color: #10c2c9;
         border-color: #10c2c9;
+    }
+    &:active {
+        background-color: #E31f5D;
     }
 `;
 
