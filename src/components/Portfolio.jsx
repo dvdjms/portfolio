@@ -96,16 +96,23 @@ const SectionTitle = styled.h1`
 `;
 
 const Section = styled.section`
-    height: 125vh;
+    height: 107vh;
     text-align: center;
     padding-top: 12vh;
     padding-bottom: 30vh;
     background-color: #F5f5f5;
     border-bottom: none;
+    @media (max-width: 676px) {
+        height: 250vh;
+    };
+    @media (max-width: 468px) {
+        height: 85vh;
+    };
     @media (max-width: 368px) {
-        height: 100vh;
+        height: 95vh;
         width: 100%;
     };
+
 `;
 
 const ScrollElement = styled.div`

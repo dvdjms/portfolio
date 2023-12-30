@@ -69,8 +69,11 @@ const Section = styled.section`
     @media (max-width: 676px) {
         height: 245vh;
     };
+    @media (max-width: 468px) {
+        height: 220vh;
+    };
     @media (max-width: 320px) {
-        height: 270vh;
+        height: 240vh;
     };
 `;
 

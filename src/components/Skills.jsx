@@ -132,7 +132,7 @@ const Skills = () => {
 };
 
 const Section = styled.section`
-    height: 125vh;
+    height: 120vh;
     border-bottom: solid #e8e8ea;
     text-align: center;
     padding-top: 80px;
@@ -141,10 +141,10 @@ const Section = styled.section`
         height: 160vh;
     };
     @media (max-width: 468px) {
-        height: 185vh;
+        height: 145vh;
     };
     @media (max-width: 320px) {
-        height: 200vh;
+        height: 120vh;
     };
 `;
 
