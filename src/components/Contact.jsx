@@ -7,14 +7,17 @@ const Contact = () => {
 
     const form = useRef();
     const [emailSent, setEmailSent] = useState(false);
+    const [loading, setLoading] = useState(false)
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setLoading(true);
         emailjs.sendForm('service_p5w2qah', 'template_ehxsiyd', form.current, 'J7wxA5qfiDgak0tca')
           .then((result) => {
               console.log(result.text);
               form.current.reset();
               setEmailSent(true);
+              setLoading(false)
           }, (error) => {
               console.log(error.text);
           });
@@ -34,7 +37,7 @@ const Contact = () => {
                     <Input id="user_email" name="user_email" placeholder="Email" required type="email" ></Input><br></br>
                     <label htmlFor="user_message"></label>
                     <Textarea id="user_message" name="message" size="50" placeholder="Message" type="text"></Textarea><br></br>
-                    <SendButton  required type="submit" value="SEND"></SendButton>
+                    <SendButton type="submit">{loading ? "Sending..." : "Send"}</SendButton>
                 </form>
             </Message>
             {emailSent && <EmailSent>Email sent successfully</EmailSent>}
@@ -151,13 +154,13 @@ const Textarea = styled.textarea`
     }
 ;`
 
-const SendButton = styled.input`
+const SendButton = styled.button`
     background: transparent;
     border: solid 1px white;
     color: white;
     float: right;
     height: 40px;
-    width: 75px;
+    width: 85px;
     transition: .5s;
     &:hover {
         background-color: #10c2c9;
