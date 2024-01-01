@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-
+import Tilt from 'react-parallax-tilt';
+import { experiences } from '../constants';
 
 const Experience = () => {
 
@@ -7,51 +8,23 @@ const Experience = () => {
         <>
         <Section id="experience">
             <SectionTitle>EXPERIENCE</SectionTitle>
-
             <ExperienceOuterContainer>
-                <ExperienceInnerContainer>
-                    <H6>Accounts and Administration</H6>
-                    <LineBreak></LineBreak>
-    
-                    <Paragraph>Over 10 years' working within accounting departments in a variety of sectors.</Paragraph>
-                    <Transferable>Transferable skills...</Transferable>
-                    <SkillTitle>Attention to detail</SkillTitle>
-                    <SkillTitle>Problem Solving & Analysis</SkillTitle>
-                    <SkillTitle>Teamwork & Independent work</SkillTitle>
-                    <SkillTitle>Streamlining workflows</SkillTitle>
-                    <SkillTitle>Strong Excel & Reporting</SkillTitle>
-                </ExperienceInnerContainer>
-
-                <ExperienceInnerContainer>
-                    <H6>English Language Instructor</H6>
-                    <LineBreak></LineBreak>
-
-                    <Paragraph>Over 5 years Teaching English as Second Language in South Korea, Vietnam, and Online.</Paragraph>
-                    <Transferable>Transferable skills...</Transferable>
-                    <SkillTitle>Interpersonal Communication</SkillTitle>
-                    <SkillTitle>Powerpoint Presentations</SkillTitle>
-                    <SkillTitle>Planning and organising</SkillTitle>
-                    <SkillTitle>Leadership</SkillTitle>
-                    <SkillTitle>Relationship building</SkillTitle>
-                </ExperienceInnerContainer>
-
-                <ExperienceInnerContainer>
-                    <H6>Contact Tracer</H6>
-                    <LineBreak></LineBreak>
-
-                    <Paragraph>During the pandemic I helped drive the infection rate down while contact tracing for the NHS.</Paragraph>
-                    <Transferable>Transferable skills...</Transferable>
-                    <SkillTitle>Advising and Supporting</SkillTitle>
-                    <SkillTitle>Communication</SkillTitle>
-                    <SkillTitle>Relationship building</SkillTitle>
-                    <SkillTitle>Handling difficult calls</SkillTitle>
-                    <SkillTitle>Training new starters</SkillTitle>
-
-                </ExperienceInnerContainer>
-
+                {experiences.map((experience, index) => (
+                    <Tilt glareEnable={true} key={index}>
+                        <ExperienceInnerContainer>
+                            <H6>{experience.title}</H6>
+                            <LineBreak></LineBreak>
+                            <Paragraph>{experience.description}</Paragraph>
+                            <Transferable>Transferable skills...</Transferable>
+                                {experience.skills.map((skill, index) => (
+                                    <SkillTitle key={`skill-${index}`}>{skill}</SkillTitle>
+                                ))}
+                        </ExperienceInnerContainer>
+                    </Tilt>
+                    )
+                )}
             </ExperienceOuterContainer>
         </Section>
-    
         </>
     );
 };
@@ -132,7 +105,8 @@ const ExperienceInnerContainer = styled.div`
 `;
 
 
-const SkillTitle = styled.div`
+const SkillTitle = styled.li`
+    list-style: none;
     margin-bottom: 1vh;
 `;
 

@@ -1,47 +1,39 @@
+import React, { useState, useRef, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import '../modal/Modal.css';
-import React, { useState } from 'react';
+import { navlinks } from '../constants';
 
 
 const Header = () => {
-
     const [hamburger, setHamburger] = useState(true);
+    const [activeIndex, setActiveIndex] = useState(null);
+    const refs = useRef(navlinks.map(() => React.createRef()));
 
-    window.onscroll = () => {
-        if (window.innerHeight + window.scrollY >= window.innerHeight){
-            document.querySelector('#one').style.color = "#E31A6D";
-            document.querySelector('#two').style.color = "";
+    const measurements = [1, 1.6, 2.6, 3.8, 4.8, 6].map((multiplier) => window.innerHeight * multiplier);
+  
+    const handleScroll = () => {
+      for (let index = 0; index < measurements.length; index++) {
+        const targetMeasurement = measurements[index];
+        const nextMeasurement = measurements[index + 1] || Infinity;
+        const isElementInView = window.innerHeight + window.scrollY >= targetMeasurement &&
+          window.scrollY < nextMeasurement;
+  
+        if (isElementInView) {
+          setActiveIndex(index);
         };
-        if (window.innerHeight + window.scrollY >= window.innerHeight * 1.6){
-            document.querySelector('#one').style.color = "";
-            document.querySelector('#two').style.color = "#E31A6D";
-            document.querySelector('#three').style.color = "";
-        };
-        if (window.innerHeight + window.scrollY >= window.innerHeight * 2.6){
-            document.querySelector('#two').style.color = "";
-            document.querySelector('#three').style.color = "#E31A6D";
-            document.querySelector('#four').style.color = "";
-        };
-        if (window.innerHeight + window.scrollY >= window.innerHeight * 3.8){
-            document.querySelector('#three').style.color = "";
-            document.querySelector('#four').style.color = "#E31A6D";
-            document.querySelector('#five').style.color = "";
-        };
-        if (window.innerHeight + window.scrollY >= window.innerHeight * 4.8){
-            document.querySelector('#four').style.color = "";
-            document.querySelector('#five').style.color = "#E31A6D";
-            document.querySelector('#six').style.color = "";
-        };
-        if (window.innerHeight + window.scrollY >= window.innerHeight * 6){
-            document.querySelector('#five').style.color = "";
-            document.querySelector('#six').style.color = "#E31A6D";
-        };
+      };
     };
+  
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    },);
 
     const handleHamburger = () => {
         setHamburger(!hamburger);
     };
-
 
     return (
         <>
@@ -51,21 +43,24 @@ const Header = () => {
 
         <HeaderTwo>
             <UnorderedList>
-                    <List><A id="one" href="#about">About</A></List>
-                    <List><A id="two" href="#training">Training</A></List>
-                    <List><A id="three" href="#skills">Skills</A></List>
-                    <List><A id="four" href="#experience">Experience</A></List>
-                    <List><A id="five" href="#portfolio">Portfolio</A></List>
-                    <List><A id="six" href="#contact">Contact</A></List>
+                {navlinks.map((link, index) => (
+                    <List key={link.id} value={`link-${link.id}`} ref={refs}>
+                        <A 
+                            href={`#${link.id}`} id={`link-${link.id}`}
+                            ref={refs.current[index]}
+                            style={{ color: activeIndex === index ? '#E31A6D' : '' }}
+                            >{link.title}
+                        </A>
+                    </List>
+                ))}
             </UnorderedList>
 
             <UnorderedList1 hamburger={!hamburger} onClick={handleHamburger}>
-                    <List><A id="one" href="#about">About</A></List>
-                    <List><A id="two" href="#training">Training</A></List>
-                    <List><A id="three" href="#skills">Skills</A></List>
-                    <List><A id="four" href="#experience">Experience</A></List>
-                    <List><A id="five" href="#portfolio">Portfolio</A></List>
-                    <List><A id="six" href="#contact">Contact</A></List>
+                {navlinks.map((link) => (
+                   <List key={link.id}>
+                        <A href={`#${link.id}`}>{link.title}</A>
+                   </List>
+                ))}
             </UnorderedList1>
 
             <HamburgerContainer onClick={handleHamburger}>

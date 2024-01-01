@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import Portrait from '../assets/images/Portrait2.png';
+import Tilt from 'react-parallax-tilt';
+import { about } from '../constants';
 
 
 const About = () => {
@@ -19,10 +21,12 @@ const About = () => {
                         <Location2>West End ∙ Edinburgh ∙ Scotland</Location2>
                     </ContainerLocationSmall>
                     <ContainerImage>
+                        <Tilt>
                             <Img src={Portrait}></Img>
+                        </Tilt>
                     </ContainerImage>
                     <ContainerProfile>
-                        <Profile>I have recently completed the Professional Software Development course at CodeClan, Edinburgh. Dedicated to becoming a full stack developer, I have a passion and focus for customer satisfaction, UI/UX design, and clean understandable code. I'm also a tenacious problem solver. I bring with me over 10 years' accounts and administration experience from a variety of sectors and over 5 years Teaching English as a Foreign Language.</Profile>
+                        <Profile>{about}</Profile>
                     </ContainerProfile>
                 </ContainerMain>
   
