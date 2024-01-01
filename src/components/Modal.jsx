@@ -2,25 +2,31 @@ import styled from 'styled-components';
 import '../modal/Modal.css';
 import { ModalBody } from 'react-bootstrap';
 import Arrow from '../assets/images/arrow_right.png';
+import { projects } from '../constants';
+import '../modal/Modal.css';
 
-const Modal = ({imageOne, imageTwo, imageThree, title, subtitle, paragraph, githublink, modalNumber, isVideo, video}) => {
+const Modal = () => {
+
 
     return (
-        <>     
-        <div className="container">
+        <> 
+        {projects.map((project, index) => (
+       
+        <div className="container" key={index}>
+
             {/* Modal */}
-            <div className="modal fade" id={`myModal${modalNumber}`} role="dialog">
+            <div className="modal fade" id={`myModal${project.modalNumber}`} role="dialog">
                 <ModalSizePosition className="modal-dialog">
                     {/* Modal content */}
                     <div className="modal-content">
 
-                    {isVideo ? 
+                    {project.isVideo ? 
                     (
                     <ModalBody as={Modal_Body} className="modal-body">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <Video controls>
-                                    <source src={video} type="video/mp4" className="d-block w-100" />
+                                    <source src={project.video} type="video/mp4" className="d-block w-100" />
                                 </Video>
                             </div>
                         </div>
@@ -30,7 +36,7 @@ const Modal = ({imageOne, imageTwo, imageThree, title, subtitle, paragraph, gith
                     (
                     <ModalBody as={Modal_Body} className="modal-body">
                     {/* Carousel */} 
-                    <div id={`carouselCaptions${modalNumber}`} className="carousel slide" data-ride="carousel">
+                    <div id={`carouselCaptions${project.modalNumber}`} className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselCaptions" data-slide-to="0" className="active"></li>
                             <li data-target="#carouselCaptions" data-slide-to="1"></li>
@@ -39,7 +45,7 @@ const Modal = ({imageOne, imageTwo, imageThree, title, subtitle, paragraph, gith
                         
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <ImageSize src={imageOne} className="d-block w-100" alt="..."></ImageSize>
+                                <ImageSize src={project.imageOne} className="d-block w-100" alt="..."></ImageSize>
                                 <div className="carousel-caption d-none d-md-block">
                                     {/* eslint-disable-next-line  */}
                                     <h5></h5>
@@ -47,7 +53,7 @@ const Modal = ({imageOne, imageTwo, imageThree, title, subtitle, paragraph, gith
                                 </div>
                             </div>
                             <div className="carousel-item">
-                                <ImageSize src={imageTwo} className="d-block w-100" alt="..."></ImageSize>
+                                <ImageSize src={project.imageTwo} className="d-block w-100" alt="..."></ImageSize>
                                 <div className="carousel-caption d-none d-md-block">
                                     {/* eslint-disable-next-line  */}
                                     <h5></h5>
@@ -55,7 +61,7 @@ const Modal = ({imageOne, imageTwo, imageThree, title, subtitle, paragraph, gith
                                 </div>
                             </div>
                             <div className="carousel-item">
-                                <ImageSize src={imageThree} className="d-block w-100" alt="..."></ImageSize>
+                                <ImageSize src={project.imageThree} className="d-block w-100" alt="..."></ImageSize>
                                 <div className="carousel-caption d-none d-md-block">
                                     {/* eslint-disable-next-line  */}
                                     <h5></h5>
@@ -63,28 +69,29 @@ const Modal = ({imageOne, imageTwo, imageThree, title, subtitle, paragraph, gith
                                 </div>
                             </div>
                         </div>
-                        <a className="carousel-control-prev" href={`#carouselCaptions${modalNumber}`} role="button" data-slide="prev">
+                        <a className="carousel-control-prev" href={`#carouselCaptions${project.modalNumber}`} role="button" data-slide="prev">
                             <ArrowLeftImage src={Arrow} />
                         </a>
-                        <a className="carousel-control-next" href={`#carouselCaptions${modalNumber}`} role="button" data-slide="next">
+                        <a className="carousel-control-next" href={`#carouselCaptions${project.modalNumber}`} role="button" data-slide="next">
                             <ArrowRightImage src={Arrow} />
                         </a>
                     </div>
                     </ModalBody>
                     )}
 
-                <ModalTitle>{title}</ModalTitle>
-                <ModalSubTitle>{subtitle}</ModalSubTitle>
-                <Paragraph>{paragraph}</Paragraph>
+                <ModalTitle>{project.title}</ModalTitle>
+                <ModalSubTitle>{project.subtitle}</ModalSubTitle>
+                <Paragraph>{project.paragraph}</Paragraph>
 
                 <Footer>
-                    <a href={githublink} target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
+                    <a href={project.githublink} target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
                     <CloseButton type="button" className="btn btn-default" data-dismiss="modal">Close</CloseButton>
                 </Footer>
                 </div>
                 </ModalSizePosition>
             </div>
         </div>
+        ))}
         </>
     )
 };

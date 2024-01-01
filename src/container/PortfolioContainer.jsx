@@ -12,7 +12,7 @@ const PortfolioContainer = () => {
 
     return (
         <>
-            <Header/>
+            <Header />
             <About className="element" />
             <Training className="element" />
             <Skills className="element" />

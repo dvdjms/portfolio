@@ -1,80 +1,29 @@
 import React from 'react';
 import styled, { keyframes }  from 'styled-components';
-import Weather from '../assets/images/WeatherwiseMain.png';
-import watchlist from '../assets/images/watchlist.jpg';
-import learn_scotland from '../assets/images/LearnScotland.jpg';
-import chaterio from '../assets/images/Chaterio_1.png';
-import Art_Ghetto from '../assets/images/ArtGhetto_1.png';
-import RecipeAI from '../assets/images/RecipeAI.png';
-import Modal from '../container/ModalContainer';
+import Modal from './Modal';
+import { projects } from '../constants';
 
 
 const Portfolio = () => {
 
     return (
         <Section id="portfolio">
-   
-            <Modal></Modal>
-            {/* &#x27A0; */}
+
             <SectionTitle>PORTFOLIO</SectionTitle>
 
-            <ScrollContainer>
-                <ScrollElement>
-                    <ImageContainer id="image1" >
-                        <Image className="webImage" alt="WeatherWise homepage" src={Weather}></Image>
-                        <TitleOfPortfolio>WeatherWise</TitleOfPortfolio>
-                        <TechnologiesHeader>Python / Django / React / Sqlite3</TechnologiesHeader>
-                        <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">LEARN MORE</LearnMoreButton>
-                    </ImageContainer>
-                </ScrollElement>
-
-                <ScrollElement>
-                    <ImageContainer id="image2" >
-                        <Image className="webImage" alt="Watchlist homepage" src={watchlist}></Image>
-                        <TitleOfPortfolio>Movie Watchlist</TitleOfPortfolio>
-                        <TechnologiesHeader>Python / Flask / Postgresql</TechnologiesHeader>
-                        <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">LEARN MORE</LearnMoreButton>
-                    </ImageContainer>
-                </ScrollElement>
-
-                <ScrollElement>
-                    <ImageContainer id="image3" >
-                        <Image alt="Learn Scotland homepage" src={learn_scotland}></Image>
-                        <TitleOfPortfolio>Learn Scotland</TitleOfPortfolio>
-                        <TechnologiesHeader>React / ExpressJS / MongoDB</TechnologiesHeader>
-                        <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">LEARN MORE</LearnMoreButton>
-                    </ImageContainer>
-                </ScrollElement>
-
-                <ScrollElement>
-                    <ImageContainer id="image4" >
-                        <Image alt="Chaterio homepage" src={chaterio}></Image>
-                        <TitleOfPortfolio>Chaterio</TitleOfPortfolio>
-                        <TechnologiesHeader>React / ExpressJS / WebSockets</TechnologiesHeader>
-                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">LEARN MORE</LearnMoreButton>
-                    </ImageContainer>
-                    {/* <Paragraph>Learn Scotland</Paragraph>
-                    <Paragraph>CodeClan Group Project</Paragraph> */}
-                </ScrollElement>
-
-                <ScrollElement>
-                    <ImageContainer id="image5" >
-                        <Image alt="Art Ghetto Collections" src={Art_Ghetto}></Image>
-                        <TitleOfPortfolio>Art Ghetto Collections</TitleOfPortfolio>
-                        <TechnologiesHeader>Python / Flask / JavaScript / Sqlite3</TechnologiesHeader>
-                         <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">LEARN MORE</LearnMoreButton>
-                    </ImageContainer>
-                </ScrollElement>
-
-                <ScrollElement>
-                    <ImageContainer id="image6" >
-                        <Image alt="RecipeAI homepage" src={RecipeAI}></Image>
-                        <TitleOfPortfolio>Recipe AI</TitleOfPortfolio>
-                        <TechnologiesHeader>Angular / ASP.NET</TechnologiesHeader>
-                        <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">LEARN MORE</LearnMoreButton>
-                    </ImageContainer>
-                </ScrollElement>
+            <ScrollContainer >
+                {projects.map((project, index) => (
+                    <ScrollElement key={index}>
+                        <ImageContainer >
+                            <Image className="webImage" alt={`${project.title}-homepage`} src={project.imageMain}></Image>
+                            <TitleOfPortfolio>{project.title}</TitleOfPortfolio>
+                            <TechnologiesHeader>{project.technologies}</TechnologiesHeader>
+                            <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target={`#myModal${project.modalNumber}`}>LEARN MORE</LearnMoreButton>
+                        </ImageContainer>
+                    </ScrollElement>
+                ))}
             </ScrollContainer>
+            <Modal></Modal>
         </Section>
     );
 };
