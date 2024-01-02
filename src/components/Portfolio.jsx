@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes }  from 'styled-components';
-import Modal from './Modal';
+import Modal from '../modal/Modal';
 import { projects } from '../constants';
 
 

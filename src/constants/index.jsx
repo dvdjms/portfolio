@@ -9,16 +9,36 @@ import ChaterioThree from '../assets/images/imagescomingsoon.png';
 import WatchlistOne from '../assets/images/watchlistmovies.png';
 import WatchlistTwo from '../assets/images/watchlistmovie.png';
 import WatchlistThree from '../assets/images/watchlistdirector.png';
-import ArtGhettoOne from '../assets/images/ArtGhetto_3.png';
-import ArtGhettoTwo from '../assets/images/ArtGhetto_2.png';
+import ArtGhettoOne from '../assets/images/ArtGhetto_2.png';
+import ArtGhettoTwo from '../assets/images/ArtGhetto_3.png';
 import ArtGhettoThree from '../assets/images/ArtGhetto_4.png';
 import WatchlistMain from '../assets/images/watchlist.jpg';
 import ChaterioMain from '../assets/images/Chaterio_1.png';
 import LearnScotlandMain from '../assets/images/LearnScotland.jpg';
-import ArtGhettodMain from '../assets/images/Art_Ghetto.jpg';
+import ArtGhettodMain from '../assets/images/ArtGhettoMain.png';
 import WeatherMain from '../assets/images/WeatherwiseMain.png';
 import RecipeAIMain from '../assets/images/RecipeAI.png';
-
+import HTML from '../assets/techImages/html.png';
+import CSS from '../assets/techImages/css.png';
+import JavaScript from '../assets/techImages/javascript.png';
+import TypeScript from '../assets/techImages/typescript.png';
+import Mongo from '../assets/techImages/mongodb.png';
+import Reactjs from '../assets/techImages/reactjs.png';
+import Nodejs from '../assets/techImages/nodejs.png';
+import Threejs from '../assets/techImages/threejs.svg';
+import Git from '../assets/techImages/git.png';
+import Python from '../assets/techImages/python.png';
+import Django from '../assets/techImages/django.png';
+import Bootstrap from '../assets/techImages/bootstrap.png';
+import Java from '../assets/techImages/java.png';
+import Flask from '../assets/techImages/flask.png';
+import PostgreSQL from '../assets/techImages/postgresql.png';
+import GitHub from '../assets/techImages/github.png';
+import CSharp from '../assets/techImages/csharp.png';
+import NPM from '../assets/techImages/npm.png';
+import SpringBoot from '../assets/techImages/springboot.png';
+import ASPnet from '../assets/techImages/aspnet.png';
+import StyledComponents from '../assets/techImages/styledcomponents.png';
 
 
 const navlinks = [
@@ -59,71 +79,132 @@ const experiences = [
         description: "Over 10 years' working within accounting departments in a variety of sectors.",
         skills: [
             "Attention to detail",
-            "Problem Solving & Analysis",
-            "Teamwork & Independent work",
+            "Problem solving & Analysis",
+            "Teamwork & independent work",
             "Streamlining workflows",
-            "Strong Excel & Reporting",
+            "Strong Excel & reporting",
         ]
     },
     {
         title: 'English Language Instructor',
         description: "Over 5 years Teaching English as Second Language in South Korea, Vietnam, and Online.",
         skills: [
-            "Interpersonal Communication",
-            "Powerpoint Presentations",
-            "Planning and organising",
+            "Interpersonal communication",
+            "Powerpoint presentations",
+            "Planning & organising",
             "Leadership",
             "Relationship building",
         ]
     },
+    // {
+    //     title: 'Contact Tracer',
+    //     description: "During the pandemic I helped drive the infection rate down while contact tracing for the NHS.",
+    //     skills: [
+    //         "Advising and Supporting",
+    //         "Communication",
+    //         "Relationship building",
+    //         "Handling difficult calls",
+    //         "Training new starters",
+    //     ]
+    // },
     {
-        title: 'Contact Tracer',
-        description: "During the pandemic I helped drive the infection rate down while contact tracing for the NHS.",
+        title: 'Software Developer',
+        description: "Volunteering with the Scottish Tech Army. Automatated map locations and project updates.",
         skills: [
-            "Advising and Supporting",
-            "Communication",
-            "Relationship building",
-            "Handling difficult calls",
-            "Training new starters",
+            "JavaScript, HTML, CSS",
+            "Google Maps, Google Sheets",
+            "Jira, Zapier, Notion, SquareSpace",
+            "Teamwork & pair-programming",
+            "Agile working environment",
         ]
     },
 ]
 
 const skills = [
     {
-        name: "HTML 5"
+        name: "HTML 5",
+        icon: HTML
     },
     {
-        name: "CSS 3"
+        name: "CSS 3",
+        icon: CSS
     },
     {
-        name: "JavaScript"
+        name: "JavaScript",
+        icon: JavaScript
     },
     {
-        name: "TypeScript"
+        name: "TypeScript",
+        icon: TypeScript
     },
     {
-        name: "React JS"
+        name: "React JS",
+        icon: Reactjs
     },
     {
-        name: "Node JS"
+        name: "Node JS",
+        icon: Nodejs
     },
     {
-        name: "JavaScript"
+        name: "Python",
+        icon: Python
     },
     {
-        name: "Python"
+        name: "Java",
+        icon: Java
     },
     {
-        name: "Flask"
+        name: "C#",
+        icon: CSharp
     },
     {
-        name: "Django"
+        name: "Django",
+        icon: Django
     },
     {
-        name: "Git & GitHub"
+        name: "Flask",
+        icon: Flask
     },
-
+    {
+        name: "Spring Boot",
+        icon: SpringBoot
+    },
+    {
+        name: "ASP.net#",
+        icon: ASPnet
+    },
+    {
+        name: "Threejs",
+        icon: Threejs
+    },
+    {
+        name: "PostgreSQL",
+        icon: PostgreSQL
+    },
+    {
+        name: "MongoDB",
+        icon: Mongo
+    },
+    {
+        name: "Styled-Components",
+        icon: StyledComponents
+    },
+    {
+        name: "Bootstrap",
+        icon: Bootstrap
+    },
+    {
+        name: "npm",
+        icon: NPM
+    },
+    {
+        name: "Git",
+        icon: Git
+    },
+    {
+        name: "GitHub",
+        icon: GitHub
+    },
 ]
 
 

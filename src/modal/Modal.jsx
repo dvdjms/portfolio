@@ -1,19 +1,18 @@
+import { useRef } from 'react';
 import styled from 'styled-components';
-import '../modal/Modal.css';
+import './Modal.css'
 import { ModalBody } from 'react-bootstrap';
 import Arrow from '../assets/images/arrow_right.png';
 import { projects } from '../constants';
-import '../modal/Modal.css';
 
 const Modal = () => {
-
+    const videoRef = useRef(null)
 
     return (
         <> 
         {projects.map((project, index) => (
-       
-        <div className="container" key={index}>
 
+        <div className="container" key={index}>
             {/* Modal */}
             <div className="modal fade" id={`myModal${project.modalNumber}`} role="dialog">
                 <ModalSizePosition className="modal-dialog">
@@ -25,7 +24,7 @@ const Modal = () => {
                     <ModalBody as={Modal_Body} className="modal-body">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <Video controls>
+                                <Video controls ref={videoRef}>
                                     <source src={project.video} type="video/mp4" className="d-block w-100" />
                                 </Video>
                             </div>
@@ -42,31 +41,15 @@ const Modal = () => {
                             <li data-target="#carouselCaptions" data-slide-to="1"></li>
                             <li data-target="#carouselCaptions" data-slide-to="2"></li>
                         </ol>
-                        
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <ImageSize src={project.imageOne} className="d-block w-100" alt="..."></ImageSize>
-                                <div className="carousel-caption d-none d-md-block">
-                                    {/* eslint-disable-next-line  */}
-                                    <h5></h5>
-                                    <p></p>
-                                </div>
+                                <ImageSize src={project.imageOne} className="d-block w-100" alt={`${project.title} application image 1`}></ImageSize>
                             </div>
                             <div className="carousel-item">
-                                <ImageSize src={project.imageTwo} className="d-block w-100" alt="..."></ImageSize>
-                                <div className="carousel-caption d-none d-md-block">
-                                    {/* eslint-disable-next-line  */}
-                                    <h5></h5>
-                                    <p></p>
-                                </div>
+                                <ImageSize src={project.imageTwo} className="d-block w-100" alt={`${project.title} application image 2`}></ImageSize>
                             </div>
                             <div className="carousel-item">
-                                <ImageSize src={project.imageThree} className="d-block w-100" alt="..."></ImageSize>
-                                <div className="carousel-caption d-none d-md-block">
-                                    {/* eslint-disable-next-line  */}
-                                    <h5></h5>
-                                    <p></p>
-                                </div>
+                                <ImageSize src={project.imageThree} className="d-block w-100" alt={`${project.title} application image 3`}></ImageSize>
                             </div>
                         </div>
                         <a className="carousel-control-prev" href={`#carouselCaptions${project.modalNumber}`} role="button" data-slide="prev">
@@ -85,7 +68,7 @@ const Modal = () => {
 
                 <Footer>
                     <a href={project.githublink} target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
-                    <CloseButton type="button" className="btn btn-default" data-dismiss="modal">Close</CloseButton>
+                    <CloseButton type="button" className="btn btn-default" data-dismiss="modal" onClick={() => {if (videoRef.current) {videoRef.current.pause();}}}>Close</CloseButton>
                 </Footer>
                 </div>
                 </ModalSizePosition>
