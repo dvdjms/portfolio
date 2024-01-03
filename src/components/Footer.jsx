@@ -3,14 +3,12 @@ import styled from 'styled-components';
 
 const Footer = () => {
 
-
-
-
+    
     return (
         <>
         <Section id="contact">
             <RedBoxContainer>
-                <a href="#about"><RedBox>&#x21ee;</RedBox></a>
+                <ScrollUpAnchor href="#about">&#8682;</ScrollUpAnchor>
             </RedBoxContainer>
 
             <ContainerIcon>
@@ -34,49 +32,39 @@ const Section = styled.section`
 `;
 
 const RedBoxContainer = styled.div`
+    background-color: #E31A6D;
+    border-radius: 5px;
     position: absolute;
     margin-top: -25px;
     height: 50px;
-    width: 47px;
-    left: 48.2%;
-    @media (max-width: 1020px) {
-        left: 47%;
+    width: 40px;
+    left:0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    &:hover {
+        height: 52px;
+        width: 42px;
     };
-    @media (max-width: 568px) {
-        left: 46%;
-    };
-    @media (max-width: 468px) {
-        left: 45%;
-    };
-    @media (max-width: 368px) {
-        left: 44%;
-    };
+    &:active {
+        background-color: #10c2c9;
+    }
 `;
 
-const RedBox = styled.div`
-    align-items: center;
-    color: #ffffffec;
-    background-color: #E31A6D;
-    border-radius: 3px;
-    display: flex;
-    font-size: 35pt;
-    height: 50px;
-    justify-content: center;
+const ScrollUpAnchor = styled.a`
+    color: #ffffff;
+    font-size: 22pt;
     padding-bottom: 7px;
     &:hover {
-        background-color: #E31f5D;
-    };
-    @media (max-width: 368px) {
-        height: 43px;
-        width: 40px;
+        color: #ffffff;
+        text-decoration: none;
     };
 `;
 
 const ContainerIcon = styled.div`
-    height: 7vh;
     padding-top: 8vh;
     margin: auto;
-    width: 150px;
+    width: 90px;
     @media (max-width: 368px) {
         padding-top: 11vh;
         width: 100px;
@@ -97,13 +85,13 @@ const GitHub = styled(LinkedIn)`
 `;
 
 const SVG = styled.svg`
-    width: 6vh;
+    width: 4vh;
 `;
 
 const Copyright = styled.p`
     color: #4f4f4f;
     font-size: 10pt;
-    margin-top: 12vh;
+    margin-top: 10vh;
     margin-bottom: 0px;
     padding-bottom: 30px;
 `;

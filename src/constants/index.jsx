@@ -1,44 +1,48 @@
-import LearnScotlandVideo from '../assets/videos/LearnScotland.mp4';
-import RecipeAIVideo from '../assets/videos/RecipeAI.mp4';
-import WeatherOne from '../assets/images/WeatherwiseWeather.png';
-import WeatherTwo from '../assets/images/WeatherwiseSearch.png';
-import WeatherThree from '../assets/images/WeatherwiseFavs.png';
+// portfolio images
+import ArtGhettodMain from '../assets/images/ArtGhettoMain.png';
+import ChaterioMain from '../assets/images/Chaterio_1.png';
+import LearnScotlandMain from '../assets/images/LearnScotland.jpg';
+import RecipeAIMain from '../assets/images/RecipeAI.png';
+import WeatherMain from '../assets/images/WeatherwiseMain.png';
+import WatchlistMain from '../assets/images/watchlist.jpg';
+// carousel images
+import ArtGhettoOne from '../assets/images/ArtGhetto_2.png';
+import ArtGhettoTwo from '../assets/images/ArtGhetto_3.png';
+import ArtGhettoThree from '../assets/images/ArtGhetto_4.png';
 import ChaterioOne from '../assets/images/imagescomingsoon.png';
 import ChaterioTwo from '../assets/images/imagescomingsoon.png';
 import ChaterioThree from '../assets/images/imagescomingsoon.png';
 import WatchlistOne from '../assets/images/watchlistmovies.png';
 import WatchlistTwo from '../assets/images/watchlistmovie.png';
 import WatchlistThree from '../assets/images/watchlistdirector.png';
-import ArtGhettoOne from '../assets/images/ArtGhetto_2.png';
-import ArtGhettoTwo from '../assets/images/ArtGhetto_3.png';
-import ArtGhettoThree from '../assets/images/ArtGhetto_4.png';
-import WatchlistMain from '../assets/images/watchlist.jpg';
-import ChaterioMain from '../assets/images/Chaterio_1.png';
-import LearnScotlandMain from '../assets/images/LearnScotland.jpg';
-import ArtGhettodMain from '../assets/images/ArtGhettoMain.png';
-import WeatherMain from '../assets/images/WeatherwiseMain.png';
-import RecipeAIMain from '../assets/images/RecipeAI.png';
-import HTML from '../assets/techImages/html.png';
-import CSS from '../assets/techImages/css.png';
-import JavaScript from '../assets/techImages/javascript.png';
-import TypeScript from '../assets/techImages/typescript.png';
-import Mongo from '../assets/techImages/mongodb.png';
-import Reactjs from '../assets/techImages/reactjs.png';
-import Nodejs from '../assets/techImages/nodejs.png';
-import Threejs from '../assets/techImages/threejs.svg';
-import Git from '../assets/techImages/git.png';
-import Python from '../assets/techImages/python.png';
-import Django from '../assets/techImages/django.png';
-import Bootstrap from '../assets/techImages/bootstrap.png';
-import Java from '../assets/techImages/java.png';
-import Flask from '../assets/techImages/flask.png';
-import PostgreSQL from '../assets/techImages/postgresql.png';
-import GitHub from '../assets/techImages/github.png';
-import CSharp from '../assets/techImages/csharp.png';
-import NPM from '../assets/techImages/npm.png';
-import SpringBoot from '../assets/techImages/springboot.png';
+import WeatherOne from '../assets/images/WeatherwiseWeather.png';
+import WeatherTwo from '../assets/images/WeatherwiseSearch.png';
+import WeatherThree from '../assets/images/WeatherwiseFavs.png';
+// carousel videos
+import LearnScotlandVideo from '../assets/videos/LearnScotland.mp4';
+import RecipeAIVideo from '../assets/videos/RecipeAI.mp4';
+// technology icons
 import ASPnet from '../assets/techImages/aspnet.png';
+import Bootstrap from '../assets/techImages/bootstrap.png';
+import CSharp from '../assets/techImages/csharp.png';
+import CSS from '../assets/techImages/css.png';
+import Django from '../assets/techImages/django.png';
+import Flask from '../assets/techImages/flask.png';
+import Git from '../assets/techImages/git.png';
+import GitHub from '../assets/techImages/github.png';
+import HTML from '../assets/techImages/html.png';
+import Java from '../assets/techImages/java.png';
+import JavaScript from '../assets/techImages/javascript.png';
+import Mongo from '../assets/techImages/mongodb.png';
+import Nodejs from '../assets/techImages/nodejs.png';
+import NPM from '../assets/techImages/npm.png';
+import PostgreSQL from '../assets/techImages/postgresql.png';
+import Python from '../assets/techImages/python.png';
+import Reactjs from '../assets/techImages/reactjs.png';
+import SpringBoot from '../assets/techImages/springboot.png';
 import StyledComponents from '../assets/techImages/styledcomponents.png';
+import Threejs from '../assets/techImages/threejs.svg';
+import TypeScript from '../assets/techImages/typescript.png';
 
 
 const navlinks = [
@@ -67,7 +71,6 @@ const navlinks = [
         title: "Contact",
     },
 ]
-
 
 const about = [
     "I have recently completed the Professional Software Development course at CodeClan, Edinburgh. Dedicated to becoming a full stack developer, I have a passion and focus for customer satisfaction, UI/UX design, and clean understandable code. I'm also a tenacious problem solver. I bring with me over 10 years' accounts and administration experience from a variety of sectors and over 5 years Teaching English as a Foreign Language."
@@ -206,7 +209,6 @@ const skills = [
         icon: GitHub
     },
 ]
-
 
 const projects = [
     {

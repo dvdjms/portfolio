@@ -10,7 +10,7 @@ const Experience = () => {
             <SectionTitle>EXPERIENCE</SectionTitle>
             <ExperienceOuterContainer>
                 {experiences.map((experience, index) => (
-                    <Tilt glareEnable={true} key={index}>
+                    <Tilt glareEnable={true} glareColor="#10c2c9" key={index}>
                         <ExperienceInnerContainer>
                             <H6>{experience.title}</H6>
                             <LineBreak></LineBreak>

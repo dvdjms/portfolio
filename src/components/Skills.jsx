@@ -14,7 +14,7 @@ const Skills = () => {
             <IconContainer>
                 {skills.map((skill, index) => (
                     <div key={index}>
-                    <Tilt scale="1.3" tiltMaxAngleX="40" tiltMaxAngleY="40"glare="#ffffff">
+                    <Tilt scale="1.3" tiltMaxAngleX="40" tiltMaxAngleY="40">
                         <Icon src={skill.icon} alt={skill.name} />
                         <IconName>{skill.name}</IconName>
                     </Tilt>
