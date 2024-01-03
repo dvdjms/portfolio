@@ -14,10 +14,10 @@ const Skills = () => {
             <IconContainer>
                 {skills.map((skill, index) => (
                     <div key={index}>
-                    <Tilt>
+                    <Tilt scale="1.3" tiltMaxAngleX="40" tiltMaxAngleY="40"glare="#ffffff">
                         <Icon src={skill.icon} alt={skill.name} />
+                        <IconName>{skill.name}</IconName>
                     </Tilt>
-      
                     </div>
                 ))}
             </IconContainer>
@@ -28,9 +28,14 @@ const Skills = () => {
     );
 };
 
+
+
 const IconContainer = styled.div`
-    width: 54vw;
+    width: 60vw;
     margin: auto;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
     @media (max-width: 578px) {
         width: 95vw;
     };
@@ -38,17 +43,21 @@ const IconContainer = styled.div`
         width: 100vw;
     };
 `;
-// display flex !!!!!
+
+const IconName = styled.p`
+    margin: 0px;
+    font-size: 12px;
+    color: #10c2c9;
+`;
 
 const Icon = styled.img`
-    margin: 25px;
+    margin: 25px 25px 10px 25px;
     height: 70px;
     width: 70px;
     float: left;
     @media (max-width: 578px) {
         margin: 10px;
     };
-
 `;
 
 const Section = styled.section`
@@ -61,10 +70,7 @@ const Section = styled.section`
         height: 160vh;
     };
     @media (max-width: 468px) {
-        height: 180vh;
-    };
-    @media (max-width: 320px) {
-        height: 120vh;
+        height: 110vh;
     };
 `;
 

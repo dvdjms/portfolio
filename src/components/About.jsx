@@ -15,7 +15,7 @@ const About = () => {
                         <FirstName>David</FirstName><LastName>James</LastName>
                     </ContainerName>
                     <ContainerLocationLarge>
-                        <Location1>Software Developer ∙ West End ∙ Edinburgh ∙ Scotland</Location1>
+                        <Location1>Software Developer ∙ Edinburgh ∙ Scotland</Location1>
                     </ContainerLocationLarge>
                     <ContainerLocationSmall>
                         <Location2>West End ∙ Edinburgh ∙ Scotland</Location2>
@@ -184,6 +184,10 @@ const ContainerImage = styled(ContainerProfile)`
         height: 230px;
         width: 230px;
         grid-column: 1/2;
+        @media (max-width: 568px) {
+            display-flex;
+            justify-content: center;
+        };
 `;
 
 const Profile = styled.p`
