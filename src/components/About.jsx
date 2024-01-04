@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Portrait from '../assets/images/Portrait2.png';
 import Tilt from 'react-parallax-tilt';
 import { about } from '../constants';
-
+import { motion } from "framer-motion";
 
 const About = () => {
 
@@ -18,14 +18,25 @@ const About = () => {
                         <Location1>Software Developer ∙ Edinburgh ∙ Scotland</Location1>
                     </ContainerLocationLarge>
                     <ContainerLocationSmall>
-                        <Location2>West End ∙ Edinburgh ∙ Scotland</Location2>
+                        <Location2>Edinburgh ∙ Scotland</Location2>
                     </ContainerLocationSmall>
                     <ContainerImage>
+                    <motion.div
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}  
+                        animate={{
+                            scale: [0, 1.2, 1.2, 1, 1],
+                            rotate: [360, 0],
+                            duration: 2,
+                        }}
+                        transition={{type: "spring", stiffness: 30}}
+                    >
                         <Tilt>
                             <Img src={Portrait}></Img>
                         </Tilt>
+                        </motion.div>
                     </ContainerImage>
-                    <ContainerProfile>
+                    <ContainerProfile>     
                         <Profile>{about}</Profile>
                     </ContainerProfile>
                 </ContainerMain>
@@ -162,7 +173,7 @@ const ContainerProfile = styled.div`
     text-align: left;
     min-width: 300px;
     grid-column: 2/2;
-    margin-top: 45px;
+    margin-top: 30px;
     margin-bottom: 20px;
     @media (max-width: 1020px) {
         margin-right: 30px;
@@ -181,10 +192,12 @@ const ContainerProfile = styled.div`
 `;
 
 const ContainerImage = styled(ContainerProfile)`
+        padding-left: 20px;
         height: 230px;
         width: 230px;
         grid-column: 1/2;
         @media (max-width: 568px) {
+            padding-left: 0;
             display-flex;
             justify-content: center;
         };
@@ -192,7 +205,7 @@ const ContainerImage = styled(ContainerProfile)`
 
 const Profile = styled.p`
     font-size: 15px;
-    width: 100%;
+    width: 90%;
     @media (max-width: 767px) {
         font-size: 14px;
     };

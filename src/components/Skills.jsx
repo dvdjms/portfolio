@@ -1,33 +1,38 @@
 import styled from 'styled-components';
 import { skills } from '../constants';
 import Tilt from 'react-parallax-tilt';
+import { motion } from "framer-motion";
 
 
 const Skills = () => {
 
-    
+
     return (
-        <>
+        
         <Section id="skills">
             <SectionTitle>SKILLS</SectionTitle>
-  
-            <IconContainer>
+            <IconContainer >
                 {skills.map((skill, index) => (
                     <div key={index}>
+                    <motion.div
+                        initial={{opacity: 0, x: -100}}   
+                        transition={{ type: "spring", stiffness: 100, delay: index * 0.07 }}
+                        viewport={{ once: true }}
+                        whileInView={{opacity: 1, x: 0}}
+                    >
                     <Tilt scale="1.3" tiltMaxAngleX="40" tiltMaxAngleY="40">
                         <Icon src={skill.icon} alt={skill.name} />
                         <IconName>{skill.name}</IconName>
                     </Tilt>
+                    </motion.div>
                     </div>
                 ))}
             </IconContainer>
-          
+
         </Section>
-    
-        </>
+        
     );
 };
-
 
 
 const IconContainer = styled.div`
@@ -73,7 +78,6 @@ const Section = styled.section`
         height: 110vh;
     };
 `;
-
 
 const SectionTitle = styled.h1`
     font-family: Arial, Helvetica, sans-serif;

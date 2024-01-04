@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes }  from 'styled-components';
 import Modal from '../modal/Modal';
 import { projects } from '../constants';
-
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
 
@@ -10,20 +10,26 @@ const Portfolio = () => {
         <Section id="portfolio">
 
             <SectionTitle>PORTFOLIO</SectionTitle>
-
-            <ScrollContainer >
-                {projects.map((project, index) => (
-                    <ScrollElement key={index}>
-                        <ImageContainer >
-                            <Image className="webImage" alt={`${project.title}-homepage`} src={project.imageMain}></Image>
-                            <TitleOfPortfolio>{project.title}</TitleOfPortfolio>
-                            <TechnologiesHeader>{project.technologies}</TechnologiesHeader>
-                            <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target={`#myModal${project.modalNumber}`}>LEARN MORE</LearnMoreButton>
-                        </ImageContainer>
-                    </ScrollElement>
-                ))}
-            </ScrollContainer>
-            <Modal></Modal>
+            <motion.div
+                initial={{opacity: 0, y: 100, x:100}}   
+                transition={{ type: "spring", stiffness: 20, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileInView={{opacity: 1, y: 0, x: 0}}
+            >
+                <ScrollContainer >
+                    {projects.map((project, index) => (
+                        <ScrollElement key={index}>
+                            <ImageContainer >
+                                <Image className="webImage" alt={`${project.title}-homepage`} src={project.imageMain}></Image>
+                                <TitleOfPortfolio>{project.title}</TitleOfPortfolio>
+                                <TechnologiesHeader>{project.technologies}</TechnologiesHeader>
+                                <LearnMoreButton type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target={`#myModal${project.modalNumber}`}>LEARN MORE</LearnMoreButton>
+                            </ImageContainer>
+                        </ScrollElement>
+                    ))}
+                </ScrollContainer>
+                <Modal></Modal>
+            </motion.div>
         </Section>
     );
 };

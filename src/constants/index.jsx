@@ -73,7 +73,7 @@ const navlinks = [
 ]
 
 const about = [
-    "I have recently completed the Professional Software Development course at CodeClan, Edinburgh. Dedicated to becoming a full stack developer, I have a passion and focus for customer satisfaction, UI/UX design, and clean understandable code. I'm also a tenacious problem solver. I bring with me over 10 years' accounts and administration experience from a variety of sectors and over 5 years Teaching English as a Foreign Language."
+    "I have recently completed the intensive 16-week Professional Software Development course at CodeClan, Edinburgh. Dedicated to becoming a full stack developer, I have a passion for problem solving, clean understandable code, UI/UX design, and customer satisfaction. I bring with me over 10 years' accounts and administration experience from a variety of sectors and over 5 years Teaching English as a Foreign Language."
 ]
 
 const experiences = [
@@ -173,7 +173,7 @@ const skills = [
         icon: SpringBoot
     },
     {
-        name: "ASP.net#",
+        name: "ASP.net",
         icon: ASPnet
     },
     {
@@ -287,4 +287,16 @@ const projects = [
     },
 ];
 
-export { navlinks, about, experiences, skills, projects};
+
+const training = {
+    codeclan: [
+        "Python", "JavaScript", "Java", "RESTful APIs", 
+        "TDD", "Agile Methodologies", "Pair-Programming", "SQA Accredited"
+    ],
+    cs50: [
+        "C Programming", "Python", "Django", "JavaScript", 
+        "SQL", "Memory Allocation", "Best Practice", "Certificate"
+    ],
+};
+
+export { navlinks, about, experiences, skills, projects, training};

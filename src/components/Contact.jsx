@@ -48,7 +48,7 @@ const Contact = () => {
 
 const EmailSent = styled.div`
     color: #F5f5f5;
-    background-color: #E31f5D;
+    background-color: #E31A6D;
     border-radius: 5px;
     min-height: 30px;
     text-align: center;
@@ -138,7 +138,7 @@ const Input = styled.input`
 ;`
 
 const Textarea = styled.textarea`
-    background-color: #1e242c;
+    background-color: #1b242f;
     border-style: none;
     color: white;
     font-size: 14px;

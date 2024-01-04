@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Tilt from 'react-parallax-tilt';
 import { experiences } from '../constants';
+import { motion } from "framer-motion";
 
 const Experience = () => {
 
@@ -10,17 +11,25 @@ const Experience = () => {
             <SectionTitle>EXPERIENCE</SectionTitle>
             <ExperienceOuterContainer>
                 {experiences.map((experience, index) => (
-                    <Tilt glareEnable={true} glareColor="#10c2c9" key={index}>
-                        <ExperienceInnerContainer>
-                            <H6>{experience.title}</H6>
-                            <LineBreak></LineBreak>
-                            <Paragraph>{experience.description}</Paragraph>
-                            <Transferable>Transferable skills...</Transferable>
-                                {experience.skills.map((skill, index) => (
-                                    <SkillTitle key={`skill-${index}`}>{skill}</SkillTitle>
-                                ))}
-                        </ExperienceInnerContainer>
-                    </Tilt>
+                    <motion.div
+                        key={index}
+                        initial={{opacity: 0, y: 100}}   
+                        transition={{ type: "spring", stiffness: 20, delay: index * 0.2 }}
+                        viewport={{ once: true }}
+                        whileInView={{opacity: 1, y: 0}}
+                    >
+                        <Tilt glareEnable={true} glareColor="#10c2c9">
+                            <ExperienceInnerContainer>
+                                <H6>{experience.title}</H6>
+                                <LineBreak></LineBreak>
+                                <Paragraph>{experience.description}</Paragraph>
+                                <Transferable>Transferable skills...</Transferable>
+                                    {experience.skills.map((skill, index) => (
+                                        <SkillTitle key={`skill-${index}`}>{skill}</SkillTitle>
+                                    ))}
+                            </ExperienceInnerContainer>
+                        </Tilt>
+                    </motion.div>
                     )
                 )}
             </ExperienceOuterContainer>
