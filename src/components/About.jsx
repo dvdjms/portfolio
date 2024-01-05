@@ -11,34 +11,41 @@ const About = () => {
         <>
             <Section id="about">
                 <ContainerMain>
+         
+                    <ContainerLine>
+                        <Circle />
+                        <Line />
+                    </ContainerLine>
+
                     <ContainerName>
-                        <FirstName>David</FirstName><LastName>James</LastName>
+                        <Name>David James</Name>
                     </ContainerName>
-                    <ContainerLocationLarge>
-                        <Location1>Software Developer ∙ Edinburgh ∙ Scotland</Location1>
-                    </ContainerLocationLarge>
-                    <ContainerLocationSmall>
-                        <Location2>Edinburgh ∙ Scotland</Location2>
-                    </ContainerLocationSmall>
+
+                    <ContainerLocation>
+                        <Location>Software Developer ∙ Edinburgh ∙ Scotland</Location>
+                    </ContainerLocation>
+
                     <ContainerImage>
-                    <motion.div
-                        initial={{opacity: 0}}
-                        whileInView={{opacity: 1}}  
-                        animate={{
-                            scale: [0, 1.2, 1.2, 1, 1],
-                            rotate: [360, 0],
-                            duration: 2,
-                        }}
-                        transition={{type: "spring", stiffness: 30}}
-                    >
-                        <Tilt>
-                            <Img src={Portrait}></Img>
-                        </Tilt>
+                        <motion.div
+                            initial={{opacity: 0}}
+                            whileInView={{opacity: 1}}  
+                            animate={{
+                                scale: [0, 1.2, 1.2, 1, 1],
+                                rotate: [360, 0],
+                                duration: 2,
+                            }}
+                            transition={{type: "spring", stiffness: 30, delay: 0.3,}}
+                        >
+                            <Tilt>
+                                <Img src={Portrait}></Img>
+                            </Tilt>
                         </motion.div>
                     </ContainerImage>
+
                     <ContainerProfile>     
                         <Profile>{about}</Profile>
                     </ContainerProfile>
+
                 </ContainerMain>
   
             </Section>
@@ -46,39 +53,92 @@ const About = () => {
     );
 };
 
+
 const Section = styled.section`
     border-bottom: solid #e8e8ea;
-    height: 120%;
+    height: 108vh;
     padding-top: 15px;
     background-color: #F5f5f5;
     width: 100%;
 `;
 
 const ContainerMain = styled.div`
-    height: 100%;
+    height: 60%;
     margin: auto;
     margin-top: 90px;
     margin-bottom: 20vh;
-    width: 60%;
-    justify-content: center;
+    width: 60vw;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: .5vh;
+    grid-template-rows: 0.5fr auto auto;
+    grid-template-areas:
+        'ContainerLine ContainerName ContainerName'
+        'ContainerLine ContainerLocation ContainerLocation'
+        'ContainerLine ContainerImage ContainerProfile';
+    @media (max-width: 968px) {
+            width: 80%;
+        };
+    @media (max-width: 768px) {
+        width: 90%;
+    };
     @media (max-width: 568px) {
-            grid-template-columns: repeat(1, 1fr);
-            margin-top: 30px;
-            margin-bottom: 70px;
+        grid-template-areas:
+        'ContainerName'
+        'ContainerLocation'
+        'ContainerImage'
+        'ContainerProfile';
+        width: 90%;
     };
 `;
 
-const FirstName = styled.h1`
+const ContainerLine = styled.div`
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: ContainerLine;
+    padding-top: 12px;
+    width: 30px;
+    @media (max-width: 568px) {
+        display: none;
+    };
+`;
+
+const Line = styled.div`
+    background: linear-gradient(#E31A6D 30%, transparent 90%);
+    height: 100%;
+    width: 5px;
+`;
+
+const Circle = styled.div`
+    background-color: #E31A6D;
+    border-radius: 50%;
+    height 20px;
+    width: 20px;
+`;
+
+const ContainerName = styled.div`
+    grid-area: ContainerName;
+    padding-top: 5px;
+    height: 4rem;
+    margin-left: 20px;
+    @media (max-width: 767px) {
+        font-size: 2vw;
+        height: 60px;
+    };
+    @media (max-width: 568px) {
+        font-size: 2.4vw;
+        margin: none;
+        margin-top: 20px;
+        display: flex;
+        justify-items: center;
+    };
+`;
+
+const Name = styled.h1`
     font-family: impact, Arial, Helvetica, sans-serif;
-    font-size: 3.2rem;
+    font-size: 3rem;
     color: #1b242f;
-    float: left;
     height: 3rem;
-    text-align: right;
+    width: 100%;
     @media (max-width: 768px) {
         font-size: 38px;
         height: 40px;
@@ -86,121 +146,47 @@ const FirstName = styled.h1`
     @media (max-width: 568px) {
         font-size: 30px;
         height: 40px;
+        text-align: center;
     };
 `;
 
-const LastName = styled(FirstName)`
-    padding-left: 20px;
-    text-align: left;
+const ContainerLocation = styled.div`
+    grid-area: ContainerLocation;
+    margin-left: 20px;
+    height: 40px;
     @media (max-width: 568px) {
-        padding-left: 10px;
+        display: none;
     };
 `;
 
-const Location1 = styled.p`
+const Location = styled.p`
     text-align: left;
-    font-size: 3.3vh;
+    font-size: 3vh;
     font-weight: 700;
     color: #3a3a3a;
+    height: 40px;
     @media (max-width: 1020px) {
         font-size: 3vh;
     };
     @media (max-width: 767px) {
         font-size: 16px;
-        height: 40px;
     };
-    @media (max-width: 568px) {
+    @media (max-width: 468px) {
         display: none;
     };
 `;
 
-const Location2 = styled(Location1)`
-    display: none;
-    @media (max-width: 568px) {
-        display: block;
-        font-size: 14px;
-        text-align: center;
-    };
-`;
-
-const ContainerName = styled.div`
-    height: 75px;
-    margin-top: 10px;
-    margin-left: 50px;
-    grid-row-start: span  1 / 2;
-    grid-column-start: 2 span;
-    @media (max-width: 767px) {
-        font-size: 2vw;
-        height: 60px;
-    };
-    @media (max-width: 568px) {
-        font-size: 2.4vw;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        margin-top: 20px;
-    };
-`;
-
-const ContainerLocationLarge = styled.div`
-    margin-left: 50px;
-    height: 10vh;
-    grid-row-start: span  1 / 2;
-    grid-column-start: 2 span;
-    @media (max-width: 1020px) {
-        height: 8vh;
-    };
-    @media (max-width: 767px) {
-        height: 8vh;
-    };
-    @media (max-width: 568px) {
-        display: none;
-    };
-`;
-
-const ContainerLocationSmall = styled(ContainerLocationLarge)`
-    display: none;
-    @media (max-width: 568px) {
-        grid-column: 1 / 1;
-        display: block;
-        margin: auto;
-    };
-`;
 
 const ContainerProfile = styled.div`
-    display: grid;
-    text-align: left;
-    min-width: 300px;
-    grid-column: 2/2;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    @media (max-width: 1020px) {
-        margin-right: 30px;
-        margin-top: 70px;
-    };
-    @media (max-width: 767px) {
-        margin: auto;
-        margin-top: 20px;
-        padding-left: 30px;
-    };
-    @media (max-width: 568px) {
-        grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: ContainerProfile;
+    padding-left: 50px;
+    @media (max-width: 468px) {
         margin: auto;
         padding: 0px;
     };
-`;
-
-const ContainerImage = styled(ContainerProfile)`
-        padding-left: 20px;
-        height: 230px;
-        width: 230px;
-        grid-column: 1/2;
-        @media (max-width: 568px) {
-            padding-left: 0;
-            display-flex;
-            justify-content: center;
-        };
 `;
 
 const Profile = styled.p`
@@ -208,6 +194,7 @@ const Profile = styled.p`
     width: 90%;
     @media (max-width: 767px) {
         font-size: 14px;
+        padding-top: 30px;
     };
     @media (max-width: 568px) {
         font-size: 16px;
@@ -217,27 +204,28 @@ const Profile = styled.p`
     };
 `;
 
+const ContainerImage = styled.div`
+    grid-area: ContainerImage;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    margin: auto;
+    padding-left: 20px;
+    width: 100%;
+`;
+
 const Img = styled.img`
     float: left;
-    margin-left: 50px;
-    height: 210px;
-    width: 230px;
-    grid-row-start: span 1;
-    grid-column: 1/2;
-    @media (max-width: 1220px) {
-        margin-right: 30px;
-        margin-bottom: 20px;
+    height: 25vh;
+    max-height: 140px
+    width: 25vw;
+    @media (max-width: 768px) {
+        float: none;
     };
-    @media (max-width: 767px) {
+    @media (max-width: 468px) {
         margin: auto;
-        margin-top: 30px;
-        height: 170px;
-        width: 190px;
-        margin-left: 20px;
-    };
-    @media (max-width: 568px) {
-        margin: auto;
-        margin-bottom: 50px;
+        margin-top: 10px;
     };
 `;
 

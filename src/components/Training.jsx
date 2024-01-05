@@ -105,13 +105,18 @@ const CodeClanContainer = styled.div`
     width: 90%;
     grid-template-columns: 1/2;
     @media (max-width: 578px) {
-        width: 80%;
+        float: none;
+        width: 90%;
     };
 `;
 
 const CS50Container = styled(CodeClanContainer)`
     grid-template-columns: 2/2;
     float: right;
+    @media (max-width: 578px) {
+        float: none;
+        width: 90%;
+    };
 `;
 
 const SectionTitle = styled.h1`
@@ -145,6 +150,7 @@ const TextBlock = styled.div`
     margin-top: 60px;
     text-align: left;
     min-width: 250px;
+    padding-right: 3px;
     width: 97%;
     @media (max-width: 1020px) {
         font-size: 12px;

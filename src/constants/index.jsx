@@ -237,7 +237,7 @@ const projects = [
     },
     {
         title: "Recipe AI",
-        subtitle: "ChatGPT Practice project",
+        subtitle: "Angular, C#, and ChatGPT Practice Project",
         paragraph: "Intrigued by the rapid evolution of Artificial Intelligence, I couldn't resist the urge to dive into the ChatGPT API. To channel my focus, I embarked on building a recipe generator.",
         technologies: "Angular / ASP.NET",
         githublink: "https://github.com/dvdjms/Recipe-AI",
@@ -290,12 +290,12 @@ const projects = [
 
 const training = {
     codeclan: [
-        "Python", "JavaScript", "Java", "RESTful APIs", 
-        "TDD", "Agile Methodologies", "Pair-Programming", "SQA Accredited"
+        "Python with Flask", "JavaScript", "Java with Spring Boot", "RESTful APIs", "PostreSQL & MongoDB",
+        "Test Driven Development", "Agile Methodologies", "Pair-Programming", "SQA Accredited"
     ],
     cs50: [
-        "C Programming", "Python", "Django", "JavaScript", 
-        "SQL", "Memory Allocation", "Best Practice", "Certificate"
+        "C Programming", "Python with Django", "JavaScript", "Bootstrap",
+        "SQL", "Database design", "Scalability", "Security", "Certificate"
     ],
 };
 

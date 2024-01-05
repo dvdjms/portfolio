@@ -114,8 +114,8 @@ const H1 = styled.h1`
     margin-top: 0;
     color: #efefef;
     text-align: center;
-    font-size: 30px;
-    padding-top: 1vh;
+    font-size: 28px;
+    padding-top: 1.3vh;
     @media (max-width: 768px) {
         font-size: 28px;
     };
@@ -193,9 +193,10 @@ const UnorderedList1 = styled.ul`
 `;
 
 const List = styled.li`
-    font-size: 18px;
+    font-size: 16px;
     float: left;
     margin-right: 20px;
+    padding-top: 2px;
     animation-name: ${FromBottom};
     animation-duration: 1.5s;
     @media (max-width: 568px) {
