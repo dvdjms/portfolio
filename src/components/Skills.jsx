@@ -75,7 +75,7 @@ const Section = styled.section`
         height: 160vh;
     };
     @media (max-width: 468px) {
-        height: 110vh;
+        height: 114vh;
     };
 `;
 

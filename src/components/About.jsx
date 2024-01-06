@@ -24,24 +24,22 @@ const About = () => {
                     <ContainerLocation>
                         <Location>Software Developer ∙ Edinburgh ∙ Scotland</Location>
                     </ContainerLocation>
-
-                    <ContainerImage>
-                        <motion.div
-                            initial={{opacity: 0}}
-                            whileInView={{opacity: 1}}  
-                            animate={{
-                                scale: [0, 1.2, 1.2, 1, 1],
-                                rotate: [360, 0],
-                                duration: 2,
-                            }}
-                            transition={{type: "spring", stiffness: 30, delay: 0.3,}}
-                        >
-                            <Tilt>
+                    <Tilt scale="1.1">
+                        <ContainerImage>
+                            <motion.div
+                                initial={{opacity: 0}}
+                                whileInView={{opacity: 1}}  
+                                animate={{
+                                    scale: [0, 1.2, 1.2, 1, 1],
+                                    rotate: [360, 0],
+                                    duration: 2,
+                                }}
+                                transition={{type: "spring", stiffness: 30, delay: 0.3,}}
+                            >
                                 <Img src={Portrait}></Img>
-                            </Tilt>
-                        </motion.div>
-                    </ContainerImage>
-
+                            </motion.div>
+                        </ContainerImage>
+                    </Tilt>
                     <ContainerProfile>     
                         <Profile>{about}</Profile>
                     </ContainerProfile>
@@ -69,14 +67,14 @@ const ContainerMain = styled.div`
     margin-bottom: 20vh;
     width: 60vw;
     display: grid;
-    grid-template-rows: 0.5fr auto auto;
+    grid-template-rows: 0.3fr 0.05fr auto;
     grid-template-areas:
         'ContainerLine ContainerName ContainerName'
         'ContainerLine ContainerLocation ContainerLocation'
         'ContainerLine ContainerImage ContainerProfile';
     @media (max-width: 968px) {
-            width: 80%;
-        };
+        width: 80%;
+    };
     @media (max-width: 768px) {
         width: 90%;
     };
@@ -86,9 +84,11 @@ const ContainerMain = styled.div`
         'ContainerLocation'
         'ContainerImage'
         'ContainerProfile';
+        margin-top: 60px;
         width: 90%;
     };
 `;
+
 
 const ContainerLine = styled.div`
     align-items: center;
@@ -96,7 +96,7 @@ const ContainerLine = styled.div`
     flex-direction: column;
     grid-area: ContainerLine;
     padding-top: 12px;
-    width: 30px;
+    width: 100px;
     @media (max-width: 568px) {
         display: none;
     };
@@ -118,7 +118,6 @@ const Circle = styled.div`
 const ContainerName = styled.div`
     grid-area: ContainerName;
     padding-top: 5px;
-    height: 4rem;
     margin-left: 20px;
     @media (max-width: 767px) {
         font-size: 2vw;
@@ -126,7 +125,7 @@ const ContainerName = styled.div`
     };
     @media (max-width: 568px) {
         font-size: 2.4vw;
-        margin: none;
+        margin-left: 0;
         margin-top: 20px;
         display: flex;
         justify-items: center;
@@ -137,7 +136,6 @@ const Name = styled.h1`
     font-family: impact, Arial, Helvetica, sans-serif;
     font-size: 3rem;
     color: #1b242f;
-    height: 3rem;
     width: 100%;
     @media (max-width: 768px) {
         font-size: 38px;
@@ -153,7 +151,6 @@ const Name = styled.h1`
 const ContainerLocation = styled.div`
     grid-area: ContainerLocation;
     margin-left: 20px;
-    height: 40px;
     @media (max-width: 568px) {
         display: none;
     };
@@ -164,7 +161,6 @@ const Location = styled.p`
     font-size: 3vh;
     font-weight: 700;
     color: #3a3a3a;
-    height: 40px;
     @media (max-width: 1020px) {
         font-size: 3vh;
     };
@@ -183,7 +179,7 @@ const ContainerProfile = styled.div`
     align-items: center;
     grid-area: ContainerProfile;
     padding-left: 50px;
-    @media (max-width: 468px) {
+    @media (max-width: 568px) {
         margin: auto;
         padding: 0px;
     };
@@ -209,10 +205,13 @@ const ContainerImage = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 230px;
+    height: 100%;
     margin: auto;
     padding-left: 20px;
     width: 100%;
+    @media (max-width: 568px) {
+        padding-left: 0px;
+    };
 `;
 
 const Img = styled.img`

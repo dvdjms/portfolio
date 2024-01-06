@@ -6,7 +6,7 @@ import Arrow from '../assets/images/arrow_right.png';
 import { projects } from '../constants';
 
 const Modal = () => {
-    const videoRef = useRef(null)
+    const videoRef = useRef(null);
 
     return (
         <> 
@@ -22,13 +22,13 @@ const Modal = () => {
                     {project.isVideo ? 
                     (
                     <ModalBody as={Modal_Body} className="modal-body">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
+                        {/* <div className="carousel-inner">
+                            <div className="carousel-item active"> */}
                                 <Video controls ref={videoRef}>
                                     <source src={project.video} type="video/mp4" className="d-block w-100" />
                                 </Video>
-                            </div>
-                        </div>
+                            {/* </div>
+                        </div> */}
                     </ModalBody>
                     )
                     :
@@ -43,13 +43,13 @@ const Modal = () => {
                         </ol>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <ImageSize src={project.imageOne} className="d-block w-100" alt={`${project.title} application image 1`}></ImageSize>
+                                <img src={project.imageOne} className="d-block w-100" alt={`${project.title} application 1`} />
                             </div>
                             <div className="carousel-item">
-                                <ImageSize src={project.imageTwo} className="d-block w-100" alt={`${project.title} application image 2`}></ImageSize>
+                                <img src={project.imageTwo} className="d-block w-100" alt={`${project.title} application 2`} />
                             </div>
                             <div className="carousel-item">
-                                <ImageSize src={project.imageThree} className="d-block w-100" alt={`${project.title} application image 3`}></ImageSize>
+                                <img src={project.imageThree} className="d-block w-100" alt={`${project.title} application 3`} />
                             </div>
                         </div>
                         <a className="carousel-control-prev" href={`#carouselCaptions${project.modalNumber}`} role="button" data-slide="prev">
@@ -118,18 +118,24 @@ const Paragraph = styled.p`
     height: 8vh;
     margin: 1.3vw 2vw 0 1.6vw;
     text-align: left;
-    @media (max-width: 468px) {
-        height: 15vh;
+    @media (max-width: 568px) {
+        min-height: 15vh;
         margin-top: 10px;
+        margin-bottom: fit;
         padding: 5px;
     };
-    @media (max-width: 368px) {
-        height: 140px;
+    @media (max-width: 468px) {
+        min-height: 17vh;
     };
+
+
 `;
 
 const ModalSizePosition = styled.div`
     margin-top: 1vw;
+    @media (max-width: 468px) {
+        margin: 0;
+    };
 `;
 
 const Modal_Body = styled.div`
@@ -140,23 +146,13 @@ const Modal_Body = styled.div`
     margin-bottom: 3vh;
 `;
 
-const ImageSize = styled.img`
-	height: 400px;
-    max-width: 100%;
-	background-size: cover;
-	overflow: hidden;
-    @media (max-width: 468px) {
-        height: 200px;
-    };
-    @media (max-width: 368px) {
-        height: 160px;
-    };
-`;
-
 const Footer = styled.p`
     margin: 1vw 1vw 0 1.6vw;
     height: 7.7vh;
     float: left;
+    @media (max-width: 468px) {
+        margin-top: 7vh;
+    };
 `;
 
 const GitButton = styled.button`
@@ -201,16 +197,10 @@ const ArrowLeftImage = styled.img`
 `;
 
 const Video = styled.video`
-	height: 400px;
-    max-width: 100%;
-	background-size: cover;
-	overflow: hidden;
-    @media (max-width: 468px) {
-        height: 200px;
-    };
-    @media (max-width: 368px) {
-        height: 160px;
-    };
+    height: auto;
+    width: 100%;
+	// background-size: cover;
+	// overflow: hidden;
 `;
 
 export default Modal;
