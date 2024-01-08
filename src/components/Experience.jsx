@@ -2,13 +2,14 @@ import styled from 'styled-components';
 import Tilt from 'react-parallax-tilt';
 import { experiences } from '../constants';
 import { motion } from "framer-motion";
+import SectionTitle from './SectionTitle';
 
 const Experience = () => {
 
     return (
         <>
         <Section id="experience">
-            <SectionTitle>EXPERIENCE</SectionTitle>
+        <SectionTitle value="EXPERIENCE" titleDirection={400} lineDirection={-400} />
             <ExperienceOuterContainer>
                 {experiences.map((experience, index) => (
                     <motion.div
@@ -128,19 +129,6 @@ const Paragraph = styled.p`
     padding: 1vh;
 `;
 
-const SectionTitle = styled.h1`
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
-    font-weight: 600;
-    color: #161639;
-    @media (max-width: 768px) {
-        font-size: 20px;
-    };
-    @media (max-width: 568px) {
-        font-size: 16px;
-    };
-`;
-
 const LineBreak = styled.div`
     background: #E31A6D;
     height: 4px;
@@ -153,12 +141,12 @@ const Transferable = styled.div`
     background-color: #05A1A7;
     color: white;
     font-weight: 600;
-    font-size: 2.3vh;
-    padding-top: 5px;
+    font-size: 2.2vh;
+    padding-top: 3px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-bottom: 3vh;
-    height: 5vh;
+    height: 4vh;
     width: 180px;
 `;
 

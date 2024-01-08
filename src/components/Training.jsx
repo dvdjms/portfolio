@@ -3,6 +3,7 @@ import codeclan from '../assets/images/CodeClan-Logo-Blue.png';
 import csLogo from '../assets/images/CS50.png';
 import { training } from '../constants';
 import { motion } from "framer-motion";
+import SectionTitle from './SectionTitle';
 
 const Training = () => {
 
@@ -10,7 +11,7 @@ const Training = () => {
         <>
         <Section id="training">
 
-            <SectionTitle>TRAINING</SectionTitle>
+        <SectionTitle value="TRAINING" titleDirection={400} lineDirection={-400} />
             <TrainingContainer>
                 <motion.div
                     initial={{opacity: 0, x: -200}}   
@@ -116,20 +117,6 @@ const CS50Container = styled(CodeClanContainer)`
     @media (max-width: 578px) {
         float: none;
         width: 90%;
-    };
-`;
-
-const SectionTitle = styled.h1`
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
-    font-weight: 600;
-    color: #161639;
-    @media (max-width: 768px) {
-        font-size: 20px;
-    };
-    @media (max-width: 568px) {
-        font-size: 16px;
     };
 `;
 

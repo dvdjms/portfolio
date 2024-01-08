@@ -60,15 +60,12 @@ const EmailSent = styled.div`
 
 const SectionTitle = styled.h1`
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 550;
     color: #F5f5f5;
     margin-top: 7vh;
     @media (max-width: 768px) {
         font-size: 20px;
-    };
-    @media (max-width: 568px) {
-        font-size: 16px;
     };
 `;
 

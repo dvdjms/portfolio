@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { skills } from '../constants';
 import Tilt from 'react-parallax-tilt';
 import { motion } from "framer-motion";
-
+import SectionTitle from './SectionTitle';
 
 const Skills = () => {
 
@@ -10,7 +10,7 @@ const Skills = () => {
     return (
         
         <Section id="skills">
-            <SectionTitle>SKILLS</SectionTitle>
+        <SectionTitle value="SKILLS" titleDirection={-400} lineDirection={400} />
             <IconContainer >
                 {skills.map((skill, index) => (
                     <div key={index}>
@@ -38,6 +38,7 @@ const Skills = () => {
 const IconContainer = styled.div`
     width: 60vw;
     margin: auto;
+    margin-top: 50px;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -75,21 +76,7 @@ const Section = styled.section`
         height: 160vh;
     };
     @media (max-width: 468px) {
-        height: 114vh;
-    };
-`;
-
-const SectionTitle = styled.h1`
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
-    font-weight: 600;
-    color: #161639;
-    margin-bottom: 50px;
-    @media (max-width: 768px) {
-        font-size: 20px;
-    };
-    @media (max-width: 568px) {
-        font-size: 16px;
+        height: 120vh;
     };
 `;
 

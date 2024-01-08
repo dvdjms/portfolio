@@ -3,13 +3,14 @@ import styled, { keyframes }  from 'styled-components';
 import Modal from '../modal/Modal';
 import { projects } from '../constants';
 import { motion } from "framer-motion";
+import SectionTitle from './SectionTitle';
 
 const Portfolio = () => {
 
     return (
         <Section id="portfolio">
 
-            <SectionTitle>PORTFOLIO</SectionTitle>
+            <SectionTitle value="PORTFOLIO" titleDirection={-400} lineDirection={400} />
             <motion.div
                 initial={{opacity: 0, y: 100, x:100}}   
                 transition={{ type: "spring", stiffness: 20, delay: 0.1 }}
@@ -35,20 +36,20 @@ const Portfolio = () => {
 };
 
 
-const SectionTitle = styled.h1`
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
-    font-weight: 600;
-    color: #161639;
-    width: 35%;
-    margin: auto;
-    @media (max-width: 768px) {
-        font-size: 20px;
-    };
-    @media (max-width: 568px) {
-        font-size: 16px;
-    };
-`;
+// const SectionTitle = styled.h1`
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-size: 2.5vw;
+//     font-weight: 600;
+//     color: #161639;
+//     width: 35%;
+//     margin: auto;
+//     @media (max-width: 768px) {
+//         font-size: 20px;
+//     };
+//     @media (max-width: 568px) {
+//         font-size: 16px;
+//     };
+// `;
 
 const Section = styled.section`
     height: 107vh;
@@ -61,13 +62,12 @@ const Section = styled.section`
         height: 250vh;
     };
     @media (max-width: 468px) {
-        height: 85vh;
+        height: 250vh;
     };
     @media (max-width: 368px) {
-        height: 95vh;
+        height: 210vh;
         width: 100%;
     };
-
 `;
 
 const ScrollElement = styled.div`
@@ -82,8 +82,9 @@ const ScrollElement = styled.div`
     box-shadow: 5px;
     box-shadow: var(--shadow-4);
     margin-top: var(--_spacer);
-    @media (max-width: 368px) {
-        width: 100%;
+    @media (max-width: 468px) {
+        margin-top: var(--_spacer);
+        border-width: 1px;
     };
 `;
 
@@ -93,7 +94,6 @@ const scrollAnimation = keyframes`
 `;
 
 const ScrollContainer = styled.div`
-    /* height: 47vh; */
     position: relative;
     --_spacer: 15px;
     background-color: #252934;
@@ -124,17 +124,18 @@ const ScrollContainer = styled.div`
         --_spacer: 2vh;
         grid-auto-columns: 98%;
     };
-    @media (max-width: 368px) {
-        --_spacer: 1vh;
+    @media (max-width: 468px) {
+        --_spacer: .5vh;
+        grid-auto-flow: row;
+        padding: 5px 0 8px 7px;      
     };
-    
 `;
 
 const Image = styled.img`
     aspect-ratio: 16 / 9;
     border: solid #474775;
     border-radius: 3px;
-    border-width: .5px;
+    border-width: .2px;
     inline-size: 100%; 
     z-index: 2;
     transition-duration: .4s;
@@ -228,7 +229,6 @@ const ImageContainer = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-
     ${TitleOfPortfolio} {
         opacity: 1;
     };

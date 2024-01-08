@@ -35,6 +35,7 @@ const About = () => {
                                     duration: 2,
                                 }}
                                 transition={{type: "spring", stiffness: 30, delay: 0.3,}}
+                                viewport={{ once: true }}
                             >
                                 <Img src={Portrait}></Img>
                             </motion.div>

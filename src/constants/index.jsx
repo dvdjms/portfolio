@@ -78,14 +78,14 @@ const about = [
 
 const experiences = [
     {
-        title: 'Accounts and Administration',
-        description: "Over 10 years' working within accounting departments in a variety of sectors.",
+        title: 'Software Developer',
+        description: "Volunteering with the Scottish Tech Army. Automatated map locations and project updates.",
         skills: [
-            "Attention to detail",
-            "Problem solving & Analysis",
-            "Teamwork & independent work",
-            "Streamlining workflows",
-            "Strong Excel & reporting",
+            "JavaScript, HTML, CSS",
+            "Google Maps, Google Sheets",
+            "Jira, Zapier, Notion, SquareSpace",
+            "Teamwork & pair-programming",
+            "Agile working environment",
         ]
     },
     {
@@ -99,6 +99,17 @@ const experiences = [
             "Relationship building",
         ]
     },
+    {
+        title: 'Accounts and Administration',
+        description: "Over 10 years' working within accounting departments in a variety of sectors.",
+        skills: [
+            "Attention to detail",
+            "Problem solving & Analysis",
+            "Teamwork & independent work",
+            "Streamlining workflows",
+            "Strong Excel & reporting",
+        ]
+    },
     // {
     //     title: 'Contact Tracer',
     //     description: "During the pandemic I helped drive the infection rate down while contact tracing for the NHS.",
@@ -110,17 +121,6 @@ const experiences = [
     //         "Training new starters",
     //     ]
     // },
-    {
-        title: 'Software Developer',
-        description: "Volunteering with the Scottish Tech Army. Automatated map locations and project updates.",
-        skills: [
-            "JavaScript, HTML, CSS",
-            "Google Maps, Google Sheets",
-            "Jira, Zapier, Notion, SquareSpace",
-            "Teamwork & pair-programming",
-            "Agile working environment",
-        ]
-    },
 ]
 
 const skills = [
