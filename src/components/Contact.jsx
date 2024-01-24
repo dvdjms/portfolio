@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
-
+// import { motion } from "framer-motion";
 
 const Contact = () => {
 
@@ -30,6 +30,13 @@ const Contact = () => {
             <SectionTitle>CONTACT</SectionTitle>
             <Paragraph>Have a question or want to work with me?</Paragraph>
             <Message>
+                {/* <motion.div
+                    animate={{scale: [0, 1]}}
+                    transition={{ type: "spring", stiffness: 30, delay: 0.5 }}
+
+                    whileInView="visible"
+                    // viewport={{ once: true }}
+                > */}
                 <form ref={form} onSubmit={sendEmail}>
                     <label htmlFor="user_name"></label>
                     <Input id="user_name" name="user_name" placeholder="Name" type="text" required></Input><br></br>
@@ -39,6 +46,7 @@ const Contact = () => {
                     <Textarea id="user_message" name="message" size="50" placeholder="Message" type="text"></Textarea><br></br>
                     <SendButton type="submit">{loading ? "Sending..." : "Send"}</SendButton>
                 </form>
+                {/* </motion.div> */}
             </Message>
             {emailSent && <EmailSent>Email sent successfully</EmailSent>}
         </Section>

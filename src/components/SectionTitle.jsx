@@ -17,7 +17,6 @@ export const SectionTitle = ({value, titleDirection, lineDirection}) => {
         line_direction = lineDirection;
     };
 
-
     return (
         <>
         <TitleContainer>
@@ -44,7 +43,7 @@ export const SectionTitle = ({value, titleDirection, lineDirection}) => {
 
 const TitleContainer = styled.div`
     position: relative;
-    height: 60px;
+    height: 50px;
     width: 100%;
     @media (max-width: 568px) {
         height: 40px;
@@ -71,7 +70,7 @@ const Underline = styled.div`
 
 const Title = styled.h1`
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-weight: 600;
     color: #1d242e;
     left: 50%;
@@ -80,7 +79,7 @@ const Title = styled.h1`
     top: 0;
     width: 250px;
     @media (max-width: 768px) {
-        font-size: 20px;
+        font-size: 18px;
     };
 `;
 

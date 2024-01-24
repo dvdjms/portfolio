@@ -227,7 +227,7 @@ const projects = [
     {
         title: "Learn Scotland",
         subtitle: "CodeClan Group Project",
-        paragraph: "Working within in a group of four, we planned, designed, and developed a Learn Scotland application aimed at young people. This included quizzes, interactive activities, and a leader board.",
+        paragraph: "Working within a group of four, we planned, designed, and developed a Learn Scotland application aimed at young people. This included quizzes, interactive activities, and a leader board.",
         technologies: "React / ExpressJS / MongoDB",
         githublink: "https://github.com/dvdjms/Learn_Scotland",
         modalNumber: 2,
@@ -250,7 +250,7 @@ const projects = [
         title: "Movie Watchlist",
         subtitle: "CodeClan Individual Project",
         paragraph: "After 4 weeks at CodeClan we undertook our first project. Working independently we were to create a flask application that allows a user to perform simple CRUD actions. I created a movie watchlist.",
-        technologies: "Python / Flask / Postgresql",
+        technologies: "Python / Flask / PostgreSQL",
         githublink: "https://github.com/dvdjms/watchlist",
         modalNumber: 4,
         isVideo: false,
