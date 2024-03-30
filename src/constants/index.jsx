@@ -82,8 +82,8 @@ const experiences = [
         description: "Volunteering with the Scottish Tech Army. Automatated map locations and project updates.",
         skills: [
             "JavaScript, HTML, CSS",
-            "Google Maps, Google Sheets",
-            "Jira, Zapier, Notion, SquareSpace",
+            "AWS Lambda, AWS API Gateway",
+            "Jira, Notion, Zapier",
             "Teamwork & pair-programming",
             "Agile working environment",
         ]

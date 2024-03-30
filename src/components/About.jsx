@@ -3,6 +3,7 @@ import Portrait from '../assets/images/Portrait2.png';
 import Tilt from 'react-parallax-tilt';
 import { about } from '../constants';
 import { motion } from "framer-motion";
+import Resume from '../assets/Resume.pdf';
 
 const About = () => {
 
@@ -42,7 +43,11 @@ const About = () => {
                         </ContainerImage>
                     </Tilt>
                     <ContainerProfile>     
-                        <Profile>{about}</Profile>
+                        <Profile>{about}&nbsp; 
+                        <span>
+                            <ResumeLink href = {Resume} target = "_blank">View resume!</ResumeLink>
+                        </span>
+                        </Profile>
                     </ContainerProfile>
 
                 </ContainerMain>
@@ -51,6 +56,16 @@ const About = () => {
         </>
     );
 };
+
+
+const ResumeLink = styled.a`
+    color: #E31A6D;
+    &:hover {
+        color: #10c2c9;
+        text-decoration: none;
+    }
+
+`;
 
 
 const Section = styled.section`
