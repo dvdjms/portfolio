@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://dvdjms.github.io/portfolio",
+  "homepage": "https://dvdjms.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -51,5 +51,9 @@
   "devDependencies": {
     "@iconify/react": "^4.0.1",
     "gh-pages": "^4.0.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
