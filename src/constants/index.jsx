@@ -291,8 +291,8 @@ const projects = [
     },
     {
         title: "Scottish Tech Army",
-        subtitle: "Auto",
-        paragraph: "Volunteered with the Scottish Tech Army to automate website updates using Jira APIs. Focused on updating project information and pinning map locations.",
+        subtitle: "Voluntary project work to gain experience",
+        paragraph: "Automated website updates using Jira APIs. Focused on updating project information and pinning project geo locations.",
         technologies: "JavaScript / Google Maps / AWS Lambda",
         githublink: "https://github.com/dvdjms/STA_Map_Project",
         modalNumber: 7,
