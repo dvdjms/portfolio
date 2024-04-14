@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f1c74087.css",
-    "main.js": "/static/js/main.2df13313.js",
+    "main.js": "/static/js/main.ab89e58a.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/LearnScotland.mp4": "/static/media/LearnScotland.7a0c58ee9f1989433b0d.mp4",
     "static/media/Chaterio_1.png": "/static/media/Chaterio_1.ea75fce1d7aa4df3f500.png",
@@ -11,9 +11,13 @@
     "static/media/watchlist.jpg": "/static/media/watchlist.d7fac745cbcef0796d67.jpg",
     "static/media/Portrait2.png": "/static/media/Portrait2.97dae0eb7c66ab013e4f.png",
     "static/media/ArtGhetto_2.png": "/static/media/ArtGhetto_2.db0b8c9060093761d232.png",
+    "static/media/map2.png": "/static/media/map2.b06c1a6f8f1dee700732.png",
     "static/media/RecipeAI.png": "/static/media/RecipeAI.a7002e00f2f29bbde27c.png",
+    "static/media/map3.png": "/static/media/map3.ab72f01f3c664f087fcc.png",
     "static/media/WeatherwiseWeather.png": "/static/media/WeatherwiseWeather.8c8889a9012871b39561.png",
+    "static/media/map1.png": "/static/media/map1.b9067118f3157cdf77e6.png",
     "static/media/watchlistmovies.png": "/static/media/watchlistmovies.68de1dd4e65e2eaa23ef.png",
+    "static/media/map.png": "/static/media/map.906048d953ac7f21fb95.png",
     "static/media/imagescomingsoon.png": "/static/media/imagescomingsoon.26ae4de5cea0d05f3a5d.png",
     "static/media/WeatherwiseFavs.png": "/static/media/WeatherwiseFavs.e40b6f58cde3fa8e65ee.png",
     "static/media/WeatherwiseMain.png": "/static/media/WeatherwiseMain.a5040ec04cf08355cfbe.png",
@@ -41,11 +45,11 @@
     "index.html": "/index.html",
     "static/media/threejs.svg": "/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "main.f1c74087.css.map": "/static/css/main.f1c74087.css.map",
-    "main.2df13313.js.map": "/static/js/main.2df13313.js.map",
+    "main.ab89e58a.js.map": "/static/js/main.ab89e58a.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1c74087.css",
-    "static/js/main.2df13313.js"
+    "static/js/main.ab89e58a.js"
   ]
 }
