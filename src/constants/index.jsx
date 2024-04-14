@@ -5,6 +5,7 @@ import LearnScotlandMain from '../assets/images/LearnScotland.jpg';
 import RecipeAIMain from '../assets/images/RecipeAI.png';
 import WeatherMain from '../assets/images/WeatherwiseMain.png';
 import WatchlistMain from '../assets/images/watchlist.jpg';
+import MapMain from '../assets/images/map.png';
 // carousel images
 import ArtGhettoOne from '../assets/images/ArtGhetto_2.png';
 import ArtGhettoTwo from '../assets/images/ArtGhetto_3.png';
@@ -18,6 +19,9 @@ import WatchlistThree from '../assets/images/watchlistdirector.png';
 import WeatherOne from '../assets/images/WeatherwiseWeather.png';
 import WeatherTwo from '../assets/images/WeatherwiseSearch.png';
 import WeatherThree from '../assets/images/WeatherwiseFavs.png';
+import MapOne from '../assets/images/map1.png';
+import MapTwo from '../assets/images/map2.png';
+import MapThree from '../assets/images/map3.png';
 // carousel videos
 import LearnScotlandVideo from '../assets/videos/LearnScotland.mp4';
 import RecipeAIVideo from '../assets/videos/RecipeAI.mp4';
@@ -284,6 +288,19 @@ const projects = [
         imageTwo: ChaterioTwo,
         imageThree: ChaterioThree,
         imageMain: ChaterioMain,
+    },
+    {
+        title: "Scottish Tech Army",
+        subtitle: "Auto",
+        paragraph: "Volunteered with the Scottish Tech Army to automate website updates using Jira APIs. Focused on updating project information and pinning map locations.",
+        technologies: "JavaScript / Google Maps / AWS Lambda",
+        githublink: "https://github.com/dvdjms/STA_Map_Project",
+        modalNumber: 7,
+        isVideo: false,
+        imageOne: MapOne,
+        imageTwo: MapTwo,
+        imageThree: MapThree,
+        imageMain: MapMain,
     },
 ];
 
