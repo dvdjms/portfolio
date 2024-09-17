@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f1c74087.css",
-    "main.js": "/static/js/main.4dc24650.js",
+    "main.js": "/static/js/main.afde0cc2.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/LearnScotland.mp4": "/static/media/LearnScotland.7a0c58ee9f1989433b0d.mp4",
     "static/media/Chaterio_1.png": "/static/media/Chaterio_1.ea75fce1d7aa4df3f500.png",
@@ -30,26 +30,31 @@
     "static/media/styledcomponents.png": "/static/media/styledcomponents.91057b06174e24f79475.png",
     "static/media/watchlistmovie.png": "/static/media/watchlistmovie.d3b3ea5c8be4a33e29d9.png",
     "static/media/watchlistdirector.png": "/static/media/watchlistdirector.39dbf036683cec94d961.png",
+    "static/media/awseventbridge.png": "/static/media/awseventbridge.855ca89b158f53e22e06.png",
     "static/media/CodeClan-Logo-Blue.png": "/static/media/CodeClan-Logo-Blue.47ea5306fff13bec2ade.png",
     "static/media/CS50.png": "/static/media/CS50.bde6c5a6dd04b3fdf692.png",
     "static/media/django.png": "/static/media/django.021631a00880c00c2501.png",
     "static/media/arrow_right.png": "/static/media/arrow_right.0e78a0355801e90496cd.png",
     "static/media/aspnet.png": "/static/media/aspnet.f795f165252f68f4ec13.png",
     "static/media/csharp.png": "/static/media/csharp.509c1a4773a41d73a664.png",
+    "static/media/awslambda.png": "/static/media/awslambda.eee58ca93c5c642bd5ef.png",
     "static/media/java.png": "/static/media/java.78093bff5a0d3a503a2d.png",
+    "static/media/awscdk.png": "/static/media/awscdk.b140ac2be8a64ddd37f1.png",
     "static/media/postgresql.png": "/static/media/postgresql.6c5d698f195dac2fe5af.png",
     "static/media/github.png": "/static/media/github.689c5b742a4c0945de79.png",
+    "static/media/awsdynamodb.png": "/static/media/awsdynamodb.fc665d2753c94744d5a5.png",
     "static/media/npm.png": "/static/media/npm.fd1b6528a0943ca467c7.png",
+    "static/media/awsgateway.png": "/static/media/awsgateway.7f3b762bd5c99fe2f3c8.png",
     "static/media/python.png": "/static/media/python.a13f3d6127e3c1dfe416.png",
     "static/media/springboot.png": "/static/media/springboot.ec44fdc3f6d962fb8e3f.png",
     "index.html": "/index.html",
     "static/media/threejs.svg": "/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "main.f1c74087.css.map": "/static/css/main.f1c74087.css.map",
-    "main.4dc24650.js.map": "/static/js/main.4dc24650.js.map",
+    "main.afde0cc2.js.map": "/static/js/main.afde0cc2.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f1c74087.css",
-    "static/js/main.4dc24650.js"
+    "static/js/main.afde0cc2.js"
   ]
 }
