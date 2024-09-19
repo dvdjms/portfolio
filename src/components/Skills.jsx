@@ -66,18 +66,16 @@ const Icon = styled.img`
     };
 `;
 
+
 const Section = styled.section`
     height: 120vh;
     border-bottom: solid #e8e8ea;
     text-align: center;
     padding-top: 80px;
     background-color: #F5f5f5;
-    @media (max-width: 876px) {
-        height: 160vh;
-    };
-    @media (max-width: 468px) {
-        height: 120vh;
-    };
+    height: fit-content;
+    padding-bottom: 20vh;
+
 `;
 
 

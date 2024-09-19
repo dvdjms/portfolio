@@ -47,6 +47,13 @@ import SpringBoot from '../assets/techImages/springboot.png';
 import StyledComponents from '../assets/techImages/styledcomponents.png';
 import Threejs from '../assets/techImages/threejs.svg';
 import TypeScript from '../assets/techImages/typescript.png';
+import Lambda from '../assets/techImages/awslambda.png';
+import Dynamo from '../assets/techImages/awsdynamodb.png';
+import Gateway from '../assets/techImages/awsgateway.png';
+import IAM from '../assets/techImages/awsiam.png';
+import CDK from '../assets/techImages/awscdk.png';
+import EventBridge from '../assets/techImages/awseventbridge.png';
+import SES from '../assets/techImages/awsses.png';
 
 
 const navlinks = [
@@ -211,6 +218,34 @@ const skills = [
     {
         name: "GitHub",
         icon: GitHub
+    },
+    {
+        name: "AWS Lambda",
+        icon: Lambda
+    },
+    {
+        name: "AWS DynamoDb",
+        icon: Dynamo
+    },
+    {
+        name: "AWS API Gateway",
+        icon: Gateway
+    },
+    {
+        name: "AWS IAM",
+        icon: IAM
+    },
+    {
+        name: "AWS CDK",
+        icon: CDK
+    },
+    {
+        name: "AWS EventBridge",
+        icon: EventBridge
+    },
+    {
+        name: "AWS SES",
+        icon: SES
     },
 ]
 
