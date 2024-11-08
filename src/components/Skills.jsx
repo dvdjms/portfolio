@@ -75,7 +75,6 @@ const Section = styled.section`
     background-color: #F5f5f5;
     height: fit-content;
     padding-bottom: 20vh;
-
 `;
 
 
