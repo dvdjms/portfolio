@@ -16,5 +16,5 @@
 html {
     overflow-x: hidden;
     overflow-y: scroll;
-    scrollbar-color: rgba(227, 26, 109, 0.5) rgba(16, 194, 201, 0.1);
+    scrollbar-color: rgba(227, 26, 109, 0.7) rgba(16, 194, 201, 0.1);
 }

@@ -12,7 +12,7 @@ const Portfolio = () => {
 
             <SectionTitle value="PORTFOLIO" titleDirection={-400} lineDirection={400} />
             <motion.div
-                initial={{opacity: 0, y: 100, x:100}}   
+                initial={{opacity: 0, y: 100, x: 0}}   
                 transition={{ type: "spring", stiffness: 20, delay: 0.1 }}
                 viewport={{ once: true }}
                 whileInView={{opacity: 1, y: 0, x: 0}}

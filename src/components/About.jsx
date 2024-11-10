@@ -31,6 +31,7 @@ const About = () => {
                                 initial={{opacity: 0}}
                                 whileInView={{opacity: 1}}  
                                 animate={{
+                                    delay: 2,
                                     scale: [0, 1.2, 1.2, 1, 1],
                                     rotate: [360, 0],
                                     duration: 2,

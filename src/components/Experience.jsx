@@ -19,7 +19,7 @@ const Experience = () => {
                         viewport={{ once: true }}
                         whileInView={{opacity: 1, y: 0}}
                     >
-                        <Tilt glareEnable={true} glareColor="#10c2c9">
+                        <Tilt glareEnable={true}>
                             <ExperienceInnerContainer>
                                 <H6>{experience.title}</H6>
                                 <LineBreak></LineBreak>
