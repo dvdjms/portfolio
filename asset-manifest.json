@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.468713da.css",
-    "main.js": "/static/js/main.a602ff30.js",
+    "main.js": "/static/js/main.0f3fd5d2.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/LearnScotland.mp4": "/static/media/LearnScotland.7a0c58ee9f1989433b0d.mp4",
     "static/media/Chaterio_1.png": "/static/media/Chaterio_1.ea75fce1d7aa4df3f500.png",
@@ -50,11 +50,11 @@
     "index.html": "/index.html",
     "static/media/threejs.svg": "/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "main.468713da.css.map": "/static/css/main.468713da.css.map",
-    "main.a602ff30.js.map": "/static/js/main.a602ff30.js.map",
+    "main.0f3fd5d2.js.map": "/static/js/main.0f3fd5d2.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.468713da.css",
-    "static/js/main.a602ff30.js"
+    "static/js/main.0f3fd5d2.js"
   ]
 }
