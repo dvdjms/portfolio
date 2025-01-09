@@ -84,17 +84,18 @@ const navlinks = [
 ]
 
 const about = [
-    "I have recently completed the intensive 16-week Professional Software Development course at CodeClan, Edinburgh. Dedicated to becoming a full stack developer, I have a passion for problem solving, clean understandable code, UI/UX design, and customer satisfaction. I bring with me over 10 years' accounts and administration experience from a variety of sectors and over 5 years Teaching English as a Foreign Language."
+    "I am a passionate full-stack developer with hands-on experience gained through freelance and voluntary projects over the past two years, following my completion of the intensive Professional Software Development course at CodeClan, Edinburgh. I enjoy both front-end and back-end development, with a focus on creating clean, maintainable code and user-friendly interfaces. With over 10 years of accounts and administration experience and 5 years as an English language teacher, I bring strong attention to detail, excellent communication skills, and a collaborative mindset to every project."
+   // "I have recently completed the intensive 16-week Professional Software Development course at CodeClan, Edinburgh. Dedicated to becoming a full stack developer, I have a passion for problem solving, clean understandable code, UI/UX design, and customer satisfaction. I bring with me over 10 years' accounts and administration experience from a variety of sectors and over 5 years Teaching English as a Foreign Language."
 ]
 
 const experiences = [
     {
         title: 'Software Developer',
-        description: "Volunteering with the Scottish Tech Army. Automatated map locations and project updates.",
+        description: "Volunteering with the Scottish Tech Army and freelance with Kontroll Solutions",
         skills: [
-            "JavaScript, HTML, CSS",
-            "AWS Lambda, AWS API Gateway",
-            "Jira, Notion, Zapier",
+            "JavaScript, HTML, and CSS",
+            "Cross-platform API integrations",
+            "AWS: Lambda, Dynamo, S3",
             "Teamwork & pair-programming",
             "Agile working environment",
         ]
@@ -337,6 +338,19 @@ const projects = [
         imageThree: MapThree,
         imageMain: MapMain,
     },
+    // {
+    //     title: "Infraspeak-Odoo API Integration",
+    //     subtitle: "Infraspeak-Odoo API Integration using AWS Lambda",
+    //     paragraph: "Implemented API integration between Infraspeak and Odoo platforms, streamlining product, stock level synchronization, and account journals.",
+    //     technologies: "JavaScript / AWS Lambda / Gateway / Dynamo / SNS",
+    //     githublink: "https://github.com/dvdjms/STA_Map_Project",
+    //     modalNumber: 8,
+    //     isVideo: false,
+    //     imageOne: MapOne,
+    //     imageTwo: MapTwo,
+    //     imageThree: MapThree,
+    //     imageMain: MapMain,
+    // },
 ];
 
 
