@@ -91,7 +91,7 @@ const about = [
 const experiences = [
     {
         title: 'Software Developer',
-        description: "Volunteering with the Scottish Tech Army and freelance with Kontroll Solutions",
+        description: "Volunteering with the Scottish Tech Army and freelance with Kontroll Solutions.",
         skills: [
             "JavaScript, HTML, and CSS",
             "Cross-platform API integrations",
