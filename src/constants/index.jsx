@@ -29,12 +29,13 @@ import RecipeAIVideo from '../assets/videos/RecipeAI.mp4';
 import ASPnet from '../assets/techImages/aspnet.png';
 import Bootstrap from '../assets/techImages/bootstrap.png';
 import CSharp from '../assets/techImages/csharp.png';
-import CSS from '../assets/techImages/css.png';
+// import CSS from '../assets/techImages/css.png';
+import Expo from '../assets/techImages/expo.png';
 import Django from '../assets/techImages/django.png';
 import Flask from '../assets/techImages/flask.png';
 import Git from '../assets/techImages/git.png';
 import GitHub from '../assets/techImages/github.png';
-import HTML from '../assets/techImages/html.png';
+// import HTML from '../assets/techImages/html.png';
 import Java from '../assets/techImages/java.png';
 import JavaScript from '../assets/techImages/javascript.png';
 import Mongo from '../assets/techImages/mongodb.png';
@@ -42,7 +43,9 @@ import Nodejs from '../assets/techImages/nodejs.png';
 import NPM from '../assets/techImages/npm.png';
 import PostgreSQL from '../assets/techImages/postgresql.png';
 import Python from '../assets/techImages/python.png';
-import Reactjs from '../assets/techImages/reactjs.png';
+// import Reactjs from '../assets/techImages/reactjs.png';
+import Reactjs from '../assets/techImages/react.webp';
+import ReactNative from '../assets/techImages/reactnative.png';
 import SpringBoot from '../assets/techImages/springboot.png';
 import StyledComponents from '../assets/techImages/styledcomponents.png';
 import Threejs from '../assets/techImages/threejs.svg';
@@ -84,8 +87,7 @@ const navlinks = [
 ]
 
 const about = [
-    "I am a passionate full-stack developer with hands-on experience gained through freelance and voluntary projects over the past two years, following my completion of the intensive Professional Software Development course at CodeClan, Edinburgh. I enjoy both front-end and back-end development, with a focus on creating clean, maintainable code and user-friendly interfaces. With over 10 years of accounts and administration experience and 5 years as an English language teacher, I bring strong attention to detail, excellent communication skills, and a collaborative mindset to every project."
-   // "I have recently completed the intensive 16-week Professional Software Development course at CodeClan, Edinburgh. Dedicated to becoming a full stack developer, I have a passion for problem solving, clean understandable code, UI/UX design, and customer satisfaction. I bring with me over 10 years' accounts and administration experience from a variety of sectors and over 5 years Teaching English as a Foreign Language."
+   "I am a full-stack developer with hands-on experience building and maintaining production systems across frontend, backend, and mobile applications. Since completing an intensive Professional Software Development course at CodeClan in Edinburgh, I’ve continued to develop through real-world work in freelance and voluntary projects, focusing on API-driven systems and cloud-based architecture. Prior to transitioning into software development, I spent over 10 years in accounts and administration and 5 years as an English language teacher, which strengthened my attention to detail, communication skills, and ability to collaborate effectively in fast-paced environments."
 ]
 
 const experiences = [
@@ -137,14 +139,6 @@ const experiences = [
 
 const skills = [
     {
-        name: "HTML 5",
-        icon: HTML
-    },
-    {
-        name: "CSS 3",
-        icon: CSS
-    },
-    {
         name: "JavaScript",
         icon: JavaScript
     },
@@ -152,9 +146,17 @@ const skills = [
         name: "TypeScript",
         icon: TypeScript
     },
+     {
+        name: "React Native",
+        icon: ReactNative
+    },
     {
         name: "React JS",
         icon: Reactjs
+    },
+        {
+        name: "Expo",
+        icon: Expo
     },
     {
         name: "Node JS",

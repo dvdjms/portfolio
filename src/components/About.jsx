@@ -45,9 +45,9 @@ const About = () => {
                     </Tilt>
                     <ContainerProfile>     
                         <Profile>{about}&nbsp; 
-                        <span>
+                        {/* <span>
                             <ResumeLink href = {Resume} target = "_blank">View resume!</ResumeLink>
-                        </span>
+                        </span> */}
                         </Profile>
                     </ContainerProfile>
 
