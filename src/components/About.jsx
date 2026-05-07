@@ -27,7 +27,7 @@ const About = () => {
                     </ContainerLocation>
                     <Tilt scale="1.1">
                         <ContainerImage>
-                            <motion.div
+                            {/* <motion.div
                                 initial={{opacity: 0}}
                                 whileInView={{opacity: 1}}  
                                 animate={{
@@ -38,9 +38,9 @@ const About = () => {
                                 }}
                                 transition={{type: "spring", stiffness: 30, delay: 0.3,}}
                                 viewport={{ once: true }}
-                            >
+                            > */}
                                 <Img src={Portrait}></Img>
-                            </motion.div>
+                            {/* </motion.div> */}
                         </ContainerImage>
                     </Tilt>
                     <ContainerProfile>     
@@ -205,6 +205,7 @@ const ContainerProfile = styled.div`
 const Profile = styled.p`
     font-size: 15px;
     width: 90%;
+    white-space: pre-line;
     @media (max-width: 767px) {
         font-size: 14px;
         padding-top: 30px;

@@ -67,7 +67,7 @@ const Modal = () => {
                 <Paragraph>{project.paragraph}</Paragraph>
 
                 <Footer>
-                    <a href={project.githublink} target="_blank" rel="noreferrer"><GitButton>Github Repository</GitButton></a>
+                    <a href={project?.githublink ? project.githublink : project.website } target="_blank" rel="noreferrer"><GitButton>{project?.githublink ?  "Github Repository" : "Visit Website"}</GitButton></a>
                     <CloseButton type="button" className="btn btn-default" data-dismiss="modal" onClick={() => {if (videoRef.current) {videoRef.current.pause();}}}>Close</CloseButton>
                 </Footer>
                 </div>

@@ -6,6 +6,7 @@ import RecipeAIMain from '../assets/images/RecipeAI.png';
 import WeatherMain from '../assets/images/WeatherwiseMain.png';
 import WatchlistMain from '../assets/images/watchlist.jpg';
 import MapMain from '../assets/images/map.png';
+import Service from '../assets/images/ServiceCapture.png'
 // carousel images
 import ArtGhettoOne from '../assets/images/ArtGhetto_2.png';
 import ArtGhettoTwo from '../assets/images/ArtGhetto_3.png';
@@ -22,6 +23,9 @@ import WeatherThree from '../assets/images/WeatherwiseFavs.png';
 import MapOne from '../assets/images/map1.png';
 import MapTwo from '../assets/images/map2.png';
 import MapThree from '../assets/images/map3.png';
+import ServiceTwo from '../assets/images/ServiceCapture2.png'
+import ServiceThree from '../assets/images/ServiceCapture3.png'
+import ServiceFour from '../assets/images/ServiceCapture4.png'
 // carousel videos
 import LearnScotlandVideo from '../assets/videos/LearnScotland.mp4';
 import RecipeAIVideo from '../assets/videos/RecipeAI.mp4';
@@ -86,28 +90,29 @@ const navlinks = [
     },
 ]
 
+
 const about = [
-   "I am a full-stack developer with hands-on experience building and maintaining production systems across frontend, backend, and mobile applications. Since completing an intensive Professional Software Development course at CodeClan in Edinburgh, I’ve continued to develop through real-world work in freelance and voluntary projects, focusing on API-driven systems and cloud-based architecture. Prior to transitioning into software development, I spent over 10 years in accounts and administration and 5 years as an English language teacher, which strengthened my attention to detail, communication skills, and ability to collaborate effectively in fast-paced environments."
+   "I am a full-stack software developer with experience building and maintaining production web and mobile applications across frontend, backend, and cloud infrastructure. My work focuses on API-driven architecture, serverless AWS solutions, and cross-platform mobile development.\n\nMost recently, I designed and built Service Capture, a SaaS application available on the Apple App Store and Google Play, created for trades and service professionals to document work, generate PDF reports, and manage proof-of-work records.\n\nPrior to transitioning into software development, I spent over 10 years in accounts and administration and 5 years teaching English abroad. These roles strengthened my communication skills, attention to detail, problem-solving ability, and confidence collaborating with clients and teams in fast-paced environments."
 ]
 
 const experiences = [
-    {
-        title: 'Software Developer',
-        description: "Volunteering with the Scottish Tech Army and freelance with Kontroll Solutions.",
-        skills: [
-            "JavaScript, HTML, and CSS",
-            "Cross-platform API integrations",
-            "AWS: Lambda, Dynamo, S3",
-            "Teamwork & pair-programming",
-            "Agile working environment",
-        ]
-    },
+{
+    title: 'Software Developer',
+    description: "Professional, freelance, and volunteer software development experience across web, mobile, and cloud-based systems.",
+    skills: [
+        "TypeScript & JavaScript",
+        "React & React Native",
+        "API integrations & automation",
+        "AWS serverless architecture",
+        "Agile collaboration & problem solving",
+    ]
+},
     {
         title: 'English Language Instructor',
-        description: "Over 5 years Teaching English as Second Language in South Korea, Vietnam, and Online.",
+        description: "Over 5 years teaching English as second language in South Korea, Vietnam, and online.",
         skills: [
             "Interpersonal communication",
-            "Powerpoint presentations",
+            "PowerPoint presentations",
             "Planning & organising",
             "Leadership",
             "Relationship building",
@@ -115,7 +120,7 @@ const experiences = [
     },
     {
         title: 'Accounts and Administration',
-        description: "Over 10 years' working within accounting departments in a variety of sectors.",
+        description: "10+ years working within accounting departments across variety of sectors.",
         skills: [
             "Attention to detail",
             "Problem solving & Analysis",
@@ -124,24 +129,9 @@ const experiences = [
             "Strong Excel & reporting",
         ]
     },
-    // {
-    //     title: 'Contact Tracer',
-    //     description: "During the pandemic I helped drive the infection rate down while contact tracing for the NHS.",
-    //     skills: [
-    //         "Advising and Supporting",
-    //         "Communication",
-    //         "Relationship building",
-    //         "Handling difficult calls",
-    //         "Training new starters",
-    //     ]
-    // },
 ]
 
 const skills = [
-    {
-        name: "JavaScript",
-        icon: JavaScript
-    },
     {
         name: "TypeScript",
         icon: TypeScript
@@ -151,17 +141,50 @@ const skills = [
         icon: ReactNative
     },
     {
+        name: "Expo",
+        icon: Expo
+    },
+    {
         name: "React JS",
         icon: Reactjs
     },
-        {
-        name: "Expo",
-        icon: Expo
+    {
+        name: "JavaScript",
+        icon: JavaScript
     },
     {
         name: "Node JS",
         icon: Nodejs
     },
+        {
+        name: "AWS Lambda",
+        icon: Lambda
+    },
+    {
+        name: "AWS DynamoDB",
+        icon: Dynamo
+    },
+    {
+        name: "AWS API Gateway",
+        icon: Gateway
+    },
+    {
+        name: "AWS IAM",
+        icon: IAM
+    },
+    {
+        name: "AWS CDK",
+        icon: CDK
+    },
+    {
+        name: "AWS EventBridge",
+        icon: EventBridge
+    },
+    {
+        name: "AWS SES",
+        icon: SES
+    },
+
     {
         name: "Python",
         icon: Python
@@ -187,7 +210,7 @@ const skills = [
         icon: SpringBoot
     },
     {
-        name: "ASP.net",
+        name: "ASP.NET",
         icon: ASPnet
     },
     {
@@ -222,44 +245,32 @@ const skills = [
         name: "GitHub",
         icon: GitHub
     },
-    {
-        name: "AWS Lambda",
-        icon: Lambda
-    },
-    {
-        name: "AWS DynamoDb",
-        icon: Dynamo
-    },
-    {
-        name: "AWS API Gateway",
-        icon: Gateway
-    },
-    {
-        name: "AWS IAM",
-        icon: IAM
-    },
-    {
-        name: "AWS CDK",
-        icon: CDK
-    },
-    {
-        name: "AWS EventBridge",
-        icon: EventBridge
-    },
-    {
-        name: "AWS SES",
-        icon: SES
-    },
+
 ]
 
 const projects = [
     {
+        title: "Service Capture",
+        subtitle: "Cross-platform SaaS product available on the Apple App Store and Google Play",
+        paragraph: "Job documentation and proof-of-work app designed for trades and service professionals. It enables users to capture photos during appointments, attach them directly to jobs, and generate professional PDF reports that can be shared with clients.",
+        technologies: "React Native / Expo / TypeScript / AWS Serverless",
+        githublink: null,
+        website: "https://servicecapture.app",
+        modalNumber: 1,
+        isVideo: false,
+        imageMain: Service,
+        imageOne: ServiceThree, 
+        imageTwo: ServiceTwo,
+        imageThree: ServiceFour,
+    },
+    {
         title: "WeatherWise",
         subtitle: "CS50W Web Programming with Python and JavaScript from HarvardX",
         paragraph: "Fully responsive Weather app for a user to search 45,000 cities and get 24 hour and 10 day weather forecasts. Includes a My Locations dashboard with local timezones.",
-        technologies: "Python / Django / React / Sqlite3",
+        technologies: "Python / Django / React / SQlite",
         githublink: "https://github.com/dvdjms/CS50w_Capstone",
-        modalNumber: 1,
+        website: null,
+        modalNumber: 2,
         isVideo: false,
         imageMain: WeatherMain,
         imageOne: WeatherOne, 
@@ -269,10 +280,11 @@ const projects = [
     {
         title: "Learn Scotland",
         subtitle: "CodeClan Group Project",
-        paragraph: "Working within a group of four, we planned, designed, and developed a Learn Scotland application aimed at young people. This included quizzes, interactive activities, and a leader board.",
+        paragraph: "Working within a group of four, we planned, designed, and developed a Learn Scotland application aimed at young people. This included quizzes, interactive activities, and a leaderboard.",
         technologies: "React / ExpressJS / MongoDB",
         githublink: "https://github.com/dvdjms/Learn_Scotland",
-        modalNumber: 2,
+        website: null,
+        modalNumber: 3,
         isVideo: true,
         video: LearnScotlandVideo,
         imageMain: LearnScotlandMain,
@@ -283,7 +295,8 @@ const projects = [
         paragraph: "Intrigued by the rapid evolution of Artificial Intelligence, I couldn't resist the urge to dive into the ChatGPT API. To channel my focus, I embarked on building a recipe generator.",
         technologies: "Angular / ASP.NET",
         githublink: "https://github.com/dvdjms/Recipe-AI",
-        modalNumber: 3,
+        website: null,
+        modalNumber: 4,
         isVideo: true,
         video: RecipeAIVideo,
         imageMain: RecipeAIMain,
@@ -291,10 +304,11 @@ const projects = [
     {
         title: "Movie Watchlist",
         subtitle: "CodeClan Individual Project",
-        paragraph: "After 4 weeks at CodeClan we undertook our first project. Working independently we were to create a flask application that allows a user to perform simple CRUD actions. I created a movie watchlist.",
+        paragraph: "After 4 weeks at CodeClan we undertook our first project. Working independently we were to create a Flask application that allows a user to perform simple CRUD actions. I created a movie watchlist.",
         technologies: "Python / Flask / PostgreSQL",
         githublink: "https://github.com/dvdjms/watchlist",
-        modalNumber: 4,
+        website: null,
+        modalNumber: 5,
         isVideo: false,
         imageOne: WatchlistOne,
         imageTwo: WatchlistTwo,
@@ -304,10 +318,11 @@ const projects = [
     {
         title: "Art Ghetto",
         subtitle: "CS50x Final Project",
-        paragraph: "Working independently I developed a flask application that allows a user to mimic buying art. A user can register, a user can buy art, a user can view transaction history.",
+        paragraph: "Working independently, I developed a Flask application that allows user to simulate buying art. A user can register, a user can buy art, a user can view transaction history.",
         technologies: "Python / Flask / JavaScript / Sqlite3",
         githublink: "https://github.com/dvdjms/Art-Ghetto",
-        modalNumber: 5,
+        website: null,
+        modalNumber: 6,
         isVideo: false,
         imageOne: ArtGhettoOne,
         imageTwo: ArtGhettoTwo,
@@ -320,7 +335,8 @@ const projects = [
         paragraph: "For the final project at CodeClan, I worked independently to explore WebSocket technologies for a video chat application. Ambitious to say the least!",
         technologies: "React / ExpressJS / WebSockets",
         githublink: "https://github.com/dvdjms/Capstone",
-        modalNumber: 6,
+        website: null,
+        modalNumber: 7,
         isVideo: false,
         imageOne: ChaterioOne,
         imageTwo: ChaterioTwo,
@@ -329,30 +345,18 @@ const projects = [
     },
     {
         title: "Scottish Tech Army",
-        subtitle: "Voluntary project work to gain experience",
+        subtitle: "Volunteer software development project",
         paragraph: "Automated website updates using Jira APIs. Focused on updating project information and pinning project geo locations.",
         technologies: "JavaScript / Google Maps / AWS Lambda",
         githublink: "https://github.com/dvdjms/STA_Map_Project",
-        modalNumber: 7,
+        website: null,
+        modalNumber: 8,
         isVideo: false,
         imageOne: MapOne,
         imageTwo: MapTwo,
         imageThree: MapThree,
         imageMain: MapMain,
     },
-    // {
-    //     title: "Infraspeak-Odoo API Integration",
-    //     subtitle: "Infraspeak-Odoo API Integration using AWS Lambda",
-    //     paragraph: "Implemented API integration between Infraspeak and Odoo platforms, streamlining product, stock level synchronization, and account journals.",
-    //     technologies: "JavaScript / AWS Lambda / Gateway / Dynamo / SNS",
-    //     githublink: "https://github.com/dvdjms/STA_Map_Project",
-    //     modalNumber: 8,
-    //     isVideo: false,
-    //     imageOne: MapOne,
-    //     imageTwo: MapTwo,
-    //     imageThree: MapThree,
-    //     imageMain: MapMain,
-    // },
 ];
 
 
